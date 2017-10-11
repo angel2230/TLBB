@@ -333,3 +333,7 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
+
+# Dev
+.ycm_extra_conf.py
+.editorconfig
