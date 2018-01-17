@@ -1,3 +1,6 @@
 *.idb
 *.obj
 *.exp
+*.res
+*.TXT
+*.cfg

@@ -50,7 +50,10 @@
 			<Tool
 				Name="VCMIDLTool"/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCPostBuildEventTool"
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+explorer.exe &quot;$(SolutionDir)Pre-Built\Bin\&quot;"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
@@ -114,7 +117,10 @@
 			<Tool
 				Name="VCMIDLTool"/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCPostBuildEventTool"
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+explorer.exe &quot;$(SolutionDir)Pre-Built\Bin\&quot;"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
@@ -178,7 +184,10 @@
 			<Tool
 				Name="VCMIDLTool"/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCPostBuildEventTool"
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin\&quot;
+explorer.exe &quot;$(SolutionDir)Pre-Built\Bin\&quot;"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
