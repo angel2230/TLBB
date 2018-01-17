@@ -1,0 +1,5 @@
+!.gitignore
+!cg.dll
+!*.dll
+!*.exe
+!*.cfg
