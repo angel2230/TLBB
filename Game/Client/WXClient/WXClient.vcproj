@@ -235,56 +235,6 @@ explorer.exe &quot;$(SolutionDir)Pre-Built\Bin\&quot;"/>
 			</File>
 		</Filter>
 		<Filter
-			Name="Resource Files"
-			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
-			<File
-				RelativePath=".\Res\Attack.cur">
-			</File>
-			<File
-				RelativePath=".\Res\AutoRun.cur">
-			</File>
-			<File
-				RelativePath=".\Res\Game.ico">
-			</File>
-			<File
-				RelativePath=".\Game.rc">
-			</File>
-			<File
-				RelativePath=".\Res\Herbs.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\Hover.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\Identify.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\Interact.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\Mine.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\Normal.cur">
-			</File>
-			<File
-				RelativePath=".\Res\PickUp.cur">
-			</File>
-			<File
-				RelativePath=".\Res\Repair.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\small.ico">
-			</File>
-			<File
-				RelativePath=".\Res\Speak.CUR">
-			</File>
-			<File
-				RelativePath=".\Res\UnReachable.cur">
-			</File>
-		</Filter>
-		<Filter
 			Name="World">
 			<File
 				RelativePath=".\World\Scene.cpp">
@@ -326,6 +276,56 @@ explorer.exe &quot;$(SolutionDir)Pre-Built\Bin\&quot;"/>
 				</File>
 				<File
 					RelativePath=".\World\BuildingCollisionMng.h">
+				</File>
+			</Filter>
+			<Filter
+				Name="Resource Files"
+				Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+				UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+				<File
+					RelativePath=".\Res\Attack.cur">
+				</File>
+				<File
+					RelativePath=".\Res\AutoRun.cur">
+				</File>
+				<File
+					RelativePath=".\Res\Game.ico">
+				</File>
+				<File
+					RelativePath=".\Game.rc">
+				</File>
+				<File
+					RelativePath=".\Res\Herbs.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\Hover.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\Identify.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\Interact.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\Mine.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\Normal.cur">
+				</File>
+				<File
+					RelativePath=".\Res\PickUp.cur">
+				</File>
+				<File
+					RelativePath=".\Res\Repair.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\small.ico">
+				</File>
+				<File
+					RelativePath=".\Res\Speak.CUR">
+				</File>
+				<File
+					RelativePath=".\Res\UnReachable.cur">
 				</File>
 			</Filter>
 		</Filter>
