@@ -249,7 +249,7 @@ BOOL CALLBACK Debug_ChooseUserFunc( HWND hDlg, UINT message, WPARAM wParam, LPAR
 				const char* s_szServerList[] = 
 				{
 					"192.168.1.1",
-					"127.0.0.1 ",
+					"127.0.0.1",
 				};
 				INT s_ServerNum = sizeof(s_szServerList)/sizeof(const char*);
 
