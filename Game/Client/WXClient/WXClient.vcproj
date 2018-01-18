@@ -51,9 +51,10 @@
 				Name="VCMIDLTool"/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-explorer.exe &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;"/>
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+explorer.exe &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
@@ -118,9 +119,10 @@ explorer.exe &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;"/>
 				Name="VCMIDLTool"/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-explorer.exe &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;"/>
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+explorer.exe &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
@@ -185,9 +187,10 @@ explorer.exe &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;"/>
 				Name="VCMIDLTool"/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;
-explorer.exe &quot;$(SolutionDir)Pre-Built\Bin$(ConfigurationName)\&quot;"/>
+				CommandLine="copy /Y &quot;$(TargetDir)*.dll&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+copy /Y &quot;$(TargetDir)*.exe&quot; &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+explorer.exe &quot;$(SolutionDir)_Pre-Built\Bin$(ConfigurationName)\&quot;
+"/>
 			<Tool
 				Name="VCPreBuildEventTool"/>
 			<Tool
