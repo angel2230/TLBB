@@ -1,1 +1,1 @@
-.\WXClient.exe -fl
+.\WXClient.exe -fl -finderror
