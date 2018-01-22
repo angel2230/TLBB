@@ -97,9 +97,7 @@
       </DataExecutionPrevention>
       <ImportLibrary>./Debug/$(TargetName).lib</ImportLibrary>
     </Link>
-    <Manifest>
-      <AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions>
-    </Manifest>
+    <Manifest />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -131,9 +129,7 @@
       </DataExecutionPrevention>
       <ImportLibrary>./Release/Main.lib</ImportLibrary>
     </Link>
-    <Manifest>
-      <AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions>
-    </Manifest>
+    <Manifest />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
     <ClCompile>
@@ -158,9 +154,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
     </Link>
-    <Manifest>
-      <AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions>
-    </Manifest>
+    <Manifest />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Ogre\OgreMain\src\OgreAlignedAllocator.cpp" />
