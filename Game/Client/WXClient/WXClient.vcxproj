@@ -102,7 +102,7 @@
     <Link>
       <AdditionalOptions>/ignore:4078 /INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions>
       <OutputFile>..\..\_Scripts\VC7.1\Debug\WXClient.exe</OutputFile>
-      <AdditionalLibraryDirectories>../../Common;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../Common;$(SolutionDir)\..\DirectX9\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>..\..\_Scripts\VC7.1\Debug\WXClient.pdb</ProgramDatabaseFile>
