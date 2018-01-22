@@ -1,102 +1,167 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="CEGUIFalagardEx"
 	ProjectGUID="{311B69CF-7381-4D57-A540-778D24D95C60}"
-	Keyword="Win32Proj">
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Debug\CEGUIFalagardEx"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Debug\CEGUIFalagardEx"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				Optimization="0"
 				AdditionalIncludeDirectories="../CEGUI/CEGUI/WidgetSets/Falagard/include;../CEGUI/CEGUI/include;../CEGUI/CEGUIRenderer/include;..\..\ogre\OgreMain\include;..\..\boost"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;FALAGARDBASE_EXPORTS"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
 				UsePrecompiledHeader="0"
 				ProgramDataBaseFileName="$(IntDir)/$(ProjectName).pdb"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
+				Detect64BitPortabilityProblems="false"
 				DebugInformationFormat="4"
-				DisableSpecificWarnings="4251;4996"/>
+				DisableSpecificWarnings="4251;4996"
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Debug\CEGUIFalagardEx.lib"/>
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+				OutputFile="..\..\_Scripts\VC7.1\Debug\CEGUIFalagardEx.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Release\CEGUIFalagardEx"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Release\CEGUIFalagardEx"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				AdditionalIncludeDirectories="../CEGUI/CEGUI/WidgetSets/Falagard/include;../CEGUI/CEGUI/include;../CEGUI/CEGUIRenderer/include;..\..\ogre\OgreMain\include;..\..\boost"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;FALAGARDBASE_EXPORTS"
 				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"
-				DisableSpecificWarnings="4251"/>
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="4"
+				DisableSpecificWarnings="4251"
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Release\CEGUIFalagardEx.lib"/>
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+				OutputFile="..\..\_Scripts\VC7.1\Release\CEGUIFalagardEx.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -105,346 +170,459 @@
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath="..\Common\AxTrace.cpp">
+				RelativePath="..\Common\AxTrace.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalActionButton.cpp">
+				RelativePath=".\FalActionButton.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalActionButtonProperties.cpp">
+				RelativePath=".\FalActionButtonProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardAnimate.cpp">
+				RelativePath=".\FalagardAnimate.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardBeHitBoard.cpp">
+				RelativePath=".\FalagardBeHitBoard.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardCheckButton.cpp">
+				RelativePath=".\FalagardCheckButton.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardComplexWindow.cpp">
+				RelativePath=".\FalagardComplexWindow.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardComplexWindowProperties.cpp">
+				RelativePath=".\FalagardComplexWindowProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardInfoList.cpp">
+				RelativePath=".\FalagardInfoList.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardMeshWindow.cpp">
+				RelativePath=".\FalagardMeshWindow.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardMeshWindowProperties.cpp">
+				RelativePath=".\FalagardMeshWindowProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardPaoPao.cpp">
+				RelativePath=".\FalagardPaoPao.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardResizeText.cpp">
+				RelativePath=".\FalagardResizeText.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardRewardItem.cpp">
+				RelativePath=".\FalagardRewardItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSelfFitWindow.cpp">
+				RelativePath=".\FalagardSelfFitWindow.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSoftKeyBoard.cpp">
+				RelativePath=".\FalagardSoftKeyBoard.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSuperProgress.cpp">
+				RelativePath=".\FalagardSuperProgress.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalAnimateProperties.cpp">
+				RelativePath=".\FalAnimateProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalBoundWindow.cpp">
+				RelativePath=".\FalBoundWindow.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalBoundWindowProperties.cpp">
+				RelativePath=".\FalBoundWindowProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatBoard.cpp">
+				RelativePath=".\FalChatBoard.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatBoardProperties.cpp">
+				RelativePath=".\FalChatBoardProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatChannel.cpp">
+				RelativePath=".\FalChatChannel.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatChannelProperties.cpp">
+				RelativePath=".\FalChatChannelProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatHistory.cpp">
+				RelativePath=".\FalChatHistory.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatHistoryProperties.cpp">
+				RelativePath=".\FalChatHistoryProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalCreatureBoard.cpp">
+				RelativePath=".\FalCreatureBoard.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalCreatureBoardProperties.cpp">
+				RelativePath=".\FalCreatureBoardProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalDragTitle.cpp">
+				RelativePath=".\FalDragTitle.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalDragTitleProperties.cpp">
+				RelativePath=".\FalDragTitleProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalIMEEditBox.cpp">
+				RelativePath=".\FalIMEEditBox.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalIMEEditBoxProperties.cpp">
+				RelativePath=".\FalIMEEditBoxProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMoney.cpp">
+				RelativePath=".\FalMoney.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMoneyProperties.cpp">
+				RelativePath=".\FalMoneyProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMultiIMEEditBox.cpp">
+				RelativePath=".\FalMultiIMEEditBox.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMultiIMEEditBoxProperties.cpp">
+				RelativePath=".\FalMultiIMEEditBoxProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSimpleText.cpp">
+				RelativePath=".\FalSimpleText.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSimpleTextProperties.cpp">
+				RelativePath=".\FalSimpleTextProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalStopWatch.cpp">
+				RelativePath=".\FalStopWatch.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalStopWatchProperties.cpp">
+				RelativePath=".\FalStopWatchProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSuperTooltip.cpp">
+				RelativePath=".\FalSuperTooltip.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSuperTooltipProperties.cpp">
+				RelativePath=".\FalSuperTooltipProperties.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath="..\Common\AxTrace.h">
+				RelativePath="..\Common\AxTrace.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalActionButton.h">
+				RelativePath=".\FalActionButton.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalActionButtonProperties.h">
+				RelativePath=".\FalActionButtonProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardAnimate.h">
+				RelativePath=".\FalagardAnimate.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardBeHitBoard.h">
+				RelativePath=".\FalagardBeHitBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardCheckButton.h">
+				RelativePath=".\FalagardCheckButton.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardComplexWindow.h">
+				RelativePath=".\FalagardComplexWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardComplexWindowProperties.h">
+				RelativePath=".\FalagardComplexWindowProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardInfoList.h">
+				RelativePath=".\FalagardInfoList.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardMeshWindow.h">
+				RelativePath=".\FalagardMeshWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardMeshWindowProperties.h">
+				RelativePath=".\FalagardMeshWindowProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardPaoPao.h">
+				RelativePath=".\FalagardPaoPao.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardResizeText.h">
+				RelativePath=".\FalagardResizeText.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSelfFitWindow.h">
+				RelativePath=".\FalagardSelfFitWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSoftKeyBoard.h">
+				RelativePath=".\FalagardSoftKeyBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSuperProgress.h">
+				RelativePath=".\FalagardSuperProgress.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalAnimateProperties.h">
+				RelativePath=".\FalAnimateProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalBoundWindow.h">
+				RelativePath=".\FalBoundWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalBoundWindowProperties.h">
+				RelativePath=".\FalBoundWindowProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatBoard.h">
+				RelativePath=".\FalChatBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatBoardProperties.h">
+				RelativePath=".\FalChatBoardProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatChannel.h">
+				RelativePath=".\FalChatChannel.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatChannelProperties.h">
+				RelativePath=".\FalChatChannelProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatHistory.h">
+				RelativePath=".\FalChatHistory.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalChatHistoryProperties.h">
+				RelativePath=".\FalChatHistoryProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalCreatureBoard.h">
+				RelativePath=".\FalCreatureBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalCreatureBoardProperties.h">
+				RelativePath=".\FalCreatureBoardProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalDragTitle.h">
+				RelativePath=".\FalDragTitle.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalDragTitleProperties.h">
+				RelativePath=".\FalDragTitleProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalIMEEditBox.h">
+				RelativePath=".\FalIMEEditBox.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalIMEEditBoxProperties.h">
+				RelativePath=".\FalIMEEditBoxProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMoney.h">
+				RelativePath=".\FalMoney.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMoneyProperties.h">
+				RelativePath=".\FalMoneyProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMultiIMEEditBox.h">
+				RelativePath=".\FalMultiIMEEditBox.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMultiIMEEditBoxProperties.h">
+				RelativePath=".\FalMultiIMEEditBoxProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSimpleText.h">
+				RelativePath=".\FalSimpleText.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSimpleTextProperties.h">
+				RelativePath=".\FalSimpleTextProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalStopWatch.h">
+				RelativePath=".\FalStopWatch.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalStopWatchProperties.h">
+				RelativePath=".\FalStopWatchProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSuperTooltip.h">
+				RelativePath=".\FalSuperTooltip.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalSuperTooltipProperties.h">
+				RelativePath=".\FalSuperTooltipProperties.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Interfaces">
+			Name="Interfaces"
+			>
 			<File
-				RelativePath=".\IFalagardActionButton.h">
+				RelativePath=".\IFalagardActionButton.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardAnimate.h">
+				RelativePath=".\IFalagardAnimate.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardBeHitBoard.h">
+				RelativePath=".\IFalagardBeHitBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardComplexWindow.h">
+				RelativePath=".\IFalagardComplexWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardMeshWindow.h">
+				RelativePath=".\IFalagardMeshWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardMinimapWindow.h">
+				RelativePath=".\IFalagardMinimapWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardSceneMapWindow.h">
+				RelativePath=".\IFalagardSceneMapWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardSelfFitWindow.h">
+				RelativePath=".\IFalagardSelfFitWindow.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardSoftKeyBoard.h">
+				RelativePath=".\IFalagardSoftKeyBoard.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalagardWorldMap.h">
+				RelativePath=".\IFalagardWorldMap.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalChatChannel.h">
+				RelativePath=".\IFalChatChannel.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalChatHistory.h">
+				RelativePath=".\IFalChatHistory.h"
+				>
 			</File>
 			<File
-				RelativePath=".\IFalSuperTooltip.h">
+				RelativePath=".\IFalSuperTooltip.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 		</Filter>
 		<Filter
-			Name="newradar">
+			Name="newradar"
+			>
 			<File
-				RelativePath=".\FalagardMiniMap.cpp">
+				RelativePath=".\FalagardMiniMap.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardMiniMap.h">
+				RelativePath=".\FalagardMiniMap.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardRadar.cpp">
+				RelativePath=".\FalagardRadar.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardRadar.h">
+				RelativePath=".\FalagardRadar.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSceneMap.cpp">
+				RelativePath=".\FalagardSceneMap.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardSceneMap.h">
+				RelativePath=".\FalagardSceneMap.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardWorldMap.cpp">
+				RelativePath=".\FalagardWorldMap.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardWorldMap.h">
+				RelativePath=".\FalagardWorldMap.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardWorldMapProperties.cpp">
+				RelativePath=".\FalagardWorldMapProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalagardWorldMapProperties.h">
+				RelativePath=".\FalagardWorldMapProperties.h"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMinimapProperties.cpp">
+				RelativePath=".\FalMinimapProperties.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\FalMinimapProperties.h">
+				RelativePath=".\FalMinimapProperties.h"
+				>
 			</File>
 		</Filter>
 	</Files>
