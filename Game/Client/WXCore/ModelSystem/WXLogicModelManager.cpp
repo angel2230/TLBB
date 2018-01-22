@@ -1165,7 +1165,11 @@ namespace WX	{
             return AnimationSkeletonLinksIterator(links->begin(), links->end());
         }
         else
-			return AnimationSkeletonLinksIterator(AnimationSkeletonLinks::iterator(0), AnimationSkeletonLinks::iterator(0));
+		{
+			//return AnimationSkeletonLinksIterator(nullptr, nullptr);
+			return AnimationSkeletonLinksIterator(AnimationSkeletonLinks::iterator(), AnimationSkeletonLinks::iterator());
+			//return AnimationSkeletonLinksIterator(AnimationSkeletonLinks::iterator(0), AnimationSkeletonLinks::iterator(0));
+		}
     }
     //---------------------------------------------------------------------
     void LogicModelManager::addToMaterialPool(MaterialHandle handle)
