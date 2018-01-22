@@ -16,7 +16,7 @@ public:
 	//²éÑ¯ÊôÐÔÖµ
 	int LUA_GetValue(LuaPlus::LuaState* pState)
 	{
-		LuaStack args(pState);
+		LuaPlus::LuaStack args(pState);
 
 		if(!(args[2].IsString()) || m_pEventArg == 0)
 		{
@@ -132,7 +132,7 @@ void CGameUIScript::createBindings(void)
 
 		g_theUIEventArg.m_pMetaTable->RegisterObjectFunctor("GetValue", &CEventArg::LUA_GetValue);
 
-		LuaObject obj_UIEvent = pLuaState->BoxPointer(&(g_theUIEventArg));
+		LuaPlus::LuaObject obj_UIEvent = pLuaState->BoxPointer(&(g_theUIEventArg));
 		obj_UIEvent.SetMetaTable(*(g_theUIEventArg.m_pMetaTable));
 		pLuaState->GetGlobals().SetObject("CEArg", obj_UIEvent);
 	}
@@ -142,7 +142,7 @@ void CGameUIScript::createBindings(void)
 
 	//CUIWindowItem(this)
 	{
-		LuaObject metaUIWindowItem = pLuaState->GetGlobals().CreateTable("MetaTable_UIWindowItem");
+		LuaPlus::LuaObject metaUIWindowItem = pLuaState->GetGlobals().CreateTable("MetaTable_UIWindowItem");
 		metaUIWindowItem.SetObject("__index", metaUIWindowItem);
 		
 		metaUIWindowItem.RegisterObjectFunctor("RegisterEvent"		, &CUIWindowItem::LUA_RegisterEvent);
