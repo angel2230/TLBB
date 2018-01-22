@@ -113,7 +113,7 @@ VOID CSoundSystemFMod::Initial(VOID*)
 	m_pMetaTable->RegisterObjectFunctor("PlaySound", &CSoundSystemFMod::Lua_PlaySound);
 	m_pMetaTable->RegisterObjectFunctor("StopSound", &CSoundSystemFMod::Lua_StopSound);
 
-	LuaObject obj_Variable = CScriptSystem::GetMe()->GetLuaState()->BoxPointer(this);
+	LuaPlus::LuaObject obj_Variable = CScriptSystem::GetMe()->GetLuaState()->BoxPointer(this);
 	obj_Variable.SetMetaTable(*m_pMetaTable);
 	CScriptSystem::GetMe()->GetLuaState()->GetGlobals().SetObject("Sound", obj_Variable);
 }
@@ -525,7 +525,7 @@ VOID CSoundSystemFMod::StopSpecialSounds(tSoundSource::Type type)
 
 INT CSoundSystemFMod::Lua_PlaySound(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsInteger()) 
 	{
 		TDThrow("LUA:CSoundSystemFMod::Lua_PlaySound[2] param parameter error");
@@ -565,7 +565,7 @@ INT CSoundSystemFMod::Lua_PlaySound(LuaPlus::LuaState* state)
 
 INT CSoundSystemFMod::Lua_StopSound(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsInteger()) 
 	{
 		TDThrow("LUA:CSoundSystemFMod::Lua_StopSound[2] param parameter error");

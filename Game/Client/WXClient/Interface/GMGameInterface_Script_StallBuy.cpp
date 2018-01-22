@@ -99,7 +99,7 @@ namespace SCRIPT_SANDBOX
 	//获得指定位置的定价
 	INT StallBuy::GetPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallBuy::GetPrice[2] param parameter error");
@@ -128,7 +128,7 @@ namespace SCRIPT_SANDBOX
 	//购买物品
 	INT StallBuy::BuyItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallBuy::BuyItem param parameter error");
@@ -236,7 +236,7 @@ namespace SCRIPT_SANDBOX
 	// 获得宠物
 	INT StallBuy::EnumPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::EnumPet[2] param parameter error");
@@ -266,7 +266,7 @@ namespace SCRIPT_SANDBOX
 	//购买宠物
 	INT StallBuy::BuyPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallBuy::BuyItem param parameter error");

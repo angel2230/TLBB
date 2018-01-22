@@ -43,7 +43,7 @@ typedef void (*fnLuaPlus_UnregisterModule)( LuaState* state );
 static int LS_import( LuaState* state )
 {
 #ifndef LUAPLUS_LIB
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	LPCSTR moduleName = args[ 1 ].GetString();
 
 #ifdef _DEBUG
@@ -65,13 +65,13 @@ static int LS_import( LuaState* state )
 #endif _DEBUG
 	_strlwr( path );
 
-	LuaObject importModulesObj = state->GetRegistry()[ "ImportModules" ];
+	LuaPlus::LuaObject importModulesObj = state->GetRegistry()[ "ImportModules" ];
 	if ( importModulesObj.IsNil() )
 	{
 		importModulesObj = state->GetRegistry().CreateTable( "ImportModules" );
 	}
 
-	LuaObject moduleObj = importModulesObj[ path ];
+	LuaPlus::LuaObject moduleObj = importModulesObj[ path ];
 	if ( !moduleObj.IsNil() )
 	{
 		// Already exists.
@@ -159,7 +159,7 @@ static int writer(lua_State* L, const void* p, size_t size, void* u)
 
 static int LS_dump( LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	const char* inFileName = args[1].GetString();
 	const char* outFileName = args[2].GetString();
 	if (luaL_loadfile(*state, inFileName) != 0)
@@ -189,7 +189,7 @@ static int LS_dump( LuaState* state )
 
 void ScriptFunctionsRegister( LuaState* state )
 {
-	LuaObject globalsObj = state->GetGlobals();
+	LuaPlus::LuaObject globalsObj = state->GetGlobals();
 	globalsObj.Register("import",			LS_import);
 	globalsObj.Register("LuaDumpBinary",	LS_dump);
 }

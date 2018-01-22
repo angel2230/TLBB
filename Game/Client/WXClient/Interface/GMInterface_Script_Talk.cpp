@@ -585,7 +585,7 @@ namespace SCRIPT_SANDBOX
 	INT	Talk::GetChannel(LuaPlus::LuaState* state)
 	{
 		//检查参数
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Talk GetChannel Wrong Param1");
@@ -620,7 +620,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::GetChannelHeader(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -662,7 +662,7 @@ namespace SCRIPT_SANDBOX
 	INT	Talk::SendChatMessage(LuaPlus::LuaState* state)
 	{
 		//检查参数
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString() && args[3].IsString()))
 		{
 			TDThrow("LUA: Talk GetChannel Wrong Param1 or Param2");
@@ -831,7 +831,7 @@ namespace SCRIPT_SANDBOX
 			return 1;				//不存在自建频道
 		}
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk JoinUserToChannel Wrong Param1");
@@ -850,7 +850,7 @@ namespace SCRIPT_SANDBOX
 			return 1;				//不存在自建频道
 		}
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk KickUserFromChannel Wrong Param1");
@@ -881,7 +881,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::InsertHistory(LuaPlus::LuaState *state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Talk InsertHistory Wrong Param1");
@@ -992,7 +992,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::SetMaxSaveNumber(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Talk SetMaxSaveNumber Wrong Param1");
@@ -1017,7 +1017,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::ConfigTab(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk ConfigTab Wrong Param1");
@@ -1044,7 +1044,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::CreateTabFinish(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()) || !(args[3].IsString()) || !(args[4].IsString()))
 		{
 			TDThrow("LUA: Talk CreateTabFinish Wrong Param");
@@ -1075,7 +1075,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::ConfigTabFinish(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()) || !(args[3].IsString()) || !(args[4].IsString()))
 		{
 			TDThrow("LUA: Talk ConfigTabFinish Wrong Param");
@@ -1097,7 +1097,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::SaveTab(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Talk SaveTab Wrong Param1");
@@ -1159,7 +1159,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::ClearTab(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Talk ClearTab Wrong Param1");
@@ -1185,7 +1185,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::GetChannelType(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk GetChannelType Wrong Param1");
@@ -1200,7 +1200,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::SelectFaceMotion(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk SelectFaceMotion Wrong Param1");
@@ -1237,7 +1237,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::SelectTextColor(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk SelectTextColor Wrong Param1");
@@ -1274,7 +1274,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::SaveOldTalkMsg(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()) || !(args[3].IsString()))
 		{
 			TDThrow("LUA: Talk SaveOldTalkMsg Wrong Param");
@@ -1301,7 +1301,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::ChangeCurrentChannel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk ChangeCurrentChannel Wrong Param1");
@@ -1426,7 +1426,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::ModifyChatTxt(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()) || !(args[3].IsString()) || !(args[4].IsString()))
 		{
 			TDThrow("LUA: Talk ModifyChatTxt Wrong Param");
@@ -1481,7 +1481,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::ShowContexMenu(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk ShowContexMenu Wrong Param1");
@@ -1509,7 +1509,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Talk::ContexMenuTalk(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -1534,7 +1534,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::HandleMenuAction(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -1561,7 +1561,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::GetTalkTemplateString_Lua(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Talk GetTalkTemplateString_Lua Wrong Param1");
@@ -1595,7 +1595,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::EnumChatMood(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		//检查参数
 		if (!(args[2].IsInteger()))
@@ -1611,7 +1611,7 @@ namespace SCRIPT_SANDBOX
 			tActionItem* pActionItem = CActionSystem::GetMe()->EnumAction(nIndex , NAMETYPE_CHATMOOD);
 			if(pActionItem)
 			{
-				LuaObject objReturn = state->BoxPointer(pActionItem);
+				LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 				objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 				objReturn.PushStack();
 
@@ -1620,7 +1620,7 @@ namespace SCRIPT_SANDBOX
 		}
 
 		//非法ActionItem
-		LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+		LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 
@@ -1664,7 +1664,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::GetPingBiName(LuaPlus::LuaState* State)
 	{
-		LuaStack args(State);
+		LuaPlus::LuaStack args(State);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: GetPingBiName Wrong Param1");
@@ -1682,7 +1682,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Talk::DelPingBi(LuaPlus::LuaState* State)
 	{
-		LuaStack args(State);
+		LuaPlus::LuaStack args(State);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: GetPingBiName Wrong Param1");

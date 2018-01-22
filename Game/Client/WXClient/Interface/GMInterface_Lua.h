@@ -24,7 +24,7 @@ public:
 		*s_pMetaTable = theState->GetGlobals().CreateTable(pszName);
 		s_pMetaTable->SetObject("__index", *s_pMetaTable);
 
-		LuaObject obj = theState->BoxPointer(s_pMe);
+		LuaPlus::LuaObject obj = theState->BoxPointer(s_pMe);
 		obj.SetMetaTable(*s_pMetaTable);
 		theState->GetGlobals().SetObject(pszName, obj);
 	}

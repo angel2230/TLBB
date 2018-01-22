@@ -198,10 +198,10 @@ private:
 	/**
 		Don't allow copies.  The stack will get screwed.
 	**/ 
-	LuaStackTableIterator& operator=( const LuaStackTableIterator& iter );
-	LuaStackTableIterator( const LuaStackTableIterator& iter );
+	LuaPlus::LuaStackTableIterator& operator=( const LuaStackTableIterator& iter );
+	LuaPlus::LuaStackTableIterator( const LuaStackTableIterator& iter );
 
-	LuaStackObject m_tableObj;				///< The table object being iterated.
+	LuaPlus::LuaStackObject m_tableObj;				///< The table object being iterated.
 	int m_startStackIndex;				///< The current starting stack index or -1 if the iterator is invalid.
 	bool m_autoStackManagement;			///< Auto stack management enabled or not?
 };

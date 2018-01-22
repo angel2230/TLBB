@@ -365,7 +365,7 @@ VOID CScriptSystem::Initial(VOID*)
 	
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	//×¢²á½ÇÉ« Target
-	LuaObject metatable_Character = objGlobal.CreateTable("CharacterMetaTable");
+	LuaPlus::LuaObject metatable_Character = objGlobal.CreateTable("CharacterMetaTable");
 	metatable_Character.SetObject("__index", metatable_Character);
 
 	metatable_Character.RegisterObjectFunctor("IsPresent", &SCRIPT_SANDBOX::Character::IsPresent);
@@ -444,13 +444,13 @@ VOID CScriptSystem::Initial(VOID*)
 	metatable_Character.RegisterObjectFunctor("IsEnemy", &SCRIPT_SANDBOX::Character::IsEnemy );
 
 
-	LuaObject obj_Target = pState->BoxPointer(&(SCRIPT_SANDBOX::Character::s_Target));
+	LuaPlus::LuaObject obj_Target = pState->BoxPointer(&(SCRIPT_SANDBOX::Character::s_Target));
 	obj_Target.SetMetaTable(metatable_Character);
 	objGlobal.SetObject("Target", obj_Target);
 
 	//---------------------------------------------------------------------------------
 	//×¢²áÍæ¼Ò Player
-	LuaObject metatable_PlayerMySelf = objGlobal.CreateTable("PlayerMySelfMetaTable");
+	LuaPlus::LuaObject metatable_PlayerMySelf = objGlobal.CreateTable("PlayerMySelfMetaTable");
 	metatable_PlayerMySelf.SetObject("__index", metatable_PlayerMySelf);
 
 	metatable_PlayerMySelf.RegisterObjectFunctor("GetData", &SCRIPT_SANDBOX::PlayerMySelf::GetData);
@@ -573,7 +573,7 @@ VOID CScriptSystem::Initial(VOID*)
 	// ×ó¼üÑ¡ÖÐ×Ô¼º
 	metatable_PlayerMySelf.RegisterObjectFunctor("SelectMyselfAsTarget", &SCRIPT_SANDBOX::PlayerMySelf::SelectMyselfAsTarget);
 
-	LuaObject obj_PlayerMySelf = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerMySelf::s_MySelf));
+	LuaPlus::LuaObject obj_PlayerMySelf = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerMySelf::s_MySelf));
 
 	obj_PlayerMySelf.SetMetaTable(metatable_PlayerMySelf);
 	objGlobal.SetObject("Player", obj_PlayerMySelf);
@@ -832,7 +832,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::DataPool::s_pMetaTable->RegisterObjectFunctor("GetPlayerSkill_Num", &SCRIPT_SANDBOX::DataPool::GetPlayerSkill_Num);
 	SCRIPT_SANDBOX::DataPool::s_pMetaTable->RegisterObjectFunctor("GetNPCobj_ID", &SCRIPT_SANDBOX::DataPool::GetNPCobj_ID);
 	
-	LuaObject obj_DataPool = pState->BoxPointer(&(SCRIPT_SANDBOX::DataPool::s_DataPool));
+	LuaPlus::LuaObject obj_DataPool = pState->BoxPointer(&(SCRIPT_SANDBOX::DataPool::s_DataPool));
 
 
 	obj_DataPool.SetMetaTable(*SCRIPT_SANDBOX::DataPool::s_pMetaTable);
@@ -852,7 +852,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::AbilityTeacher::s_pMetaTable->RegisterObjectFunctor("GetNeedSkillExp", &SCRIPT_SANDBOX::AbilityTeacher::GetNeedSkillExp);
 	SCRIPT_SANDBOX::AbilityTeacher::s_pMetaTable->RegisterObjectFunctor("GetServerData", &SCRIPT_SANDBOX::AbilityTeacher::GetServerData);
 
-	LuaObject obj_Ability = pState->BoxPointer(&(SCRIPT_SANDBOX::AbilityTeacher::s_AbilityTeacher));
+	LuaPlus::LuaObject obj_Ability = pState->BoxPointer(&(SCRIPT_SANDBOX::AbilityTeacher::s_AbilityTeacher));
 	obj_Ability.SetMetaTable(*SCRIPT_SANDBOX::AbilityTeacher::s_pMetaTable);
 	objGlobal.SetObject("AbilityTeacher", obj_Ability);
 
@@ -938,7 +938,7 @@ VOID CScriptSystem::Initial(VOID*)
 	
 	
 	
-	LuaObject obj_Pet = pState->BoxPointer(&(SCRIPT_SANDBOX::Pet::s_Pet));
+	LuaPlus::LuaObject obj_Pet = pState->BoxPointer(&(SCRIPT_SANDBOX::Pet::s_Pet));
 	obj_Pet.SetMetaTable(*SCRIPT_SANDBOX::Pet::s_pMetaTable);
 	objGlobal.SetObject("Pet", obj_Pet);
 
@@ -955,7 +955,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::PetInviteFriend::s_pMetaTable->RegisterObjectFunctor("ShowTargetPet", &SCRIPT_SANDBOX::PetInviteFriend::ShowTargetPet);
 	SCRIPT_SANDBOX::PetInviteFriend::s_pMetaTable->RegisterObjectFunctor("GetPetINFO", &SCRIPT_SANDBOX::PetInviteFriend::GetPetINFO);
 
-	LuaObject obj_PetInviteFriend = pState->BoxPointer(&(SCRIPT_SANDBOX::PetInviteFriend::s_PetInviteFriend));
+	LuaPlus::LuaObject obj_PetInviteFriend = pState->BoxPointer(&(SCRIPT_SANDBOX::PetInviteFriend::s_PetInviteFriend));
 	obj_PetInviteFriend.SetMetaTable(*SCRIPT_SANDBOX::PetInviteFriend::s_pMetaTable);
 	objGlobal.SetObject("PetInviteFriend", obj_PetInviteFriend);
 
@@ -1017,7 +1017,7 @@ VOID CScriptSystem::Initial(VOID*)
 
 
 
-	LuaObject obj_TargetPet = pState->BoxPointer(&(SCRIPT_SANDBOX::TargetPet::s_TargetPet));
+	LuaPlus::LuaObject obj_TargetPet = pState->BoxPointer(&(SCRIPT_SANDBOX::TargetPet::s_TargetPet));
 	obj_TargetPet.SetMetaTable(*SCRIPT_SANDBOX::TargetPet::s_pMetaTable);
 	objGlobal.SetObject("TargetPet", obj_TargetPet);
 
@@ -1045,7 +1045,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::Bank::s_pMetaTable->RegisterObjectFunctor("Close", &SCRIPT_SANDBOX::Bank::Close);
 	SCRIPT_SANDBOX::Bank::s_pMetaTable->RegisterObjectFunctor("EnumItem", &SCRIPT_SANDBOX::Bank::EnumItem);
 
-	LuaObject obj_Bank = pState->BoxPointer(&(SCRIPT_SANDBOX::Bank::s_Bank));
+	LuaPlus::LuaObject obj_Bank = pState->BoxPointer(&(SCRIPT_SANDBOX::Bank::s_Bank));
 	obj_Bank.SetMetaTable(*SCRIPT_SANDBOX::Bank::s_pMetaTable);
 	objGlobal.SetObject("Bank", obj_Bank);
 
@@ -1076,7 +1076,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::Exchange::s_pMetaTable->RegisterObjectFunctor("DelSelectPet", &SCRIPT_SANDBOX::Exchange::DelSelectPet);
 	SCRIPT_SANDBOX::Exchange::s_pMetaTable->RegisterObjectFunctor("ViewPetDesc", &SCRIPT_SANDBOX::Exchange::ViewPetDesc);
 
-	LuaObject obj_Exchange = pState->BoxPointer(&(SCRIPT_SANDBOX::Exchange::s_Exchange));
+	LuaPlus::LuaObject obj_Exchange = pState->BoxPointer(&(SCRIPT_SANDBOX::Exchange::s_Exchange));
 	obj_Exchange.SetMetaTable(*SCRIPT_SANDBOX::Exchange::s_pMetaTable);
 	objGlobal.SetObject("Exchange", obj_Exchange);
 
@@ -1108,7 +1108,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::LifeAbility::s_pMetaTable->RegisterObjectFunctor("GetNpcId", &SCRIPT_SANDBOX::LifeAbility::GetNpcId);
 
 	
-	LuaObject obj_LifeAbility = pState->BoxPointer(&(SCRIPT_SANDBOX::LifeAbility::s_LifeAbility));
+	LuaPlus::LuaObject obj_LifeAbility = pState->BoxPointer(&(SCRIPT_SANDBOX::LifeAbility::s_LifeAbility));
 	obj_LifeAbility.SetMetaTable(*SCRIPT_SANDBOX::LifeAbility::s_pMetaTable);
 	objGlobal.SetObject("LifeAbility", obj_LifeAbility);
 
@@ -1143,7 +1143,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::Guild::s_pMetaTable->RegisterObjectFunctor("GetShowMembersIdx", &SCRIPT_SANDBOX::Guild::GetShowMembersIdx);
 	SCRIPT_SANDBOX::Guild::s_pMetaTable->RegisterObjectFunctor("GetShowTraineesIdx", &SCRIPT_SANDBOX::Guild::GetShowTraineesIdx);
 
-	LuaObject obj_Guild = pState->BoxPointer(&(SCRIPT_SANDBOX::Guild::s_Guild));
+	LuaPlus::LuaObject obj_Guild = pState->BoxPointer(&(SCRIPT_SANDBOX::Guild::s_Guild));
 	obj_Guild.SetMetaTable(*SCRIPT_SANDBOX::Guild::s_pMetaTable);
 	objGlobal.SetObject("Guild", obj_Guild);
 
@@ -1166,7 +1166,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::PlayerPackage::s_pMetaTable->RegisterObjectFunctor("Lock", &SCRIPT_SANDBOX::PlayerPackage::Lock);
 	SCRIPT_SANDBOX::PlayerPackage::s_pMetaTable->RegisterObjectFunctor("IsLock", &SCRIPT_SANDBOX::PlayerPackage::IsLock);
 
-	LuaObject obj_PlayerPackage = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerPackage::s_PlayerPackage));
+	LuaPlus::LuaObject obj_PlayerPackage = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerPackage::s_PlayerPackage));
 	obj_PlayerPackage.SetMetaTable(*SCRIPT_SANDBOX::PlayerPackage::s_pMetaTable);
 	objGlobal.SetObject("PlayerPackage", obj_PlayerPackage);
 
@@ -1313,7 +1313,7 @@ VOID CScriptSystem::Initial(VOID*)
 	//SCRIPT_SANDBOX::SuperTooltips::s_pMetaTable->RegisterObjectFunctor("GetCashValue", &SCRIPT_SANDBOX::SuperTooltips::GetCashValue);
 	SCRIPT_SANDBOX::SuperTooltips::s_pMetaTable->RegisterObjectFunctor("GetSysColour", &SCRIPT_SANDBOX::SuperTooltips::GetSysColour);
 
-	LuaObject obj_SuperTooltips = pState->BoxPointer(&(SCRIPT_SANDBOX::SuperTooltips::s_SupperTooltip));
+	LuaPlus::LuaObject obj_SuperTooltips = pState->BoxPointer(&(SCRIPT_SANDBOX::SuperTooltips::s_SupperTooltip));
 	obj_SuperTooltips.SetMetaTable(*SCRIPT_SANDBOX::SuperTooltips::s_pMetaTable);
 	objGlobal.SetObject("SuperTooltips", obj_SuperTooltips);
 	
@@ -1350,7 +1350,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::StallSale::s_pMetaTable->RegisterObjectFunctor("SetSelectPet", &SCRIPT_SANDBOX::StallSale::SetSelectPet);
 
 
-	LuaObject obj_StallSale = pState->BoxPointer(&(SCRIPT_SANDBOX::StallSale::s_StallSale));
+	LuaPlus::LuaObject obj_StallSale = pState->BoxPointer(&(SCRIPT_SANDBOX::StallSale::s_StallSale));
 	obj_StallSale.SetMetaTable(*SCRIPT_SANDBOX::StallSale::s_pMetaTable);
 	objGlobal.SetObject("StallSale", obj_StallSale);
 
@@ -1376,7 +1376,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::StallBuy::s_pMetaTable->RegisterObjectFunctor("GetDefaultPage", &SCRIPT_SANDBOX::StallBuy::GetDefaultPage);
 	SCRIPT_SANDBOX::StallBuy::s_pMetaTable->RegisterObjectFunctor("BuyPet", &SCRIPT_SANDBOX::StallBuy::BuyPet);
 
-	LuaObject obj_StallBuy = pState->BoxPointer(&(SCRIPT_SANDBOX::StallBuy::s_StallBuy));
+	LuaPlus::LuaObject obj_StallBuy = pState->BoxPointer(&(SCRIPT_SANDBOX::StallBuy::s_StallBuy));
 	obj_StallBuy.SetMetaTable(*SCRIPT_SANDBOX::StallBuy::s_pMetaTable);
 	objGlobal.SetObject("StallBuy", obj_StallBuy);
 
@@ -1391,7 +1391,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::StallBbs::s_pMetaTable->RegisterObjectFunctor("AddMessage", &SCRIPT_SANDBOX::StallBbs::AddMessage);
 	SCRIPT_SANDBOX::StallBbs::s_pMetaTable->RegisterObjectFunctor("ReplyMessage", &SCRIPT_SANDBOX::StallBbs::ReplyMessage);
 
-	LuaObject obj_StallBbs = pState->BoxPointer(&(SCRIPT_SANDBOX::StallBbs::s_StallBbs));
+	LuaPlus::LuaObject obj_StallBbs = pState->BoxPointer(&(SCRIPT_SANDBOX::StallBbs::s_StallBbs));
 	obj_StallBbs.SetMetaTable(*SCRIPT_SANDBOX::StallBbs::s_pMetaTable);
 	objGlobal.SetObject("StallBbs", obj_StallBbs);
 
@@ -1406,7 +1406,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::MissionReply::s_pMetaTable->RegisterObjectFunctor("OnContinue", &SCRIPT_SANDBOX::MissionReply::OnContinue);
 	SCRIPT_SANDBOX::MissionReply::s_pMetaTable->RegisterObjectFunctor("EnumItem", &SCRIPT_SANDBOX::MissionReply::EnumItem);
 
-	LuaObject obj_MissionReply = pState->BoxPointer(&(SCRIPT_SANDBOX::MissionReply::s_MissionReply));
+	LuaPlus::LuaObject obj_MissionReply = pState->BoxPointer(&(SCRIPT_SANDBOX::MissionReply::s_MissionReply));
 	obj_MissionReply.SetMetaTable(*SCRIPT_SANDBOX::MissionReply::s_pMetaTable);
 	objGlobal.SetObject("MissionReply", obj_MissionReply);
 
@@ -1451,7 +1451,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::Talk::s_pMetaTable->RegisterObjectFunctor("DelPingBi", &SCRIPT_SANDBOX::Talk::DelPingBi);
 	SCRIPT_SANDBOX::Talk::s_pMetaTable->RegisterObjectFunctor("GetCurInputLanguage", &SCRIPT_SANDBOX::Talk::GetCurInputLanguage);
 
-	LuaObject obj_Talk = pState->BoxPointer(&(SCRIPT_SANDBOX::Talk::s_Talk));
+	LuaPlus::LuaObject obj_Talk = pState->BoxPointer(&(SCRIPT_SANDBOX::Talk::s_Talk));
 	obj_Talk.SetMetaTable(*SCRIPT_SANDBOX::Talk::s_pMetaTable);
 	objGlobal.SetObject("Talk", obj_Talk);
 
@@ -1472,7 +1472,7 @@ VOID CScriptSystem::Initial(VOID*)
 	//SCRIPT_SANDBOX::NpcShop::s_pMetaTable->RegisterObjectFunctor("GetShopType", &SCRIPT_SANDBOX::NpcShop::GetShopType);
 	//SCRIPT_SANDBOX::NpcShop::s_pMetaTable->RegisterObjectFunctor("GetRepairAllPrice", &SCRIPT_SANDBOX::NpcShop::GetRepairAllPrice);
 
-	LuaObject obj_NpcShop = pState->BoxPointer(&(SCRIPT_SANDBOX::NpcShop::s_NpcShop));
+	LuaPlus::LuaObject obj_NpcShop = pState->BoxPointer(&(SCRIPT_SANDBOX::NpcShop::s_NpcShop));
 	obj_NpcShop.SetMetaTable(*SCRIPT_SANDBOX::NpcShop::s_pMetaTable);
 	objGlobal.SetObject("NpcShop", obj_NpcShop);
 
@@ -1565,7 +1565,7 @@ VOID CScriptSystem::Initial(VOID*)
 	SCRIPT_SANDBOX::PlayerShop::s_pMetaTable->RegisterObjectFunctor("ChangeShopNum", &SCRIPT_SANDBOX::PlayerShop::ChangeShopNum);
 	SCRIPT_SANDBOX::PlayerShop::s_pMetaTable->RegisterObjectFunctor("GetNpcId", &SCRIPT_SANDBOX::PlayerShop::GetNpcId);
 
-	LuaObject obj_PlayerShop = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerShop::s_PlayerShop));
+	LuaPlus::LuaObject obj_PlayerShop = pState->BoxPointer(&(SCRIPT_SANDBOX::PlayerShop::s_PlayerShop));
 	obj_PlayerShop.SetMetaTable(*SCRIPT_SANDBOX::PlayerShop::s_pMetaTable);
 	objGlobal.SetObject("PlayerShop", obj_PlayerShop);
 
@@ -1594,7 +1594,7 @@ VOID CScriptSystem::Initial(VOID*)
 		
 	
 
-	LuaObject obj_Friend = pState->BoxPointer(&(SCRIPT_SANDBOX::Friend::s_Friend));
+	LuaPlus::LuaObject obj_Friend = pState->BoxPointer(&(SCRIPT_SANDBOX::Friend::s_Friend));
 	obj_Friend.SetMetaTable(*SCRIPT_SANDBOX::Friend::s_pMetaTable);
 	objGlobal.SetObject("Friend", obj_Friend);
 
@@ -1720,7 +1720,7 @@ VOID CScriptSystem::Initial(VOID*)
 	// ¹Ø±ÕÍøÂç×´Ì¬¡£
 	SCRIPT_SANDBOX::CGameProduce_Login::s_pMetaTable->RegisterObjectFunctor("CloseNetConnect",	&SCRIPT_SANDBOX::CGameProduce_Login::CloseNetConnect);
 
-	LuaObject obj_GameProduceLogin = pState->BoxPointer(&(SCRIPT_SANDBOX::CGameProduce_Login::s_GameProduceLogin));
+	LuaPlus::LuaObject obj_GameProduceLogin = pState->BoxPointer(&(SCRIPT_SANDBOX::CGameProduce_Login::s_GameProduceLogin));
 	obj_GameProduceLogin.SetMetaTable(*SCRIPT_SANDBOX::CGameProduce_Login::s_pMetaTable);
 	objGlobal.SetObject("GameProduceLogin", obj_GameProduceLogin);
 

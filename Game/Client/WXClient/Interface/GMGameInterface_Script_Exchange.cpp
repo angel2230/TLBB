@@ -175,7 +175,7 @@ namespace SCRIPT_SANDBOX
 	// 自己的（"self"），对方的（"other"）
 	INT Exchange::GetItemNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::GetItemNum param parameter error");
@@ -204,7 +204,7 @@ namespace SCRIPT_SANDBOX
 	//导出交易的金钱数
 	INT Exchange::GetMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::GetMoney param parameter error");
@@ -276,7 +276,7 @@ namespace SCRIPT_SANDBOX
 	//导出锁定状态
 	INT Exchange::IsLocked(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::GetMoney param parameter error");
@@ -328,7 +328,7 @@ namespace SCRIPT_SANDBOX
 	// 从输入框获得金钱
 	INT Exchange::GetMoneyFromInput(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Exchange::GetMoney param parameter error");
@@ -392,7 +392,7 @@ namespace SCRIPT_SANDBOX
 	//选择一个宠物列表中的宠物，点击确定后的操作
 	INT Exchange::AddPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Exchange:AddPet[2] param parameter error");
@@ -459,7 +459,7 @@ namespace SCRIPT_SANDBOX
 	// 获得宠物的个数
 	INT Exchange::GetPetNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::GetPetNum[2] param parameter error");
@@ -479,7 +479,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT Exchange::EnumPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::EnumPet[2] param parameter error");
@@ -522,7 +522,7 @@ namespace SCRIPT_SANDBOX
 	//从交易栏上拿下一个宠物
 	INT Exchange::DelSelectPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Exchange::EnumPet[2] param parameter error");
@@ -541,7 +541,7 @@ namespace SCRIPT_SANDBOX
 	//显示宠物详细信息
 	INT Exchange::ViewPetDesc(LuaPlus::LuaState* state)//("self",g_nSelectPet);
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::ViewPetDesc[2] param parameter error");

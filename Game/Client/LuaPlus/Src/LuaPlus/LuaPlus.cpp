@@ -307,8 +307,8 @@ static int LS_LuaDumpObject( LuaState* state )
 {
 	LuaStateOutFile file;
 
-	LuaStack args(state);
-	LuaStackObject fileObj = args[1];
+	LuaPlus::LuaStack args(state);
+	LuaPlus::LuaStackObject fileObj = args[1];
 	const char* fileName = NULL;
 	if ( fileObj.IsUserData() )
 	{
@@ -320,12 +320,12 @@ static int LS_LuaDumpObject( LuaState* state )
 		fileName = fileObj.GetString();
 	}
 
-	LuaObject nameObj = args[2];
-	LuaObject valueObj = args[3];
-	LuaStackObject alphabeticalObj = args[4];
-	LuaStackObject indentLevelObj = args[5];
-	LuaStackObject maxIndentLevelObj = args[6];
-	LuaStackObject writeAllObj = args[7];
+	LuaPlus::LuaObject nameObj = args[2];
+	LuaPlus::LuaObject valueObj = args[3];
+	LuaPlus::LuaStackObject alphabeticalObj = args[4];
+	LuaPlus::LuaStackObject indentLevelObj = args[5];
+	LuaPlus::LuaStackObject maxIndentLevelObj = args[6];
+	LuaPlus::LuaStackObject writeAllObj = args[7];
 	bool writeAll = writeAllObj.IsBoolean() ? writeAllObj.GetBoolean() : false;
 	bool alphabetical = alphabeticalObj.IsBoolean() ? alphabeticalObj.GetBoolean() : true;
 	unsigned int maxIndentLevel = maxIndentLevelObj.IsInteger() ? (unsigned int)maxIndentLevelObj.GetInteger() : 0xFFFFFFFF;
@@ -357,8 +357,8 @@ static int LS_LuaDumpGlobals(LuaState* state)
 {
 	LuaStateOutFile file;
 
-	LuaStack args(state);
-	LuaStackObject fileObj = args[1];
+	LuaPlus::LuaStack args(state);
+	LuaPlus::LuaStackObject fileObj = args[1];
 	const char* fileName = NULL;
 	if ( fileObj.IsUserData() )
 	{
@@ -370,9 +370,9 @@ static int LS_LuaDumpGlobals(LuaState* state)
 		fileName = fileObj.GetString();
 	}
 
-	LuaStackObject alphabeticalObj = args[2];
-	LuaStackObject maxIndentLevelObj = args[3];
-	LuaStackObject writeAllObj = args[4];
+	LuaPlus::LuaStackObject alphabeticalObj = args[2];
+	LuaPlus::LuaStackObject maxIndentLevelObj = args[3];
+	LuaPlus::LuaStackObject writeAllObj = args[4];
 	bool alphabetical = alphabeticalObj.IsBoolean() ? alphabeticalObj.GetBoolean() : true;
 	unsigned int maxIndentLevel = maxIndentLevelObj.IsInteger() ? (unsigned int)maxIndentLevelObj.GetInteger() : 0xFFFFFFFF;
 	bool writeAll = writeAllObj.IsBoolean() ? writeAllObj.GetBoolean() : false;
@@ -479,7 +479,7 @@ void LuaPlusGCFunction(void* s)
 	if (!state)
 		return;
 
-	LuaObject* curObj = state->GetHeadObject()->m_next;
+	LuaPlus::LuaObject* curObj = state->GetHeadObject()->m_next;
 	while (curObj != state->GetTailObject())
 	{
 		markobject(st, &curObj->m_object);

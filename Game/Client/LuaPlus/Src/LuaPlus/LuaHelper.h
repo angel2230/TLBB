@@ -189,7 +189,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static LuaStackObject GetTable( LuaStackObject& obj, KeyT key, bool require = true )
 	{
-		LuaStackObject tableObj = obj[ key ];
+		LuaPlus::LuaStackObject tableObj = obj[ key ];
 		if ( !tableObj.IsTable() )
 		{
 			if ( require )
@@ -217,7 +217,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static bool GetBoolean( LuaObject& obj, KeyT key, bool require = true, bool defaultValue = false )
 	{
-		LuaObject boolObj = obj[ key ];
+		LuaPlus::LuaObject boolObj = obj[ key ];
 		if ( !boolObj.IsBoolean() )
 		{
 			if ( require )
@@ -247,7 +247,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static int GetInteger( LuaObject& obj, KeyT key, bool require = true, int defaultValue = -1 )
 	{
-		LuaObject intObj = obj[ key ];
+		LuaPlus::LuaObject intObj = obj[ key ];
 		if ( !intObj.IsInteger() )
 		{
 			if ( require )
@@ -277,7 +277,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static float GetFloat( LuaObject& obj, KeyT key, bool require = true, float defaultValue = -1.0f )
 	{
-		LuaObject floatObj = obj[ key ];
+		LuaPlus::LuaObject floatObj = obj[ key ];
 		if ( !floatObj.IsNumber() )
 		{
 			if ( require )
@@ -307,7 +307,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static void* GetLightUserData( LuaObject& obj, KeyT key, bool require = true, void* defaultValue = NULL )
 	{
-		LuaObject outObj = obj[ key ];
+		LuaPlus::LuaObject outObj = obj[ key ];
 		if ( !outObj.IsLightUserData() )
 		{
 			if ( require )
@@ -337,7 +337,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static const char* GetString( LuaObject& obj, KeyT key, bool require = true, const char* defaultValue = "" )
 	{
-		LuaObject stringObj = obj[ key ];
+		LuaPlus::LuaObject stringObj = obj[ key ];
 		if ( !stringObj.IsString() )
 		{
 			if ( require )
@@ -364,7 +364,7 @@ namespace LuaHelper
 	template< typename KeyT >
 	static LuaObject GetTable( LuaObject& obj, KeyT key, bool require = true )
 	{
-		LuaObject tableObj = obj[ key ];
+		LuaPlus::LuaObject tableObj = obj[ key ];
 		if ( !tableObj.IsTable() )
 		{
 			if ( require )

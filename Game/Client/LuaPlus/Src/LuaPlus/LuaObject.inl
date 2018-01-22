@@ -169,7 +169,7 @@ inline LuaStackObject LuaCall::operator<<(const LuaRun& run)
 	int err = m_state->PCall(m_numArgs, run.m_numResults, alertStackPos);
 	if (err != 0)
 	{
-		LuaStackObject errObj(m_state, -1);
+		LuaPlus::LuaStackObject errObj(m_state, -1);
 		luaplus_assert(err == 0);
 	}
 	else

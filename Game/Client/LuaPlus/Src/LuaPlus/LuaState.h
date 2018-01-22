@@ -112,15 +112,15 @@ public:
 	lua_CFunction AtPanic(lua_CFunction panicf);
 
 	// LuaObject
-	LuaObject GetGlobals() throw();
-	LuaObject GetGlobal(const char *name);
-	LuaObject GetRegistry();
+	LuaPlus::LuaObject GetGlobals() throw();
+	LuaPlus::LuaObject GetGlobal(const char *name);
+	LuaPlus::LuaObject GetRegistry();
 
 	int Equal(const LuaObject& o1, const LuaObject& o2);
 	int LessThan(const LuaObject& o1, const LuaObject& o2);
 
 	// Stack functions.
-	LuaStackObject Stack(int index)				{  return LuaStackObject(this, index);  }
+	LuaPlus::LuaStackObject Stack(int index)				{  return LuaStackObject(this, index);  }
 	int GetTop();
 	void SetTop(int index);
 	void PushValue(int index);
@@ -135,17 +135,17 @@ public:
 	int LessThan(int index1, int index2);
 
 	// push functions (C -> stack)
-	LuaStackObject PushNil();
-	LuaStackObject PushInteger(int n);
-	LuaStackObject PushNumber(lua_Number n);
-	LuaStackObject PushLString(const char *s, size_t len);
-	LuaStackObject PushLWString(const lua_WChar* s, size_t len);
-	LuaStackObject PushString(const char *s);
-	LuaStackObject PushWString(const lua_WChar* s);
+	LuaPlus::LuaStackObject PushNil();
+	LuaPlus::LuaStackObject PushInteger(int n);
+	LuaPlus::LuaStackObject PushNumber(lua_Number n);
+	LuaPlus::LuaStackObject PushLString(const char *s, size_t len);
+	LuaPlus::LuaStackObject PushLWString(const lua_WChar* s, size_t len);
+	LuaPlus::LuaStackObject PushString(const char *s);
+	LuaPlus::LuaStackObject PushWString(const lua_WChar* s);
 	const char *PushVFString(const char *fmt, va_list argp);
-	LuaStackObject PushCClosure(lua_CFunction fn, int n);
+	LuaPlus::LuaStackObject PushCClosure(lua_CFunction fn, int n);
 
-	LuaStackObject PushCClosure(int (*f)(LuaState*), int n)
+	LuaPlus::LuaStackObject PushCClosure(int (*f)(LuaState*), int n)
 	{
 		unsigned char* buffer = (unsigned char*)lua_newuserdata(m_state, sizeof(f));
 		memcpy(buffer, &f, sizeof(f));
@@ -154,7 +154,7 @@ public:
 	}
 
 	template <class Callee>
-	LuaStackObject PushCClosure(const Callee& callee, int (Callee::*f)(LuaState*), int n)
+	LuaPlus::LuaStackObject PushCClosure(const Callee& callee, int (Callee::*f)(LuaState*), int n)
 	{
 		unsigned char* buffer = (unsigned char*)lua_newuserdata(m_state, sizeof(Callee) + sizeof(f));
 		memcpy(buffer, &callee, sizeof(Callee));
@@ -163,22 +163,22 @@ public:
 		return LuaStackObject(this, lua_gettop(m_state));
 	}
 	
-	LuaStackObject PushCFunction(lua_CFunction f);
-	LuaStackObject PushBoolean(bool value);
-	LuaStackObject PushLightUserData(void* p);
+	LuaPlus::LuaStackObject PushCFunction(lua_CFunction f);
+	LuaPlus::LuaStackObject PushBoolean(bool value);
+	LuaPlus::LuaStackObject PushLightUserData(void* p);
 
 	// get functions (Lua -> stack)
 	void GetTable(int index);
 	void RawGet(int index);
 	void RawGetI(int index, int n);
-	LuaStackObject NewTable(int size = 0);
+	LuaPlus::LuaStackObject NewTable(int size = 0);
 	void* NewUserData(size_t size);
-	LuaStackObject GetMetaTable(int objindex);
-	LuaStackObject GetDefaultMetaTable(int type);
-	LuaStackObject GetGlobals_Stack();					// Backward compatible.
-	LuaStackObject GetGlobal_Stack(const char *name);
-	LuaStackObject GetRegistry_Stack();
-	LuaStackObject GetRef(int ref);
+	LuaPlus::LuaStackObject GetMetaTable(int objindex);
+	LuaPlus::LuaStackObject GetDefaultMetaTable(int type);
+	LuaPlus::LuaStackObject GetGlobals_Stack();					// Backward compatible.
+	LuaPlus::LuaStackObject GetGlobal_Stack(const char *name);
+	LuaPlus::LuaStackObject GetRegistry_Stack();
+	LuaPlus::LuaStackObject GetRef(int ref);
 
 
 	// set functions(stack -> Lua)
@@ -225,8 +225,8 @@ public:
 
 	void Concat(int n);
 
-	LuaObject NewUserDataBox(void* u);
-	LuaStackObject NewUserDataBox_Stack(void* u);
+	LuaPlus::LuaObject NewUserDataBox(void* u);
+	LuaPlus::LuaStackObject NewUserDataBox_Stack(void* u);
 
 	// Helper functions
 	void Pop();
@@ -280,15 +280,15 @@ public:
 	unsigned long GetHookMask();
 
 	// Extra
-	LuaStackObject BoxPointer(void* u);
+	LuaPlus::LuaStackObject BoxPointer(void* u);
 	void* UnBoxPointer(int stackIndex);
 
 	lua_State* m_state;
 	bool m_ownState;
 
 	// We want the storage space, but we can't have the constructor run.
-	LuaObject* GetHeadObject()			{  return (LuaObject*)&m_headObject;  }
-	LuaObject* GetTailObject()			{  return (LuaObject*)&m_tailObject;  }
+	LuaPlus::LuaObject* GetHeadObject()			{  return (LuaObject*)&m_headObject;  }
+	LuaPlus::LuaObject* GetTailObject()			{  return (LuaObject*)&m_tailObject;  }
 
 protected:
 	LuaState(bool initStandardLibrary = true, bool multithreaded = false);
@@ -307,13 +307,13 @@ protected:
 
 	struct MiniLuaObject
 	{
-		LuaObject* m_next;		   // only valid when in free list
-		LuaObject* m_prev;		   // only valid when in used list
+		LuaPlus::LuaObject* m_next;		   // only valid when in free list
+		LuaPlus::LuaObject* m_prev;		   // only valid when in used list
 	};
 
 	MiniLuaObject m_headObject;
 	MiniLuaObject m_tailObject;
-	LuaObject m_threadObj;
+	LuaPlus::LuaObject m_threadObj;
 };
 
 
@@ -389,11 +389,11 @@ private:
 class LuaStack
 {
 public:
-	LuaStack(LuaState* state) : m_state(state) {}
-	LuaStack(lua_State* L) : m_state(LuaState::CastState(L)) {}
+	LuaPlus::LuaStack(LuaState* state) : m_state(state) {}
+	LuaPlus::LuaStack(lua_State* L) : m_state(LuaState::CastState(L)) {}
 	~LuaStack() {}
 
-	LuaStackObject operator[](int index)
+	LuaPlus::LuaStackObject operator[](int index)
 	{
 		return LuaStackObject(m_state, index);
 	}
@@ -524,7 +524,7 @@ public:
 	}
 
 protected:
-	LuaObject m_functionObj;
+	LuaPlus::LuaObject m_functionObj;
 };
 
 
@@ -642,7 +642,7 @@ public:
 	}
 
 protected:
-	LuaObject m_functionObj;
+	LuaPlus::LuaObject m_functionObj;
 };
 
 

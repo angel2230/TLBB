@@ -496,7 +496,7 @@ LuaObject LuaObject::Clone()
 	lua_State *L = GetCState();		(void)L;
 	if (IsTable())
 	{
-		LuaObject tableObj(m_state);
+		LuaPlus::LuaObject tableObj(m_state);
 		sethvalue(&tableObj.m_object, luaH_new(m_state->m_state, hvalue(&m_object)->sizearray, hvalue(&m_object)->lsizenode));
 		tableObj.SetMetaTable(GetMetaTable());
 
@@ -504,7 +504,7 @@ LuaObject LuaObject::Clone()
 		{
 			if (it.GetValue().IsTable())
 			{
-				LuaObject clonedChildTableObj = it.GetValue().Clone();
+				LuaPlus::LuaObject clonedChildTableObj = it.GetValue().Clone();
 				tableObj.SetObject(it.GetKey(), clonedChildTableObj);
 			}
 			else
@@ -551,7 +551,7 @@ LuaObject LuaObject::GetMetaTable()
 {
 	luaplus_assert(m_state);
 	Table *mt = luaT_getmetatable(m_state->m_state, &m_object);
-	LuaObject ret(m_state);
+	LuaPlus::LuaObject ret(m_state);
 	sethvalue2n(&ret.m_object, mt);
 	return ret;
 }
@@ -586,8 +586,8 @@ void LuaObject::Insert(LuaObject& obj)
 {
 	luaplus_assert(m_state);
 	LuaAutoBlock autoBlock(GetCState());
-	LuaObject tableObj = m_state->GetGlobal("table");
-	LuaObject funcObj = tableObj["insert"];
+	LuaPlus::LuaObject tableObj = m_state->GetGlobal("table");
+	LuaPlus::LuaObject funcObj = tableObj["insert"];
 	luaplus_assert(funcObj.IsFunction());
     LuaCall callObj(funcObj);
 	callObj << *this << obj << LuaRun();
@@ -598,8 +598,8 @@ void LuaObject::Insert(int index, LuaObject& obj)
 {
 	luaplus_assert(m_state);
 	LuaAutoBlock autoBlock(GetCState());
-	LuaObject tableObj = m_state->GetGlobal("table");
-	LuaObject funcObj = tableObj["insert"];
+	LuaPlus::LuaObject tableObj = m_state->GetGlobal("table");
+	LuaPlus::LuaObject funcObj = tableObj["insert"];
 	luaplus_assert(funcObj.IsFunction());
     LuaCall callObj(funcObj);
 	callObj << *this << index << obj << LuaRun();
@@ -610,8 +610,8 @@ void LuaObject::Remove(int index)
 {
 	luaplus_assert(m_state);
 	LuaAutoBlock autoBlock(GetCState());
-	LuaObject tableObj = m_state->GetGlobal("table");
-	LuaObject funcObj = tableObj["remove"];
+	LuaPlus::LuaObject tableObj = m_state->GetGlobal("table");
+	LuaPlus::LuaObject funcObj = tableObj["remove"];
 	luaplus_assert(funcObj.IsFunction());
     LuaCall callObj(funcObj);
 	callObj << *this << index << LuaRun();
@@ -622,8 +622,8 @@ void LuaObject::Sort()
 {
 	luaplus_assert(m_state);
 	LuaAutoBlock autoBlock(GetCState());
-	LuaObject tableObj = m_state->GetGlobal("table");
-	LuaObject funcObj = tableObj["sort"];
+	LuaPlus::LuaObject tableObj = m_state->GetGlobal("table");
+	LuaPlus::LuaObject funcObj = tableObj["sort"];
 	luaplus_assert(funcObj.IsFunction());
     LuaCall callObj(funcObj);
 	callObj << *this << LuaRun();
@@ -661,7 +661,7 @@ int LuaObject::GetTableCount()
 LuaObject LuaObject::CreateTable(const char* key, int narray, int lnhash)
 {
 	luaplus_assert(m_state);
-	LuaObject ret = LuaObject(m_state);
+	LuaPlus::LuaObject ret = LuaObject(m_state);
 	sethvalue2n(&ret.m_object, luaH_new(m_state->m_state, narray, lnhash));
 	SetTableHelper(key, ret.m_object);
 	return ret;
@@ -678,7 +678,7 @@ LuaObject LuaObject::CreateTable(const char* key, int narray, int lnhash)
 LuaObject LuaObject::CreateTable(int key, int narray, int lnhash)
 {
 	luaplus_assert(m_state);
-	LuaObject ret = LuaObject(m_state);
+	LuaPlus::LuaObject ret = LuaObject(m_state);
 	sethvalue2n(&ret.m_object, luaH_new(m_state->m_state, narray, lnhash));
 	SetTableHelper(key, ret.m_object);
 	return ret;
@@ -695,7 +695,7 @@ LuaObject LuaObject::CreateTable(int key, int narray, int lnhash)
 LuaObject LuaObject::CreateTable(LuaObject& key, int narray, int lnhash)
 {
 	luaplus_assert(m_state);
-	LuaObject ret = LuaObject(m_state);
+	LuaPlus::LuaObject ret = LuaObject(m_state);
 	sethvalue2n(&ret.m_object, luaH_new(m_state->m_state, narray, lnhash));
 	SetTableHelper(key, ret.m_object);
 	return ret;
@@ -801,7 +801,7 @@ LuaObject LuaObject::operator[](const LuaStackObject& obj)
 
 LuaObject LuaObject::Lookup(const char* key)
 {
-	LuaObject table = *this;
+	LuaPlus::LuaObject table = *this;
 
 	size_t keyLen = strlen(key);
 #if defined(_MSC_VER)
@@ -1381,7 +1381,7 @@ inline void LuaObject::AddToUsedList(LuaState* state)
 {
 	luaplus_assert(state);
 	m_state = state;
-	LuaObject& headObject = *m_state->GetHeadObject();
+	LuaPlus::LuaObject& headObject = *m_state->GetHeadObject();
 	m_next = headObject.m_next;
 	headObject.m_next = this;
 	m_next->m_prev = this;
@@ -1393,7 +1393,7 @@ inline void LuaObject::AddToUsedList(LuaState* state, const lua_TObject& obj)
 {
 	luaplus_assert(state);
 	m_state = state;
-	LuaObject& headObject = *m_state->GetHeadObject();
+	LuaPlus::LuaObject& headObject = *m_state->GetHeadObject();
 	m_next = headObject.m_next;
 	headObject.m_next = this;
 	m_next->m_prev = this;
