@@ -184,7 +184,7 @@ unsigned long OgreCEGUIRenderer::addQuad(const Rect& dest_rect, float z, const T
 		QuadList::iterator it = d_quadlist.insert(quad);
 
 		//insert to id map
-		d_quadIDMap.insert(std::make_pair(quad.id, &(*it)));
+		d_quadIDMap.insert(std::make_pair(quad.id, const_cast<QuadInfo*>(&*it)));
 		return quad.id;
 	}
 }
