@@ -63,7 +63,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::CreateGuild(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -159,7 +159,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::CreateGuildConfirm(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -266,7 +266,7 @@ namespace SCRIPT_SANDBOX
 	INT Guild::AskGuildAppointPosInfo(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -329,7 +329,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::AdjustMemberAuth(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -381,7 +381,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetGuildInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -461,7 +461,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetMembersInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -538,7 +538,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetMyGuildInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -578,7 +578,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetMyGuildDetailInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsString()))
 		{
 			TDThrow("LUA: Guild GetMyGuildDetailInfo Wrong Param1");
@@ -688,7 +688,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetMembersNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -742,7 +742,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetShowMembersIdx(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -759,7 +759,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::GetShowTraineesIdx(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -777,7 +777,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::JoinGuild(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -809,7 +809,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::KickGuild(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Guild KickGuild Wrong Param1");
@@ -845,7 +845,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Guild::RecruitGuild(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Guild RecruitGuild Wrong Param1");

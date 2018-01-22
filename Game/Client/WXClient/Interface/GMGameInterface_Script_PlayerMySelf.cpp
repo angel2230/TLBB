@@ -69,7 +69,7 @@ namespace SCRIPT_SANDBOX
 
 	INT		PlayerMySelf::GetBuffIconNameByIndex( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -108,7 +108,7 @@ namespace SCRIPT_SANDBOX
 
 	INT		PlayerMySelf::GetBuffToolTipsByIndex( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffToolTipsByIndex param parameter error");
@@ -146,7 +146,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT		PlayerMySelf::DispelBuffByIndex( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:DispelBuffByIndex param parameter error");
@@ -159,7 +159,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT		PlayerMySelf::GetBuffTimeTextByIndex( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffTimeTextByIndex param parameter error");
@@ -189,7 +189,7 @@ namespace SCRIPT_SANDBOX
 
 	INT		PlayerMySelf::GetData( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[ 2 ].IsString() ) return 0;
 
 		CCharacterData* pCharData = CObjectManager::GetMe()->GetMySelf()->GetCharacterData();
@@ -490,7 +490,7 @@ namespace SCRIPT_SANDBOX
 	//获得玩家的某项技能信息
 	INT PlayerMySelf::GetSkillInfo( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -556,7 +556,7 @@ namespace SCRIPT_SANDBOX
 	//获得玩家的某项心法信息
 	INT PlayerMySelf::GetSkillClassInfo( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -590,7 +590,7 @@ namespace SCRIPT_SANDBOX
 	//获得玩家的某项生活技能信息
 	INT PlayerMySelf::GetAbilityInfo( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -637,7 +637,7 @@ namespace SCRIPT_SANDBOX
 	// 角色请求学习生活技能
 	INT PlayerMySelf::AskLeanAbility(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()))
 		{
@@ -741,7 +741,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PlayerMySelf::EnumAgname(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()))
 		{
@@ -826,7 +826,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PlayerMySelf::AskChangeCurrentAgname(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: AskChangeCurrentAgname Wrong Param1");
@@ -870,7 +870,7 @@ namespace SCRIPT_SANDBOX
 	// 发送手动调整属性点数 
 	INT PlayerMySelf::SendAskManualAttr(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: SendAskManualAttr[2] Wrong Param1");
@@ -933,7 +933,7 @@ namespace SCRIPT_SANDBOX
 	// 同意加入队伍(有人邀请我)
 	INT	PlayerMySelf::SendAgreeJoinTeam(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: AskChangeCurrentAgname Wrong Param1");
@@ -979,7 +979,7 @@ namespace SCRIPT_SANDBOX
 		//return 0;//
 
 		// 得到队伍索引
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: AskChangeCurrentAgname Wrong Param1");
@@ -1026,7 +1026,7 @@ namespace SCRIPT_SANDBOX
 
 		
 		// 得到队伍索引
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: SendAgreeJoinTeam_Apply[2] Wrong Param1");
@@ -1065,7 +1065,7 @@ namespace SCRIPT_SANDBOX
 
 		
 		// 得到队伍索引
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: SendRejectJoinTeam_Apply[2] Wrong Param1");
@@ -1099,7 +1099,7 @@ namespace SCRIPT_SANDBOX
 			CGTeamLeaderRetInvite msg;
 
 			// 得到队伍索引
-			LuaStack args(state);
+			LuaPlus::LuaStack args(state);
 			if (!(args[2].IsInteger()))
 			{
 				TDThrow("LUA: SendRejectJoinTeam_Apply[2] Wrong Param1");
@@ -1128,7 +1128,7 @@ namespace SCRIPT_SANDBOX
 		
 			
 			// 得到队伍索引
-			LuaStack args(state);
+			LuaPlus::LuaStack args(state);
 			if (!(args[2].IsInteger()))
 			{
 				TDThrow("LUA: SendRejectJoinTeam_Apply[2] Wrong Param1");
@@ -1210,7 +1210,7 @@ namespace SCRIPT_SANDBOX
 	// 删除当前选中队员
 	INT PlayerMySelf::KickTeamMember(LuaPlus::LuaState* state)			
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:KickTeamMember");
@@ -1232,7 +1232,7 @@ namespace SCRIPT_SANDBOX
 	// 删除当前选中队员
 	INT PlayerMySelf::KickTeamMemberByIndex(LuaPlus::LuaState* state)			
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:KickTeamMemberByIndex");
@@ -1274,7 +1274,7 @@ namespace SCRIPT_SANDBOX
 	//任命队长消息
 	INT	PlayerMySelf::AppointLeader(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:AppointLeader");
@@ -1342,7 +1342,7 @@ namespace SCRIPT_SANDBOX
 	{
 
 		// 得到队伍索引
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: Send Add Friend Team");

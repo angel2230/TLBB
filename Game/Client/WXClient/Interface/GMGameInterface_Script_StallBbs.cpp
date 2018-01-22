@@ -29,7 +29,7 @@ namespace SCRIPT_SANDBOX
 	//获得信息的条数
 	INT StallBbs::GetMessageNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA: StallBbs::GetMessageNum Wrong Param1");
@@ -49,7 +49,7 @@ namespace SCRIPT_SANDBOX
 	//获得(同时返回信息发布者名字、时间、信息内容，以及回复)
 	INT StallBbs::EnumMessage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: StallBbs::EnumMessage Wrong Param1");
@@ -129,7 +129,7 @@ namespace SCRIPT_SANDBOX
 	//添加一条新的信息（摊主和买家都要使用）
 	INT StallBbs::AddMessage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA: StallBbs::AddMessage[2] Wrong Param1");
@@ -172,7 +172,7 @@ namespace SCRIPT_SANDBOX
 	//回复一条信息(摊主使用)
 	INT StallBbs::ReplyMessage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA: StallBbs::ReplyMessage Wrong Param1");

@@ -131,7 +131,7 @@ void CHelperSystem::CreateHelperProcess(const STRING& strAnchor)
 
 INT CHelperSystem::Lua_GotoHelper(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsString()) return 0;
 
 	GotoAnchorHelp(args[2].GetString());

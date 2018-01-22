@@ -63,7 +63,7 @@ STRING CUIIconsManager::GetIconFullName(LPCTSTR szIconName)
 
 INT	CUIIconsManager::LUA_GetIconFullName(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[1].IsString() ) return 0;
 
 	pState->PushString(CUIIconsManager::GetMe()->GetIconFullName(args[1].GetString()).c_str());

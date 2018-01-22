@@ -698,7 +698,7 @@ void MultiColumnList::insertColumn(const String& text, uint col_id, float width,
 	// Insert a blank entry at the appropriate position in each row.
 	for (uint i = 0; i < getRowCount(); ++i)
 	{
-		d_grid[i].d_items.insert(d_grid[i].d_items.begin() + position, NULL);
+		d_grid[i].d_items.insert<ListboxItem*>(d_grid[i].d_items.begin() + position, NULL);
 	}
 
 	// update stored nominated selection column if that has changed.
@@ -909,7 +909,7 @@ void MultiColumnList::removeRow(uint row_idx)
 		// delete items we are supposed to
 		for (uint i = 0; i < getColumnCount(); ++i)
 		{
-			ListboxItem* item = d_grid[row_idx][i];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[row_idx][i]);
 
 			if ((item != NULL) && item->isAutoDeleted())
 			{
@@ -952,7 +952,7 @@ void MultiColumnList::setItem(ListboxItem* item, const MCLGridRef& position)
 	}
 
 	// delete old item as required
-	ListboxItem* oldItem = d_grid[position.row][position.column];
+	ListboxItem* oldItem = reinterpret_cast<ListboxItem*>(d_grid[position.row][position.column]);
 
 	if ((oldItem != NULL) && oldItem->isAutoDeleted())
 	{
@@ -1393,7 +1393,7 @@ bool MultiColumnList::selectRange(const MCLGridRef& start, const MCLGridRef& end
 	{
 		for (uint j = tmpStart.column; j <= tmpEnd.column; ++j)
 		{
-			ListboxItem* item = d_grid[i][j];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][j]);
 
 			if (item != NULL)
 			{
@@ -1440,7 +1440,7 @@ float MultiColumnList::getWidestColumnItemWidth(uint col_idx) const
 		// check each item in the column
 		for (uint i = 0; i < getRowCount(); ++i)
 		{
-			ListboxItem* item = d_grid[i][col_idx];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][col_idx]);
 
 			// if the slot has an item in it
 			if (item != NULL)
@@ -1481,7 +1481,7 @@ float MultiColumnList::getHighestRowItemHeight(uint row_idx) const
 		// check each item in the column
 		for (uint i = 0; i < getColumnCount(); ++i)
 		{
-			ListboxItem* item = d_grid[row_idx][i];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[row_idx][i]);
 
 			// if the slot has an item in it
 			if (item != NULL)
@@ -1518,7 +1518,7 @@ bool MultiColumnList::clearAllSelections_impl(void)
 	{
 		for (uint j = 0; j < getColumnCount(); ++j)
 		{
-			ListboxItem* item = d_grid[i][j];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][j]);
 
 			// if slot has an item, and item is selected
 			if ((item != NULL) && item->isSelected())
@@ -1567,7 +1567,7 @@ ListboxItem* MultiColumnList::getItemAtPoint(const Point& pt) const
 				if (pt.d_x < x)
 				{
 					// return contents of grid element that was clicked.
-					return d_grid[i][j];
+					return reinterpret_cast<ListboxItem*>(d_grid[i][j]);
 				}
 
 			}
@@ -1645,7 +1645,7 @@ void MultiColumnList::setSelectForItemsInRow(uint row_idx, bool state)
 {
 	for (uint i = 0; i < getColumnCount(); ++i)
 	{
-		ListboxItem* item = d_grid[row_idx][i];
+		ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[row_idx][i]);
 
 		if (item != NULL)
 		{
@@ -1664,7 +1664,7 @@ void MultiColumnList::setSelectForItemsInColumn(uint col_idx, bool state)
 {
 	for (uint i = 0; i < getRowCount(); ++i)
 	{
-		ListboxItem* item = d_grid[i][col_idx];
+		ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][col_idx]);
 
 		if (item != NULL)
 		{
@@ -1714,7 +1714,7 @@ void MultiColumnList::moveColumn_impl(uint col_idx, uint position)
 		for (uint i = 0; i < getRowCount(); ++i)
 		{
 			// store entry.
-			ListboxItem* item = d_grid[i][col_idx];
+			ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][col_idx]);
 
 			// remove the original column for this row.
 			d_grid[i].d_items.erase(d_grid[i].d_items.begin() + col_idx);
@@ -1780,7 +1780,7 @@ void MultiColumnList::populateRenderCache()
             // allow item to use full width of the column
             itemSize.d_width = d_header->getColumnPixelWidth(j);
 
-            ListboxItem* item = d_grid[i][j];
+            ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][j]);
 
             // is the item for this column set?
             if (item)
@@ -2294,7 +2294,7 @@ bool MultiColumnList::resetList_impl(void)
 		{
 			for (uint j = 0; j < getColumnCount(); ++j)
 			{
-				ListboxItem* item = d_grid[i][j];
+				ListboxItem* item = reinterpret_cast<ListboxItem*>(d_grid[i][j]);
 
 				// delete item as needed.
 				if ((item != NULL) && item->isAutoDeleted())
@@ -2456,8 +2456,8 @@ int MultiColumnList::writePropertiesXML(OutStream& out_stream) const
 *************************************************************************/
 bool MultiColumnList::ListRow::operator<(const ListRow& rhs) const
 {
-	ListboxItem* a = d_items[d_sortColumn];
-	ListboxItem* b = rhs.d_items[d_sortColumn];
+	ListboxItem* a = reinterpret_cast<ListboxItem*>(d_items[d_sortColumn]);
+	ListboxItem* b = reinterpret_cast<ListboxItem*>(rhs.d_items[d_sortColumn]);
 
 	// handle cases with empty slots
 	if (b == NULL)
@@ -2481,8 +2481,8 @@ bool MultiColumnList::ListRow::operator<(const ListRow& rhs) const
 *************************************************************************/
 bool MultiColumnList::ListRow::operator>(const ListRow& rhs) const
 {
-	ListboxItem* a = d_items[d_sortColumn];
-	ListboxItem* b = rhs.d_items[d_sortColumn];
+	ListboxItem* a = reinterpret_cast<ListboxItem*>(d_items[d_sortColumn]);
+	ListboxItem* b = reinterpret_cast<ListboxItem*>(rhs.d_items[d_sortColumn]);
 
 	// handle cases with empty slots
 	if (a == NULL)

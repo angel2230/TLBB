@@ -44,7 +44,7 @@ namespace SCRIPT_SANDBOX
 	////得到宠物是否存在
 	INT Pet::IsPresent(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -85,7 +85,7 @@ namespace SCRIPT_SANDBOX
 	//得到第几只宠物的名字
 	INT	Pet::GetPetList_Appoint(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !(args[2].IsInteger()) ) 
 		{
@@ -123,7 +123,7 @@ namespace SCRIPT_SANDBOX
 	// 得到宠物的名字
 	INT	Pet::GetName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -155,7 +155,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetConsort(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -183,7 +183,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetSex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -205,7 +205,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetID(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -238,7 +238,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetLevel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -259,7 +259,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetAIType(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -280,7 +280,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetHappy(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -301,7 +301,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetType(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -322,7 +322,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetNaturalLife(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -343,7 +343,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetMaxLife(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		TDAssert(false&&"Pet::GetMaxLife 没有宠物的最大生命的概念");
 		state->PushNumber( 100 );
 		return 1;
@@ -351,7 +351,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetLoyalgGade(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -372,7 +372,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetHP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -393,7 +393,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetMP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -414,7 +414,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetMaxHP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -435,7 +435,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetMaxMP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -456,7 +456,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetStrAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -476,7 +476,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetPFAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -496,7 +496,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetDexAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -516,7 +516,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetIntAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -536,7 +536,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetStaAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -557,7 +557,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetStr(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -577,7 +577,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetInt(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -597,7 +597,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetDex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -617,7 +617,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetPF(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -637,7 +637,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetSta(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -658,7 +658,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetBasic(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -679,7 +679,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetPotential(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -699,7 +699,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetExp(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -733,7 +733,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetPhysicsAttack(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -753,7 +753,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetMagicAttack(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -773,7 +773,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetPhysicsRecovery(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -793,7 +793,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetMagicRecovery(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -814,7 +814,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetShootProbability(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -834,7 +834,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Pet::GetMiss(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -855,7 +855,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::SetModel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -877,7 +877,7 @@ namespace SCRIPT_SANDBOX
 	// 宠物加属性点。
 	INT Pet::Add_Attribute(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ||
 			!(args[3].IsInteger()) ||
@@ -924,7 +924,7 @@ namespace SCRIPT_SANDBOX
 	//宠物改名字
 	INT	Pet::Change_Name(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !(args[2].IsInteger()) || !(args[3].IsString()) )
 		{
@@ -977,7 +977,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::Go_Fight(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1009,7 +1009,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::Free_Confirm(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1032,7 +1032,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::Go_Free(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1072,7 +1072,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::Feed(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1108,7 +1108,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::Dome(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1152,7 +1152,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::Go_Relax(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -1178,7 +1178,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetIsFighting(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1206,7 +1206,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT Pet::GetDeathWarrant(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1226,7 +1226,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT Pet::Select_Pet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1248,7 +1248,7 @@ namespace SCRIPT_SANDBOX
 	//得到操作对象
 	INT	Pet::Lua_EnumPetSkill(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()))
 		{
@@ -1272,13 +1272,13 @@ namespace SCRIPT_SANDBOX
 
 		if(pActionItem) 
 		{
-			LuaObject objReturn = state->BoxPointer(pActionItem);
+			LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 			objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 			objReturn.PushStack();
 		}
 		else
 		{
-			LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+			LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 			objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 			objReturn.PushStack();
 		}
@@ -1289,7 +1289,7 @@ namespace SCRIPT_SANDBOX
 	//for petskillstudy
 	INT	Pet::SetSkillStudyModel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1310,7 +1310,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::ShowTargetPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1332,7 +1332,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::SkillStudy_Do(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -1424,7 +1424,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::SkillStudyUnlock(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Pet SkillStudyUnlock parameter1 error");
@@ -1442,7 +1442,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::SkillStudy_MenPaiSkill_Created(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()) || !(args[3].IsInteger()) || !(args[4].IsInteger()))
 		{
 			TDThrow("LUA:Pet SkillStudy_MenPaiSkill_Created parameter error");
@@ -1462,7 +1462,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::SkillStudy_MenPaiSkill_Clear(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		CDataPool::GetMe()->PetSkillStudy_MenPaiList_Clear();
 		CActionSystem::GetMe()->UserPetSkillStudy_Update();
@@ -1472,7 +1472,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::GetGUID(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -1496,7 +1496,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::ShowPetList(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()) ) 
 		{
 			TDThrow("LUA:Pet ShowPetList parameter error");
@@ -1546,7 +1546,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::HandlePetMenuItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsString()))
 		{
@@ -1655,7 +1655,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetPetPortraitByIndex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Pet GetPetPortraitByIndex parameter error");
@@ -1683,7 +1683,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetPetImpactNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if(!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Pet GetPetImpactNum parameter error");
@@ -1714,7 +1714,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Pet::GetPetImpactIconNameByIndex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		if(!(args[2].IsInteger()) || !(args[3].IsInteger()))
 		{
@@ -1753,7 +1753,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	Pet::GetSkillPassive(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !(args[2].IsInteger()) || (!(args[3].IsInteger())) ) 
 		{

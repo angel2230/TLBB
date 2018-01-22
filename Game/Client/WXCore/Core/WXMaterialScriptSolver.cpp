@@ -175,7 +175,7 @@ namespace WX {
                             }
 
                             std::pair<TextureNames::iterator, bool> inserted =
-                                textureNames.insert(TextureNames::value_type(textureName, NULL));
+                                textureNames.insert(TextureNames::value_type(textureName, nullptr));
                             if (!inserted.second)
                             {
                                 // The texture name already checked

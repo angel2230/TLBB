@@ -183,18 +183,18 @@ static int LS_LuaFileIndent(LuaState* state)
 bool LuaState::CallFormatting(LuaObject& tableObj, LuaStateOutFile& file, int indentLevel,
 		bool writeAll, bool alphabetical, bool writeTablePointers, unsigned int maxIndentLevel)
 {
-	LuaObject metaTableObj = tableObj.GetMetaTable();
+	LuaPlus::LuaObject metaTableObj = tableObj.GetMetaTable();
 	if (metaTableObj.IsNil())
 		return false;
 
-	LuaObject formattedWriteObj = metaTableObj["FormattedWrite"];
+	LuaPlus::LuaObject formattedWriteObj = metaTableObj["FormattedWrite"];
 	if (!formattedWriteObj.IsFunction())
 		return false;
 
 	LuaState* state = tableObj;
 	
 	{
-		LuaObject funcObj = state->GetGlobals()["LuaFilePrint"];
+		LuaPlus::LuaObject funcObj = state->GetGlobals()["LuaFilePrint"];
 		if (funcObj.IsNil())
 		{
 			state->GetGlobals().Register("LuaFilePrint", LS_LuaFilePrint);
@@ -216,8 +216,8 @@ bool LuaState::CallFormatting(LuaObject& tableObj, LuaStateOutFile& file, int in
 
 struct KeyValue
 {
-	LuaObject key;
-	LuaObject value;
+	LuaPlus::LuaObject key;
+	LuaPlus::LuaObject value;
 
 	inline bool operator<(const KeyValue& right) const
 	{
@@ -498,7 +498,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 			}
 
 			// Rename, just for ease of reading.
-			LuaObject& table = value;
+			LuaPlus::LuaObject& table = value;
 
 			// upperIndex is the upper index value of a sequential numerical array
 			// items.
@@ -509,8 +509,8 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 			// Block to search for array items.
 			{
 				// Grab index 1 and index 2 of the table.
-				LuaObject value1 = table[1];
-				LuaObject value2 = table[2];
+				LuaPlus::LuaObject value1 = table[1];
+				LuaPlus::LuaObject value2 = table[2];
 
 				// If they both exist, then there is a sequential list.
 				if (!value1.IsNil()  &&  !value2.IsNil())
@@ -520,7 +520,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 					for (; ; ++upperIndex)
 					{
 						// Try retrieving the table entry at upperIndex.
-						LuaObject value = table[upperIndex];
+						LuaPlus::LuaObject value = table[upperIndex];
 
 						// If it doesn't exist, then exit the loop.
 						if (value.IsNil())
@@ -537,7 +537,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 						}
 						
 						// Write the object as an unnamed entry.
-						LuaObject nilObj(this);
+						LuaPlus::LuaObject nilObj(this);
 						DumpObject(file, nilObj, value, flags, indentLevel + 1, maxIndentLevel);
 
 						// We've definitely passed the head item now.
@@ -560,7 +560,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 				for (LuaTableIterator it(table); it; ++it)
 				{
 					// Retrieve the table entry's key and value.
-					LuaObject& key = it.GetKey();
+					LuaPlus::LuaObject& key = it.GetKey();
 
 					// Is the key a number?
 					if (key.IsNumber())
@@ -634,7 +634,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, LuaObject& key, LuaObject& valu
 				for (LuaTableIterator it(table); it; ++it)
 				{
 					// Retrieve the table entry's key and value.
-					LuaObject& key = it.GetKey();
+					LuaPlus::LuaObject& key = it.GetKey();
 
 					// Is the key a number?
 					if (key.IsNumber())
@@ -797,7 +797,7 @@ bool LuaState::DumpObject(LuaStateOutFile& file, const char* name, LuaObject& va
 		file.Print("%s = ", name);
 	}
 
-	LuaObject key(this);
+	LuaPlus::LuaObject key(this);
 	return DumpObject(file, key, value, flags | 0xF0000000, indentLevel, maxIndentLevel);
 }
 
@@ -912,7 +912,7 @@ bool LuaState::DumpObject(const char* filename, const char* name, LuaObject& val
 		file->Print("%s = ", name);
 	}
 
-	LuaObject key(this);
+	LuaPlus::LuaObject key(this);
 	return DumpObject(*file, key, value, flags | 0xF0000000, indentLevel, maxIndentLevel);
 }
 
@@ -951,7 +951,7 @@ bool LuaState::DumpGlobals(const char* filename, unsigned int flags, unsigned in
 **/
 bool LuaState::DumpGlobals(LuaStateOutFile& file, unsigned int flags, unsigned int maxIndentLevel)
 {
-	LuaObject globalsObj = GetGlobals();
+	LuaPlus::LuaObject globalsObj = GetGlobals();
 	
 	for (LuaTableIterator it(globalsObj); it; ++it)
 	{
@@ -987,7 +987,7 @@ int LuaState::LessThan(const LuaObject& o1, const LuaObject& o2)
 
 LuaObject LuaState::NewUserDataBox(void* u)
 {
-	LuaObject obj(this);
+	LuaPlus::LuaObject obj(this);
 	obj.AssignUserData(this, u);
 	return obj;
 }

@@ -87,7 +87,7 @@ VOID CVariableSystem::LoadVariable(LPCTSTR szFileName, VARIABLE_MAP& mapBuf)
 	m_pMetaTable->RegisterObjectFunctor("GetVariable", &CVariableSystem::Lua_GetGlobalVariable);
 	m_pMetaTable->RegisterObjectFunctor("SetVariable", &CVariableSystem::Lua_SetGlobalVariable);
 	m_pMetaTable->RegisterObjectFunctor("SetVariableDelay", &CVariableSystem::Lua_SetGlobalVariableDelay);
-	LuaObject obj_Variable = CScriptSystem::GetMe()->GetLuaState()->BoxPointer(this);
+	LuaPlus::LuaObject obj_Variable = CScriptSystem::GetMe()->GetLuaState()->BoxPointer(this);
 	obj_Variable.SetMetaTable(*m_pMetaTable);
 	CScriptSystem::GetMe()->GetLuaState()->GetGlobals().SetObject("Variable", obj_Variable);
 }
@@ -259,7 +259,7 @@ fVector2 CVariableSystem::GetAs_Vector2(LPCTSTR szName, BOOL* bHave)
 
 INT CVariableSystem::Lua_SetGlobalVariable(LuaPlus::LuaState* state)	//ÉèÖÃÈ«¾Ö±äÁ¿
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsString()) 
 	{
 		TDThrow("LUA:CVariableSystem::Lua_SetGlobalVariable[2] param parameter error");
@@ -282,7 +282,7 @@ INT CVariableSystem::Lua_SetGlobalVariable(LuaPlus::LuaState* state)	//ÉèÖÃÈ«¾Ö±
 
 INT CVariableSystem::Lua_SetGlobalVariableDelay(LuaPlus::LuaState* state)	//ÉèÖÃÈ«¾Ö±äÁ¿ÖØÆðºóÉúÐ§
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsString()) 
 	{
 		TDThrow("LUA:CVariableSystem::Lua_SetGlobalVariableDelay[2] param parameter error");
@@ -300,7 +300,7 @@ INT CVariableSystem::Lua_SetGlobalVariableDelay(LuaPlus::LuaState* state)	//ÉèÖÃ
 
 INT CVariableSystem::Lua_GetGlobalVariable(LuaPlus::LuaState* state)	//È¡µÃÈ«¾Ö±äÁ¿
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if(!args[2].IsString())
 	{
 		state->PushNil();

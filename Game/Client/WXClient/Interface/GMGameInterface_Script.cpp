@@ -135,7 +135,7 @@ INT Lua_UpdateMinimap( LuaPlus::LuaState* state )
 }
 INT Lua_OpenMinimap( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsString() ) return 0;
 	if( strcmp( args[ 1 ].GetString(), "Minimap" ) == 0 ) // 打开小地图
 	{
@@ -153,7 +153,7 @@ INT Lua_OpenMinimap( LuaPlus::LuaState* state )
 // 关闭打开大地图
 INT Lua_ToggleLargeMap( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsString() ) 
 		CEventSystem::GetMe()->PushEvent( GE_TOGLE_LARGEMAP, "2" );
 		return 0;
@@ -165,7 +165,7 @@ INT Lua_ToggleLargeMap( LuaPlus::LuaState* state )
 // 关闭打开场景地图
 INT Lua_ToggleSceneMap( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	std::vector< STRING > vParam;
 	vParam.push_back( CWorldManager::GetMe()->GetActiveScene()->GetSceneDefine()->szSceneMap );
 	if( !args[ 1 ].IsString() ) 
@@ -204,7 +204,7 @@ INT Lua_ToggleMission(LuaPlus::LuaState* state)
 }
 INT Lua_PushDebugMessage(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsString()))
 	{
@@ -219,7 +219,7 @@ INT Lua_PushDebugMessage(LuaPlus::LuaState* state)
 
 INT Lua_Get_XParam_INT(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -234,7 +234,7 @@ INT Lua_Get_XParam_INT(LuaPlus::LuaState* state)
 
 INT Lua_Get_XParam_STR(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -250,7 +250,7 @@ INT Lua_Get_XParam_STR(LuaPlus::LuaState* state)
 
 INT Lua_Set_XSCRIPT_Function_Name(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsString()))
 	{
@@ -267,7 +267,7 @@ INT Lua_Set_XSCRIPT_Function_Name(LuaPlus::LuaState* state)
 
 INT Lua_Set_XSCRIPT_Parameter(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger() && args[2].IsInteger()))
 	{
@@ -280,7 +280,7 @@ INT Lua_Set_XSCRIPT_Parameter(LuaPlus::LuaState* state)
 
 INT Lua_Set_XSCRIPT_ScriptID(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -293,7 +293,7 @@ INT Lua_Set_XSCRIPT_ScriptID(LuaPlus::LuaState* state)
 
 INT Lua_Set_XSCRIPT_ParamCount(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -306,7 +306,7 @@ INT Lua_Set_XSCRIPT_ParamCount(LuaPlus::LuaState* state)
 
 INT Lua_Clear_XSCRIPT(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	CDataPool::GetMe()->X_XCRIPT_Get()->CleanUp();
 
@@ -315,7 +315,7 @@ INT Lua_Clear_XSCRIPT(LuaPlus::LuaState* state)
 
 INT Lua_Send_XSCRIPT(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	CGExecuteScript msg;
 
 	X_SCRIPT* pXScript_DataPool = CDataPool::GetMe()->X_XCRIPT_Get();
@@ -351,7 +351,7 @@ INT Lua_MenpaiFrameJoin(LuaPlus::LuaState* state)
 //导出心法等级
 //INT Lua_GetXinfaLevel(LuaPlus::LuaState* state)
 //{
-//	LuaStack args(state);
+//	LuaPlus::LuaStack args(state);
 //
 //	if (!(args[1].IsInteger()))
 //	{
@@ -398,7 +398,7 @@ INT GetStudySkillLevelId(int SkillId,int skillLevel )
 //得到技能图标
 INT Lua_GetSkillImage(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetSkillImage Wrong Param");
@@ -423,7 +423,7 @@ INT Lua_GetSkillImage(LuaPlus::LuaState* state)
 //得到学习技能的金钱要求
 INT Lua_GetStudySkillMoney(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetUplevelSkillSpendMoney Wrong Param");
@@ -488,7 +488,7 @@ INT Lua_GetStudySkillMoney(LuaPlus::LuaState* state)
 //得到学习技能的等级要求
 INT Lua_GetStudySkillName(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetUplevelSkillNeedLevel Wrong Param");
@@ -522,7 +522,7 @@ INT Lua_GetStudySkillName(LuaPlus::LuaState* state)
 //得到学习技能描述
 INT Lua_GetStudySkillMS(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetStudySkillMS Wrong Param");
@@ -555,7 +555,7 @@ INT Lua_GetStudySkillMS(LuaPlus::LuaState* state)
 //得到学习技能的等级要求
 INT Lua_GetStudySkillLevel(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetUplevelSkillNeedLevel Wrong Param");
@@ -589,7 +589,7 @@ INT Lua_GetStudySkillLevel(LuaPlus::LuaState* state)
 //导出心法升级需要的金钱,传入的参数为要学习的心法等级
 INT Lua_GetUplevelXinfaSpendMoney(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[1].IsInteger()))
 	{
 		TDThrow("LUA: Lua_GetUplevelXinfaSpendMoney Wrong Param");
@@ -654,7 +654,7 @@ INT Lua_GetUplevelXinfaSpendMoney(LuaPlus::LuaState* state)
 //导出心法升级需要的经验值,传入的参数为要学习的心法等级
 INT Lua_GetUplevelXinfaSpendExp(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -684,7 +684,7 @@ INT Lua_GetUplevelXinfaSpendExp(LuaPlus::LuaState* state)
 //学习技能界面
 INT lua_SkillsStudyFrame_study(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -705,7 +705,7 @@ INT lua_SkillsStudyFrame_study(LuaPlus::LuaState* state)
 
 INT	Lua_GetActionNum(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsString()))
 	{
@@ -719,7 +719,7 @@ INT	Lua_GetActionNum(LuaPlus::LuaState* state)
 
 INT Lua_IsWindowShow(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsString()))
 	{
@@ -733,7 +733,7 @@ INT Lua_IsWindowShow(LuaPlus::LuaState* state)
 //得到操作对象
 INT	Lua_EnumAction(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsInteger()))
 	{
@@ -751,13 +751,13 @@ INT	Lua_EnumAction(LuaPlus::LuaState* state)
 
 	if(pActionItem) 
 	{
-		LuaObject objReturn = state->BoxPointer(pActionItem);
+		LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 	}
 	else
 	{
-		LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+		LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 	}
@@ -767,7 +767,7 @@ INT	Lua_EnumAction(LuaPlus::LuaState* state)
 
 INT	Lua_ShowContexMenu(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsString()))
 	{
@@ -801,7 +801,7 @@ INT	Lua_ShowContexMenu(LuaPlus::LuaState* state)
 
 INT Lua_QuestFrameOptionClicked(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsNumber()))
 	{
@@ -849,7 +849,7 @@ INT Lua_QuestFrameMissionContinue(LuaPlus::LuaState* state)
 //放弃任务
 INT Lua_QuestFrameMissionAbnegate(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if ( !(args[1].IsInteger()) ) return 0;
 	CUIDataPool::GetMe()->SendAbandonEvent(args[1].GetInteger());
@@ -858,7 +858,7 @@ INT Lua_QuestFrameMissionAbnegate(LuaPlus::LuaState* state)
 //完成任务
 INT Lua_QuestFrameMissionComplete(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!(args[1].IsNumber()))
 	{
@@ -925,7 +925,7 @@ INT Lua_ToggleComposeWnd(LuaPlus::LuaState* state)
 //得到某一种配方的数量
 INT Lua_GetMethodNumber( LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	// 第一个值为配方类型，第二个为配方序列号
 	if (!(args[1].IsInteger()))
 	{
@@ -939,7 +939,7 @@ INT Lua_GetMethodNumber( LuaPlus::LuaState* state)
 //枚举配方数据
 INT	Lua_EnumMethod(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	// 第一个值为配方类型，第二个为配方序列号
 	if (!(args[1].IsInteger()))
 	{
@@ -963,7 +963,7 @@ INT	Lua_EnumMethod(LuaPlus::LuaState* state)
 */
 INT Lua_SendChatMessage( LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsString() ) return 0; // 消息字符串 
 	if( !args[ 2 ].IsString() ) return 0; // 目标名字字符串
 	if( !args[ 3 ].IsInteger() ) return 0; //频道id
@@ -980,7 +980,7 @@ INT Lua_SendChatMessage( LuaPlus::LuaState* state)
 
 INT Lua_SendGMCommand(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsString() ) return 0; // 消息字符串 
 
 	CGameProcedure::s_pGameInterface->GM_SendCommand(args[1].GetString());
@@ -989,7 +989,7 @@ INT Lua_SendGMCommand(LuaPlus::LuaState* state)
 
 INT Lua_SendAUTOMove(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) return 0; // x坐标
 	if( !args[ 2 ].IsInteger() ) return 0; // Z坐标 
 	CGameProcedure::s_pGameInterface->Player_MoveTo(fVector2((FLOAT)args[1].GetInteger(),(FLOAT)args[2].GetInteger()));
@@ -1007,7 +1007,7 @@ INT Lua_GetCurChatProperty( LuaPlus::LuaState* state )
 
 INT Lua_AxTrace(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	
 	if(!(args[1].IsInteger()) || !(args[2].IsInteger()) || !(args[3].IsString()))
 		return 0;
@@ -1019,7 +1019,7 @@ INT Lua_AxTrace(LuaPlus::LuaState* state)
 
 INT Lua_ComposeItem_Begin(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsInteger()) || !(args[2].IsInteger()) )
 	{
 		TDThrow("LUA: ComposeItem Wrong Param");
@@ -1043,7 +1043,7 @@ INT Lua_ComposeItem_Begin(LuaPlus::LuaState* state)
 
 INT Lua_ComposeItem_Cancel(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	//if (! (args[1].IsInteger()) )
 	//{
 	//	TDThrow("LUA: ComposeItem_Cancel Wrong Param");
@@ -1129,7 +1129,7 @@ INT Lua_RepairOne( LuaPlus::LuaState* state)
 //打开关闭称号界面
 INT Lua_OpenSelfEquip( LuaPlus::LuaState* state) 
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) 
 	{
 		return 0;
@@ -1166,7 +1166,7 @@ INT Lua_GetCurrentSceneName( LuaPlus::LuaState* state )
 
 INT Lua_GetCurrentSceneNameById( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	int nIndex=args[1].GetInteger();
 
 	DBC_DEFINEHANDLE(s_pSceneNameDBC, DBC_SCENE_DEFINE);
@@ -1179,7 +1179,7 @@ INT Lua_GetCurrentSceneNameById( LuaPlus::LuaState* state )
 //获得商店的修理和收购类型
 INT Lua_GetShopType( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[1].IsString() )
 	{
 		TDThrow("LUA: Lua_GetShopType[1] param parameter error");
@@ -1213,7 +1213,7 @@ INT Lua_GetOperationType( LuaPlus::LuaState* state )
 
 INT Lua_OpenCharacter( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) return 0;
 	CEventSystem::GetMe()->PushEvent( GE_OPEN_CHARACTOR, args[ 1 ].GetInteger() );
 	return 0;
@@ -1221,7 +1221,7 @@ INT Lua_OpenCharacter( LuaPlus::LuaState* state )
 
 INT Lua_OpenEquip( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) return 0;
 
 	CEventSystem::GetMe()->PushEvent(GE_OPEN_EQUIP, args[1].GetInteger());
@@ -1231,7 +1231,7 @@ INT Lua_OpenEquip( LuaPlus::LuaState* state )
 
 INT Lua_GetActionInfo( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) return 0;
 
 	return 1;
@@ -1249,7 +1249,7 @@ INT Lua_AskLevelUp(LuaPlus::LuaState* state)
 //开启/关闭挂机
 INT Lua_AutoHit(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() ) return 0;
 	CGameInterface::GetMe()->Player_AUTOHit(args[ 1 ].GetInteger());
 	return 0;
@@ -1262,7 +1262,7 @@ INT Lua_AutoHit(LuaPlus::LuaState* state)
 INT Lua_ShowTeamFuncMenu(LuaPlus::LuaState* state)	
 {
 	
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() )
 	{
 		return 0;
@@ -1317,7 +1317,7 @@ INT Lua_ShowTeamFuncMenu(LuaPlus::LuaState* state)
 INT Lua_SetCurSelMember(LuaPlus::LuaState* state)	
 {
 	
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() )
 	{
 		return 0;
@@ -1335,7 +1335,7 @@ INT Lua_SetCurSelMember(LuaPlus::LuaState* state)
 // 显示队伍信息对话框.
 INT Lua_ShowTeamInfoDlg(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() )
 	{
 		return 0;
@@ -1356,7 +1356,7 @@ INT Lua_ShowTeamInfoDlg(LuaPlus::LuaState* state)
 // 闪烁按钮.
 INT Lua_FlashTeamButton(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if( !args[ 1 ].IsInteger() )
 	{
 		return 0;
@@ -1379,7 +1379,7 @@ INT Lua_FlashTeamButton(LuaPlus::LuaState* state)
 // 设置一个全局变量（）
 INT Lua_SetGlobalInteger(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsNumber()) )
 	{
 		TDThrow("LUA: Lua_SetGlobalInteger Wrong Param");
@@ -1402,7 +1402,7 @@ INT Lua_SetGlobalInteger(LuaPlus::LuaState* state)
 // 获得一个全局变量
 INT Lua_GetGlobalInteger(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_GetGlobalInteger Wrong Param");
@@ -1552,7 +1552,7 @@ INT Lua_DiscardItemCancelLocked( LuaPlus::LuaState* state)
 // 播放声音
 INT Lua_PlaySound(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsNumber()) )
 	{
 		TDThrow("LUA: Lua_SetGlobalInteger Wrong Param");
@@ -1597,7 +1597,7 @@ INT Lua_GetMousePos( LuaPlus::LuaState* state)
 INT Lua_ShowSystemTipInfo( LuaPlus::LuaState* state)
 {
 	
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_ShowSystemTipInfo Wrong Param");
@@ -1636,7 +1636,7 @@ INT Lua_OpenSetMinorPasswordDlg( LuaPlus::LuaState* state)
 INT Lua_SendSetMinorPassword( LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_SendSetMinorPassword Wrong Param");
@@ -1659,7 +1659,7 @@ INT Lua_SendSetMinorPassword( LuaPlus::LuaState* state)
 // 修改密码。2006－3－28
 INT Lua_SendModifyMinorPassword( LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_SendModifyMinorPassword Wrong Param");
@@ -1682,7 +1682,7 @@ INT Lua_SendModifyMinorPassword( LuaPlus::LuaState* state)
 // 解锁密码。2006－3－28
 INT Lua_UnLockMinorPassword( LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_UnLockMinorPassword Wrong Param");
@@ -1721,7 +1721,7 @@ INT Lua_ForceUnLockMinorPassword( LuaPlus::LuaState* state)
 INT Lua_ModifyMinorPassword( LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (! (args[1].IsString()) )
 	{
 		TDThrow("LUA: Lua_UnLockMinorPassword Wrong Param");
@@ -1775,7 +1775,7 @@ INT Lua_GetCurMousePos( LuaPlus::LuaState* state)
 //// 播放音乐。参数是音乐的ID 2006－3－28
 //INT Lua_PlayMusic( LuaPlus::LuaState* state)
 //{
-//	LuaStack args(state);
+//	LuaPlus::LuaStack args(state);
 //	if (! (args[1].IsString()) )
 //	{
 //		TDThrow("LUA: Lua_PlayMusic Wrong Param");

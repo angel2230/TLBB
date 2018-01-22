@@ -72,7 +72,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetAreaName(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -95,7 +95,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetAreaServerInfo(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -124,7 +124,7 @@ namespace SCRIPT_SANDBOX
 	//得到区域服务器中, login server 的个数.
 	INT CGameProduce_Login::GetAreaLoginServerCount(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -147,7 +147,7 @@ namespace SCRIPT_SANDBOX
 	// 得到login server 的信息.
 	INT CGameProduce_Login::GetAreaLoginServerInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -191,7 +191,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::ConnectToLoginServer(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -233,7 +233,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::CheckAccount(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -261,7 +261,7 @@ namespace SCRIPT_SANDBOX
 	// 选择一个服务器
 	INT CGameProduce_Login::SelectLoginServer(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -330,7 +330,7 @@ namespace SCRIPT_SANDBOX
 	// 得到角色的个数
 	INT CGameProduce_Login::GetRoleCount(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		int iRoleCount = 0;
 		if(CGameProcedure::s_pProcCharSel)
@@ -347,7 +347,7 @@ namespace SCRIPT_SANDBOX
 	// 得到角色的信息
 	INT CGameProduce_Login::GetRoleInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -391,7 +391,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetRoleUIModleName(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -423,7 +423,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::CreateRole(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -464,7 +464,7 @@ namespace SCRIPT_SANDBOX
 	// 删除角色
 	INT CGameProduce_Login::DelRole(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -500,7 +500,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::SendEnterGameMsg(LuaPlus::LuaState* state)
 	{
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -521,7 +521,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::DelRole_YesNo(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -587,7 +587,7 @@ namespace SCRIPT_SANDBOX
 	// 自动选择一个与当前选择的网络供应商匹配的login server
 	INT CGameProduce_Login::AutoSelLoginServer(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -603,7 +603,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetWomanFaceCount(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		int iFaceCount = 0;
 
@@ -620,7 +620,7 @@ namespace SCRIPT_SANDBOX
 	// 得到男主角头像的个数
 	INT CGameProduce_Login::GetManFaceCount(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		int iFaceCount = 0;
 		if((CGameProcedure::s_pProcCharCreate)&&(CGameProcedure::s_pProcCharCreate->m_iIsLoadFace))
@@ -637,7 +637,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetWomanFaceName(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -669,7 +669,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::GetManFaceName(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -700,7 +700,7 @@ namespace SCRIPT_SANDBOX
 	// 得到主角头像的名称
 	INT CGameProduce_Login::GetFaceName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -738,7 +738,7 @@ namespace SCRIPT_SANDBOX
 	// 设置头像id
 	INT CGameProduce_Login::SetFaceId(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -771,7 +771,7 @@ namespace SCRIPT_SANDBOX
 	// 得到脸形model的个数
 	INT CGameProduce_Login::GetFaceModelCount(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -793,7 +793,7 @@ namespace SCRIPT_SANDBOX
 	// 得到脸形模型的名字
 	INT CGameProduce_Login::GetFaceModelName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -832,7 +832,7 @@ namespace SCRIPT_SANDBOX
 	// 设置脸形模型id
 	INT CGameProduce_Login::SetFaceModelId(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -867,7 +867,7 @@ namespace SCRIPT_SANDBOX
 	// 得到脸形model的个数
 	INT CGameProduce_Login::GetHairModelCount(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -889,7 +889,7 @@ namespace SCRIPT_SANDBOX
 	// 得到脸形模型的名字
 	INT CGameProduce_Login::GetHairModelName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -930,7 +930,7 @@ namespace SCRIPT_SANDBOX
 	INT CGameProduce_Login::SetHairModelId(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -957,7 +957,7 @@ namespace SCRIPT_SANDBOX
 	// 得到玩家阵营
 	INT CGameProduce_Login::GetPlayerCamp(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		state->PushInteger( CGameProcedure::s_pProcCharCreate->m_iCamp );
 
@@ -966,7 +966,7 @@ namespace SCRIPT_SANDBOX
 
 	INT CGameProduce_Login::SetPlayerCamp(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -985,7 +985,7 @@ namespace SCRIPT_SANDBOX
 
 	INT CGameProduce_Login::SetPlayerMenpai(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");

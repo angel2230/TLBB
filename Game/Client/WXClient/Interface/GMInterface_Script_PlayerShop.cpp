@@ -42,7 +42,7 @@ namespace SCRIPT_SANDBOX
 	// 开一个新店
 	INT PlayerShop::CreateShop(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsString()))
 		{
@@ -121,7 +121,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::EnumShop(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("PlayerShop::EnumShop[2] param parameter error");
@@ -182,7 +182,7 @@ namespace SCRIPT_SANDBOX
 	// 商店需要的比较详细的一些信息(注：ShopList对话框使用)
 	INT PlayerShop::EnumShopInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("PlayerShop::EnumShopInfo[2] param parameter error");
@@ -229,7 +229,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::AskOpenShop(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("PlayerShop::AskOpenShop[2] param parameter error");
@@ -257,7 +257,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::EnumItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("PlayerShop::EnumItem[2] param parameter error");
@@ -301,7 +301,7 @@ namespace SCRIPT_SANDBOX
 
 		if( pActionItem )
 		{
-			LuaObject objReturn = state->BoxPointer(pActionItem);
+			LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 			objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 			objReturn.PushStack();
 
@@ -313,7 +313,7 @@ namespace SCRIPT_SANDBOX
 		}
 
 		//非法ActionItem
-		LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+		LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 
@@ -323,7 +323,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::GetSelectIndex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("PlayerShop::GetSelectIndex[2] param parameter error");
@@ -349,7 +349,7 @@ namespace SCRIPT_SANDBOX
 	// 从玩家商店取回物品到自己的背包
 	INT PlayerShop::RetackItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("PlayerShop::RetackItem[2] param parameter error");
@@ -438,7 +438,7 @@ namespace SCRIPT_SANDBOX
 	//点击上架
 	INT PlayerShop::InputMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::InputMoney[2] param parameter error");
@@ -481,7 +481,7 @@ namespace SCRIPT_SANDBOX
 	//上架
 	INT PlayerShop::UpStall(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::UpStall param parameter error");
@@ -566,7 +566,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT	PlayerShop::SetCurSelectPage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::SetCurSelectPage[2] param parameter error");
@@ -587,7 +587,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT	PlayerShop::GetCurSelectPage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::SetCurSelectPage[2] param parameter error");
@@ -603,7 +603,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::DealMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::DealMoney[2] param parameter error");
@@ -698,7 +698,7 @@ namespace SCRIPT_SANDBOX
 	// 向服务器提交
 	INT PlayerShop::ApplyMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::ApplyMoney[2] param parameter error");
@@ -783,7 +783,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::GetStallNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetStallNum[2] param parameter error");
@@ -835,7 +835,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::BuyItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::BuyItem[2] param parameter error");
@@ -896,7 +896,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::IsSelectOnSale(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::IsSelectOnSale[2] param parameter error");
@@ -929,7 +929,7 @@ namespace SCRIPT_SANDBOX
 	//下架
 	INT PlayerShop::DownSale(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::DownSale[2] param parameter error");
@@ -1004,7 +1004,7 @@ namespace SCRIPT_SANDBOX
 	//清空当前的选择
 	INT PlayerShop::ClearSelect(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::ClearSelect[2] param parameter error");
@@ -1024,7 +1024,7 @@ namespace SCRIPT_SANDBOX
 	//获得金钱
 	INT PlayerShop::GetMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetMoney[2] param parameter error");
@@ -1148,7 +1148,7 @@ namespace SCRIPT_SANDBOX
 	//获得店名（在显示交易的时候显示）
 	INT PlayerShop::GetShopInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetShopInfo[2] param parameter error");
@@ -1217,7 +1217,7 @@ namespace SCRIPT_SANDBOX
 	//检查一个Stall是否Open
 	INT PlayerShop::IsOpenStall(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::IsOpenStall[2] param parameter error");
@@ -1260,7 +1260,7 @@ namespace SCRIPT_SANDBOX
 	//开张一个柜台
 	INT PlayerShop::OpenStall(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:PlayerShop::OpenStall[2] param parameter error");
@@ -1283,7 +1283,7 @@ namespace SCRIPT_SANDBOX
 	//向服务器请求一个Stall的数据
 	INT PlayerShop::AskStallData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::AskStallData[2] param parameter error");
@@ -1323,7 +1323,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT PlayerShop::EnumPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::EnumItem[2] param parameter error");
@@ -1377,7 +1377,7 @@ namespace SCRIPT_SANDBOX
 	//设置当前选中的宠物
 	INT PlayerShop::SetSelectPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:PlayerShop::SetSelectPet[2] param parameter error");
@@ -1398,7 +1398,7 @@ namespace SCRIPT_SANDBOX
 	//获得当前选中的宠物Index
 	INT PlayerShop::SetCurSelectPetIndex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::SetCurSelectPetIndex[2] param parameter error");
@@ -1430,7 +1430,7 @@ namespace SCRIPT_SANDBOX
 	//获得选择物品或者宠物的价格
 	INT PlayerShop::GetObjPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetObjPrice[2] param parameter error");
@@ -1485,7 +1485,7 @@ namespace SCRIPT_SANDBOX
 	//修改商店的内容
 	INT PlayerShop::Modify(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::Modify[2] param parameter error");
@@ -1609,7 +1609,7 @@ namespace SCRIPT_SANDBOX
 	//获得选中的物品（宠物）的名称
 	INT PlayerShop::GetObjName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetObjName[2] param parameter error");
@@ -1711,7 +1711,7 @@ namespace SCRIPT_SANDBOX
 	//显示宠物详细信息
 	INT PlayerShop::ViewPetDesc(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::ViewPetDesc[2] param parameter error");
@@ -1750,7 +1750,7 @@ namespace SCRIPT_SANDBOX
 	//清除现在选择的 Position,,在进行操作的时候，可以使用检测这个值是不是为－1 来标志是不是界面有选中物品
 	INT PlayerShop::ClearSelectPos(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:Exchange::ClearSelectPos[2] param parameter error");
@@ -1771,7 +1771,7 @@ namespace SCRIPT_SANDBOX
 	//盘出商店
 	INT PlayerShop::Transfer(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::Transfer[2] param parameter error");
@@ -1814,7 +1814,7 @@ namespace SCRIPT_SANDBOX
 	// 查看当前的商店是不是处于盘店状态
 	INT PlayerShop::IsSaleOut(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::IsSaleOut[2] param parameter error");
@@ -1847,7 +1847,7 @@ namespace SCRIPT_SANDBOX
 	//关闭
 	INT PlayerShop::CloseShop(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::CloseShop[2] param parameter error");
@@ -1874,7 +1874,7 @@ namespace SCRIPT_SANDBOX
 	INT PlayerShop::OpenMessage(LuaPlus::LuaState* state)
 	{
 		//开关
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::OpenMessage[2] param parameter error");
@@ -1914,7 +1914,7 @@ namespace SCRIPT_SANDBOX
 	//获得Message的数量
 	INT PlayerShop::GetMessageNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetMessageNum[2] param parameter error");
@@ -1939,7 +1939,7 @@ namespace SCRIPT_SANDBOX
 	//当前页的Message的数量
 	INT PlayerShop::GetCurPageMessageNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::GetMessageNum[2] param parameter error");
@@ -1964,7 +1964,7 @@ namespace SCRIPT_SANDBOX
 	//获得Message
 	INT PlayerShop::EnumMessage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::EnumMessage[2] param parameter error");
@@ -1995,7 +1995,7 @@ namespace SCRIPT_SANDBOX
 	//操作合伙人
 	INT PlayerShop::DealFriend(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::DealFriend[2] param parameter error");
@@ -2055,7 +2055,7 @@ namespace SCRIPT_SANDBOX
 	//获得合伙人
 	INT PlayerShop::EnumFriend(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:PlayerShop::EnumFriend[2] param parameter error");
@@ -2070,7 +2070,7 @@ namespace SCRIPT_SANDBOX
 	//扩张（缩减）店铺
 	INT PlayerShop::ChangeShopNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:PlayerShop::ChangeShopNum[2] param parameter error");

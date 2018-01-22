@@ -71,7 +71,7 @@ namespace SCRIPT_SANDBOX
 	//提交商品价格（同时要提交物品，和修改价格使用不同的）
 	INT StallSale::ReferItemPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::ReferItemPrice param parameter error");
@@ -127,7 +127,7 @@ namespace SCRIPT_SANDBOX
 	// 更改摊位名字
 	INT StallSale::ModifStallName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::ModifStallName[2] param parameter error");
@@ -168,7 +168,7 @@ namespace SCRIPT_SANDBOX
 	// 更改Item价格(打开输入价格的对话Frame)
 	INT StallSale::ModifItemPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::ModifItemPrice[2] param parameter error");
@@ -196,7 +196,7 @@ namespace SCRIPT_SANDBOX
 	// 商品的重新定价
 	INT StallSale::ItemReprice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::ItemReprice[2] param parameter error");
@@ -280,7 +280,7 @@ namespace SCRIPT_SANDBOX
 	//删除货架上的一个物品或者宠物（下架）
 	INT StallSale::DeleteItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::DeleteItem[2] param parameter error");
@@ -340,7 +340,7 @@ namespace SCRIPT_SANDBOX
 	//获得指定位置的定价
 	INT StallSale::GetPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::GetPrice[2] param parameter error");
@@ -407,7 +407,7 @@ namespace SCRIPT_SANDBOX
 	//更改摊位介绍（广告语）
 	INT StallSale::ApplyAd(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::ApplyAd param parameter error");
@@ -474,7 +474,7 @@ namespace SCRIPT_SANDBOX
 	// 获得宠物
 	INT StallSale::EnumPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::EnumPet[2] param parameter error");
@@ -496,7 +496,7 @@ namespace SCRIPT_SANDBOX
 	// 宠物上架
 	INT StallSale::PetUpStall(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::PetUpStall[2] param parameter error");
@@ -530,7 +530,7 @@ namespace SCRIPT_SANDBOX
 	INT StallSale::PetReprice(LuaPlus::LuaState* state)
 	{
 		//更改宠物价格
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::ItemReprice[2] param parameter error");
@@ -576,7 +576,7 @@ namespace SCRIPT_SANDBOX
 	// 获得缺省页
 	INT StallSale::SetDefaultPage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::SetDefaultPage[2] param parameter error");
@@ -594,7 +594,7 @@ namespace SCRIPT_SANDBOX
 	//显示宠物详细信息
 	INT StallSale::ViewPetDesc(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:StallSale::ViewPetDesc[2] param parameter error");
@@ -628,7 +628,7 @@ namespace SCRIPT_SANDBOX
 	//设置选中的自己摊位上的宠物
 	INT StallSale::SetSelectPet(LuaPlus::LuaState* state)//MyStallBox_SetnSelectPetOnStall
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:StallSale::SetSelectPet[2] param parameter error");
