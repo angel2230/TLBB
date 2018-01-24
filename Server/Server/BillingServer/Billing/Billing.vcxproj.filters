@@ -2,29 +2,29 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Base">
-      <UniqueIdentifier>{0ffbdddd-2724-46e1-b9cb-d4d95a6989a2}</UniqueIdentifier>
+      <UniqueIdentifier>{f5959a2b-0c25-43bd-98cd-de403c7c6d4f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets">
-      <UniqueIdentifier>{41c7d2f9-d065-4ff5-8396-00593700dff5}</UniqueIdentifier>
+      <UniqueIdentifier>{d76a7ba2-eb7b-409c-aef6-1d63f97c80a1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{88454aec-2873-4790-b723-a7c7b02fc3d4}</UniqueIdentifier>
+      <UniqueIdentifier>{aadf84bb-3773-497d-8ab5-d2d2e4f3dad7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets">
-      <UniqueIdentifier>{a25ac2eb-d676-4c2c-8f1f-a8413bdf43c3}</UniqueIdentifier>
+      <UniqueIdentifier>{fc0062fb-2282-42b9-9cc4-6eea36b38725}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\DataBase">
-      <UniqueIdentifier>{2cf829de-9b92-4f79-8766-d86b6e937956}</UniqueIdentifier>
+      <UniqueIdentifier>{1f6f20ed-e016-479e-81b6-b1caa47e9ec5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Net">
-      <UniqueIdentifier>{d874a03b-8577-4aa5-8208-1bfaedf8026b}</UniqueIdentifier>
+      <UniqueIdentifier>{4362cc5b-dec2-4cac-b850-b584657a5acc}</UniqueIdentifier>
     </Filter>
     <Filter Include="StdAfx">
-      <UniqueIdentifier>{ddf25b18-4379-45bc-91d7-2d3f394705ff}</UniqueIdentifier>
+      <UniqueIdentifier>{2ffc8afa-9db9-4004-917b-50667bf93ba5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -349,9 +349,6 @@
       <Filter>Common\Net</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>StdAfx</Filter>
-    </ClInclude>
-    <ClInclude Include="fileapi.h">
       <Filter>StdAfx</Filter>
     </ClInclude>
   </ItemGroup>

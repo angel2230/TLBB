@@ -2,250 +2,250 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Common">
-      <UniqueIdentifier>{e9bf2154-72f1-4eb0-a887-d2267156a64c}</UniqueIdentifier>
+      <UniqueIdentifier>{4f4452c8-0031-4088-9c0c-97e1eeb8e1b7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets">
-      <UniqueIdentifier>{950e4c9e-4c92-42e5-8641-aac44d45a255}</UniqueIdentifier>
+      <UniqueIdentifier>{b7512300-f59f-4280-8ae0-bd50a2d5119b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\ItemPart">
-      <UniqueIdentifier>{3de3ec86-e3d7-4d03-bd89-2bd94166e805}</UniqueIdentifier>
+      <UniqueIdentifier>{2e189e0f-a08c-4272-a410-e2424a683d43}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\ItemPart\ItemSynch">
-      <UniqueIdentifier>{68b21588-621c-4e96-96e6-965ee20db2cd}</UniqueIdentifier>
+      <UniqueIdentifier>{2a11e431-301e-406b-a19f-65fe86ff6b62}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\DataPool">
-      <UniqueIdentifier>{d61fc934-acd3-4ae2-be5c-f8169348b23f}</UniqueIdentifier>
+      <UniqueIdentifier>{ca706d2f-ea2c-4efb-9d20-06d49c21a7ac}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Object">
-      <UniqueIdentifier>{03d8ea5e-dad2-4e7c-a6ca-86556d408efc}</UniqueIdentifier>
+      <UniqueIdentifier>{850beba5-6ec8-4ac9-95cb-5c734dcd54e1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\World">
-      <UniqueIdentifier>{525e8732-143b-4907-9070-bcc02dcfeeeb}</UniqueIdentifier>
+      <UniqueIdentifier>{71310291-d116-4025-a3be-2823ab7e4da3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Ability">
-      <UniqueIdentifier>{2921aefc-2228-42b2-8490-db32b907f4c5}</UniqueIdentifier>
+      <UniqueIdentifier>{dd027a2e-978a-4616-b712-4c91f1e4a351}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Team">
-      <UniqueIdentifier>{2e5a3690-0ca1-4b17-95aa-11e9957a23b2}</UniqueIdentifier>
+      <UniqueIdentifier>{4a91c999-fa78-44f0-ae00-d1eadacf7b9d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Chat">
-      <UniqueIdentifier>{dc41495f-cd80-4067-a8e5-37269dc9db58}</UniqueIdentifier>
+      <UniqueIdentifier>{14270099-4cb6-4abc-9b1f-43115b6deefe}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Commerce">
-      <UniqueIdentifier>{d707f452-27d7-4f15-9981-ded6d7696f46}</UniqueIdentifier>
+      <UniqueIdentifier>{dde68422-e4f7-4ace-afba-910fc7c277b4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Menpai">
-      <UniqueIdentifier>{b09fb8be-9e18-4dbb-b0b2-ecb3ebbd3a87}</UniqueIdentifier>
+      <UniqueIdentifier>{e625f630-3b41-4d5d-a794-50e4eb7e9d62}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Bank">
-      <UniqueIdentifier>{78d9e922-0c04-44be-ab71-4a0f8611d22d}</UniqueIdentifier>
+      <UniqueIdentifier>{c7169106-d44a-4968-ad89-4dafcf680ea7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Exchange">
-      <UniqueIdentifier>{554954f8-0562-4630-a672-4d99c5393fd7}</UniqueIdentifier>
+      <UniqueIdentifier>{5612d133-92d0-4448-baae-7c1873a156b6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Exchange\StepI">
-      <UniqueIdentifier>{ce4ffaf5-84a8-489b-a23b-d80aa57aa123}</UniqueIdentifier>
+      <UniqueIdentifier>{f1c2fc92-f518-4fd1-9a6d-c0411aa589c8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Exchange\StepII">
-      <UniqueIdentifier>{21c59354-ff11-483f-8d5c-d0df911078b5}</UniqueIdentifier>
+      <UniqueIdentifier>{d197aef2-65aa-4c3f-a05c-8ca7734a784d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Exchange\StepIII">
-      <UniqueIdentifier>{006d57d1-aaec-4ba5-81f6-09830ba8a3b1}</UniqueIdentifier>
+      <UniqueIdentifier>{015ddc0f-9cb2-4487-a91f-e8640ed8cad3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Main">
-      <UniqueIdentifier>{284ea66b-32f6-492f-916f-cb316b1b5a14}</UniqueIdentifier>
+      <UniqueIdentifier>{f6385f86-ba2e-4072-b0cc-ab471832a910}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Pet">
-      <UniqueIdentifier>{a04b34a9-9fd1-4d3f-bb29-5c403d194054}</UniqueIdentifier>
+      <UniqueIdentifier>{67eba83d-aa82-4725-ada9-dce63aabd4d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Guild">
-      <UniqueIdentifier>{d64c20d4-c84d-48bd-828e-9cfc5b652d34}</UniqueIdentifier>
+      <UniqueIdentifier>{1a4c6812-1238-4406-8623-4c8ecf1f6a84}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Stall">
-      <UniqueIdentifier>{400196fd-7b75-46de-9265-2d82dc9ea31c}</UniqueIdentifier>
+      <UniqueIdentifier>{a509648b-4927-423e-b3f8-5639f4444391}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Stall\Check">
-      <UniqueIdentifier>{9ca7e9e2-4d44-411a-9176-86fc09114c3c}</UniqueIdentifier>
+      <UniqueIdentifier>{8c759fe3-5216-47ba-9f2c-6b7729bec737}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Stall\Synch">
-      <UniqueIdentifier>{4b080073-2abc-4628-a887-1929fd609412}</UniqueIdentifier>
+      <UniqueIdentifier>{43c47317-2929-48e4-859d-cac1234ff152}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Stall\Close">
-      <UniqueIdentifier>{43a9753e-cf39-4057-9770-0728bb427e9e}</UniqueIdentifier>
+      <UniqueIdentifier>{73675fa7-96a7-4274-a899-e281898ef4ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Stall\BBS">
-      <UniqueIdentifier>{b0b012a4-e3ca-42e1-8452-eedfbb382916}</UniqueIdentifier>
+      <UniqueIdentifier>{40c7be6b-3928-4142-976b-821d6f8e941a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\Relation">
-      <UniqueIdentifier>{25406e20-fe83-4098-b3bd-c890d3b3fe11}</UniqueIdentifier>
+      <UniqueIdentifier>{9db730cf-ef57-4fa2-9b80-e049ccc14b57}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\PlayerShop">
-      <UniqueIdentifier>{3b36dc36-3178-4e3d-ab5b-86fe5b2048ca}</UniqueIdentifier>
+      <UniqueIdentifier>{ca308df7-e934-4b34-8d06-dcf90213b8cf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\PlayerShop\Apply">
-      <UniqueIdentifier>{77ddbaa8-9c62-404f-81b4-adbad19f64ce}</UniqueIdentifier>
+      <UniqueIdentifier>{99f8491d-ddd7-4fba-9d81-9871c82133d1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\PlayerShop\Manager">
-      <UniqueIdentifier>{2f884b9e-5e48-4f60-83cb-9766f702f9ff}</UniqueIdentifier>
+      <UniqueIdentifier>{e3b3345c-00c3-4db1-b445-559262ff0337}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\PlayerShop\View">
-      <UniqueIdentifier>{acf5d797-824c-4bc5-8087-049199e19609}</UniqueIdentifier>
+      <UniqueIdentifier>{f6177ec5-c772-40ab-977a-11ced37e84a8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\City">
-      <UniqueIdentifier>{8262aeee-fd1f-4f45-b5b9-9798ff7416d8}</UniqueIdentifier>
+      <UniqueIdentifier>{ed21ff58-3d55-46e8-adcb-4ce5aab95985}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\PrivateInfo">
-      <UniqueIdentifier>{d3664981-b08f-4195-a1a0-c1b59074058a}</UniqueIdentifier>
+      <UniqueIdentifier>{f2e4196c-f6d8-4e75-a958-af3cdd8738fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\DataBase">
-      <UniqueIdentifier>{e25838d9-7572-4400-87e6-af64651a27ee}</UniqueIdentifier>
+      <UniqueIdentifier>{c39925ad-42da-4d3d-86cf-266d0f668d3a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Combat">
-      <UniqueIdentifier>{746d285e-635b-4027-a5e7-e234e3425cca}</UniqueIdentifier>
+      <UniqueIdentifier>{0847a656-61f8-4b61-abaf-9508dc731a0e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Common">
-      <UniqueIdentifier>{f4886c6c-32c4-48f5-9c8b-e0ba3874a515}</UniqueIdentifier>
+      <UniqueIdentifier>{7a31dfb0-e477-47eb-bb70-e55b308b527a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Net">
-      <UniqueIdentifier>{17904949-4f90-4d50-89fe-659281a6d633}</UniqueIdentifier>
+      <UniqueIdentifier>{1166fadc-5c01-4132-b446-2478a9aec0be}</UniqueIdentifier>
     </Filter>
     <Filter Include="Obj">
-      <UniqueIdentifier>{99c4043e-50f3-4358-9b1b-f45f5eec14a6}</UniqueIdentifier>
+      <UniqueIdentifier>{eb485d0e-84dd-4fbe-83fa-c06d301d8e01}</UniqueIdentifier>
     </Filter>
     <Filter Include="Base">
-      <UniqueIdentifier>{f0f6658d-244e-4385-b2ce-293ab9c3e606}</UniqueIdentifier>
+      <UniqueIdentifier>{0bd8b2ae-02ad-47d7-97c2-e8b6931a6aa0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
-      <UniqueIdentifier>{83f74abe-0f8c-41cb-b8e0-d5c0ef552fc7}</UniqueIdentifier>
+      <UniqueIdentifier>{0953b0f1-2742-4f8c-b8db-9e8ec76010e0}</UniqueIdentifier>
     </Filter>
     <Filter Include="DB">
-      <UniqueIdentifier>{aafbd999-a5c4-4de4-b6ac-3efddc030d18}</UniqueIdentifier>
+      <UniqueIdentifier>{ca612402-5273-448e-8e8b-40361c76d1fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets">
-      <UniqueIdentifier>{0cdf00e0-d825-4029-9b72-7ac018084078}</UniqueIdentifier>
+      <UniqueIdentifier>{b2ab0f6e-0247-42d4-9cdb-88076bcc7fbf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\SkillStudy">
-      <UniqueIdentifier>{1c78b04e-b7fa-4454-9bab-bbb41fbf6f86}</UniqueIdentifier>
+      <UniqueIdentifier>{9d490920-66c1-42b5-a3ee-f80d509d36a6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Team">
-      <UniqueIdentifier>{63e17920-099d-40f1-8272-f089619f2828}</UniqueIdentifier>
+      <UniqueIdentifier>{3cfb546f-a0e6-49b9-ae7b-54a6e4bbb69b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Team\Follow">
-      <UniqueIdentifier>{cf22de51-ba45-40e8-afb6-605f1d7f8915}</UniqueIdentifier>
+      <UniqueIdentifier>{e51d6998-ffb6-4b91-91f8-d8625a2f2e12}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Stall">
-      <UniqueIdentifier>{90071cb4-cbc3-49dc-a996-3f2dcf4a0d07}</UniqueIdentifier>
+      <UniqueIdentifier>{4b6fbfd2-9728-46cc-99ce-8de3d075a802}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Stall\BBS">
-      <UniqueIdentifier>{b9fff92f-5d54-4428-ad8f-abade8889170}</UniqueIdentifier>
+      <UniqueIdentifier>{a2da2ed3-3fc3-442b-ad84-232cce7c48e9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Item">
-      <UniqueIdentifier>{a8e0e54f-7af3-4a4e-88d4-6cda0366e8cf}</UniqueIdentifier>
+      <UniqueIdentifier>{0676598c-5c51-4faf-a1a0-56d1eaa513e0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\PlayerShop">
-      <UniqueIdentifier>{cdfa89db-de9c-4f89-a146-f7668f30309f}</UniqueIdentifier>
+      <UniqueIdentifier>{367da366-1522-466b-8cfd-5ff8053cd7bd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Exchange">
-      <UniqueIdentifier>{3332891b-7a9b-435c-973a-3ec166a8d289}</UniqueIdentifier>
+      <UniqueIdentifier>{6cdb2484-91bf-416a-b3bb-135c286caa6d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\City">
-      <UniqueIdentifier>{73d2af59-7482-4608-9a41-08aa49d85fdb}</UniqueIdentifier>
+      <UniqueIdentifier>{02a89c4a-114c-4715-86e7-f0cb848703bc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\PrivateInfo">
-      <UniqueIdentifier>{c78066c5-ef21-4b28-8d97-eedb528ceb92}</UniqueIdentifier>
+      <UniqueIdentifier>{7351accc-664a-4718-9cfd-b7e8bf2e4129}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Guild">
-      <UniqueIdentifier>{671c65be-a60d-4e46-a361-d744bfff53ed}</UniqueIdentifier>
+      <UniqueIdentifier>{826429fe-34d0-4960-9210-7e097d14a0ca}</UniqueIdentifier>
     </Filter>
     <Filter Include="Player">
-      <UniqueIdentifier>{a27117c6-2ae1-4595-a76c-ee998f1880a6}</UniqueIdentifier>
+      <UniqueIdentifier>{acfd0267-0506-44b6-ad10-fb6af9f2e2cc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Script">
-      <UniqueIdentifier>{07478151-9ec4-4e44-96c8-1cbfd4a3cc64}</UniqueIdentifier>
+      <UniqueIdentifier>{6e6b4827-35c5-48b4-9c3c-5d24acef977f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Item">
-      <UniqueIdentifier>{a32beebf-ef96-442a-b7c7-068a5abbf5ce}</UniqueIdentifier>
+      <UniqueIdentifier>{40b5327f-309c-49ac-abc8-c7609b47000a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Item\Growpoint">
-      <UniqueIdentifier>{f7144807-47e6-4354-b18a-1535a189762e}</UniqueIdentifier>
+      <UniqueIdentifier>{ad76b08f-5ccf-4a91-bd04-4b4c6651c167}</UniqueIdentifier>
     </Filter>
     <Filter Include="Item\ItemWrap">
-      <UniqueIdentifier>{ca118c7b-76f3-4fd5-af03-b513497b1464}</UniqueIdentifier>
+      <UniqueIdentifier>{16945810-a482-4e62-a617-cff9fd744982}</UniqueIdentifier>
     </Filter>
     <Filter Include="Item\ItemBase">
-      <UniqueIdentifier>{6dc66902-1ed5-4896-9127-0555c55cacc5}</UniqueIdentifier>
+      <UniqueIdentifier>{40512cf5-6ccd-4596-a59b-4a155689225f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Item\ItemLogic">
-      <UniqueIdentifier>{75c60d23-7b76-4da2-94b3-b92cc56a9212}</UniqueIdentifier>
+      <UniqueIdentifier>{5fe596fd-8176-47a1-b34a-8712f69c76cb}</UniqueIdentifier>
     </Filter>
     <Filter Include="SMU">
-      <UniqueIdentifier>{25563df3-3674-41ad-92e3-dd09e8bb0ff4}</UniqueIdentifier>
+      <UniqueIdentifier>{ace19bae-6872-48d7-bff4-e291419ef418}</UniqueIdentifier>
     </Filter>
     <Filter Include="Team">
-      <UniqueIdentifier>{e1cd9b92-8ce7-45c3-a614-9ef65468dacb}</UniqueIdentifier>
+      <UniqueIdentifier>{1a48eef3-aba3-4125-a1b6-627246a36679}</UniqueIdentifier>
     </Filter>
     <Filter Include="MenPai">
-      <UniqueIdentifier>{bd092f9a-138a-4881-843d-0ef0cd53f0f9}</UniqueIdentifier>
+      <UniqueIdentifier>{e03ad683-3bda-4d71-a61c-cfec9f2b6077}</UniqueIdentifier>
     </Filter>
     <Filter Include="MenPai\Mission">
-      <UniqueIdentifier>{0b52c18e-2ab3-4102-9ecb-f89c8a4deda2}</UniqueIdentifier>
+      <UniqueIdentifier>{85237f85-0aba-46c3-9ada-d67f82622724}</UniqueIdentifier>
     </Filter>
     <Filter Include="AI">
-      <UniqueIdentifier>{e45f0f13-388a-4704-b397-03cd8cbe2ed1}</UniqueIdentifier>
+      <UniqueIdentifier>{db193c30-e3a1-4cf2-992b-3a32cb798e6b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Other">
-      <UniqueIdentifier>{6fb04db0-194d-4a60-a050-cf10b5c246ae}</UniqueIdentifier>
+      <UniqueIdentifier>{cd40c246-10bf-4cb7-9425-d239b207a9a6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Other\PlayerShop">
-      <UniqueIdentifier>{1060cfaf-e4ec-4b37-be78-41d089519101}</UniqueIdentifier>
+      <UniqueIdentifier>{d82669af-b18b-4657-8e85-ea941a6ca14a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Ability">
-      <UniqueIdentifier>{5d8def2d-9906-45f1-bbee-092569b4d8d8}</UniqueIdentifier>
+      <UniqueIdentifier>{b08d4fbe-2c88-4a7a-8f0d-266a1e30896d}</UniqueIdentifier>
     </Filter>
     <Filter Include="EventModule">
-      <UniqueIdentifier>{8e1d9712-62d4-4197-8a1e-bae1c715e6a6}</UniqueIdentifier>
+      <UniqueIdentifier>{29ad554b-cb4c-48a2-9014-47c4ad4a34ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="ActionModule">
-      <UniqueIdentifier>{0517bbc1-f148-4b77-9b8a-894c07f3aab1}</UniqueIdentifier>
+      <UniqueIdentifier>{1e8da0be-0669-4c80-94c1-13048a27f4b6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Scene">
-      <UniqueIdentifier>{f7f8e51d-79ef-4a58-ad67-2bbb030a7690}</UniqueIdentifier>
+      <UniqueIdentifier>{99073c21-5591-4d55-a9b9-a781c578daf2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Scene\Scan">
-      <UniqueIdentifier>{11d91727-c2df-4dc0-b5c1-4ba7e00218b0}</UniqueIdentifier>
+      <UniqueIdentifier>{4230a10a-bcaf-40e5-b5a7-a3917ce8979f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill">
-      <UniqueIdentifier>{4d6eb926-57ca-4f97-959b-c765db47dd27}</UniqueIdentifier>
+      <UniqueIdentifier>{2e6aeeee-8a71-4593-92e4-9a9bd5498c77}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\ImpactLogic">
-      <UniqueIdentifier>{97454188-4bd8-41e7-b3c2-df7bdea10dca}</UniqueIdentifier>
+      <UniqueIdentifier>{487f0515-c95f-41bf-8ea2-0cd96adc049d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic">
-      <UniqueIdentifier>{8ec4517f-2180-43d5-b2a8-01cd3520378f}</UniqueIdentifier>
+      <UniqueIdentifier>{15652398-5484-4f50-8b92-f3f5f0875ef6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Human">
-      <UniqueIdentifier>{31bb35bc-b847-4db3-9e30-966a287d1260}</UniqueIdentifier>
+      <UniqueIdentifier>{eead3e79-20db-499c-bb27-aaaf86ce7150}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Other">
-      <UniqueIdentifier>{3a5fd05a-88d2-445f-9ebc-38c5b062850a}</UniqueIdentifier>
+      <UniqueIdentifier>{18ad19de-fc94-4ca5-9613-2aef0528fe79}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Common">
-      <UniqueIdentifier>{471c4393-82ee-4cc0-a4f4-ee90f8654585}</UniqueIdentifier>
+      <UniqueIdentifier>{08886ee9-dd9d-4996-b326-8c05efa12c14}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Item">
-      <UniqueIdentifier>{e8038640-bfba-4d78-bd3a-688d646adcc6}</UniqueIdentifier>
+      <UniqueIdentifier>{6f19d81b-3b2f-48b1-b7ad-81b95ba3feca}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Monster">
-      <UniqueIdentifier>{bebe39c7-3129-45bb-ba32-5e61e8d5eabb}</UniqueIdentifier>
+      <UniqueIdentifier>{2d60af13-2857-4e4d-9bed-b4a6c2343717}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SkillLogic\Pet">
-      <UniqueIdentifier>{8f656454-a2f9-4171-afae-f7e733b3d544}</UniqueIdentifier>
+      <UniqueIdentifier>{950c5d8e-7d3f-4b3b-be14-a2d57453968c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Skill\SpecialObjLogic">
-      <UniqueIdentifier>{38068045-ae65-45c1-8d07-e1810cf4ae81}</UniqueIdentifier>
+      <UniqueIdentifier>{f83d5bee-771d-4edd-af22-6d384d40930a}</UniqueIdentifier>
     </Filter>
     <Filter Include="StdAfx">
-      <UniqueIdentifier>{6c4d5195-877d-42ca-ad5e-8e61580d7f8d}</UniqueIdentifier>
+      <UniqueIdentifier>{34b85540-0317-4fa0-a5c1-06651e45724d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -5238,9 +5238,6 @@
       <Filter>Skill\SpecialObjLogic</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>StdAfx</Filter>
-    </ClInclude>
-    <ClInclude Include="fileapi.h">
       <Filter>StdAfx</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,44 +2,44 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Base">
-      <UniqueIdentifier>{969f496d-7ff4-405e-89eb-5b5032c5ac27}</UniqueIdentifier>
+      <UniqueIdentifier>{f7167775-2fd1-47d7-a75d-7f5b97bacacf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets">
-      <UniqueIdentifier>{34df1fcf-59d8-48b3-bb0d-e302d3c5118f}</UniqueIdentifier>
+      <UniqueIdentifier>{a91b4e51-455d-404e-9a05-4f08026777c6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\City">
-      <UniqueIdentifier>{b10c3052-a2c9-4127-95a6-aa8dc1712c78}</UniqueIdentifier>
+      <UniqueIdentifier>{6d3674f1-c8c6-43e5-ad02-44af300d30cd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{594361f3-a1bc-425c-84a3-e6605724a797}</UniqueIdentifier>
+      <UniqueIdentifier>{6b39d7c2-16de-440f-bce8-432ffb69a467}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets">
-      <UniqueIdentifier>{32f61677-da88-47ed-b420-e9496dfb48b9}</UniqueIdentifier>
+      <UniqueIdentifier>{e7e6e4d4-7a18-45cb-a738-7b71cec2f72a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets\City">
-      <UniqueIdentifier>{5073a5cf-4ff5-4e46-b78e-058af668a961}</UniqueIdentifier>
+      <UniqueIdentifier>{b9c3a6a6-d27a-4699-a01e-c02694cfefc1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\DataBase">
-      <UniqueIdentifier>{a3bb45f6-2164-418c-8062-19fa625880e3}</UniqueIdentifier>
+      <UniqueIdentifier>{d5016001-0625-4e28-a0eb-da293c782817}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Combat">
-      <UniqueIdentifier>{7bfeb72c-5169-490a-a081-1cd4c1553656}</UniqueIdentifier>
+      <UniqueIdentifier>{a2d8cacf-341b-45d9-ac00-c9a8b348b5ef}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Net">
-      <UniqueIdentifier>{1b47d7a9-396c-4364-9e55-f981a26d49c1}</UniqueIdentifier>
+      <UniqueIdentifier>{0f6e8413-0306-4cdb-a82a-d1ee7df0dcf6}</UniqueIdentifier>
     </Filter>
     <Filter Include="WorldData">
-      <UniqueIdentifier>{ab207c8a-68dd-4275-8a9f-fc8ea11e6271}</UniqueIdentifier>
+      <UniqueIdentifier>{da823d7c-94d7-48df-bc9b-c62d2a592faf}</UniqueIdentifier>
     </Filter>
     <Filter Include="SMU">
-      <UniqueIdentifier>{d7aae66d-f85f-4836-b706-fa5c9fbef6e5}</UniqueIdentifier>
+      <UniqueIdentifier>{5591d0b2-3742-4135-94ef-ba52bc187b90}</UniqueIdentifier>
     </Filter>
     <Filter Include="StdAfx">
-      <UniqueIdentifier>{2d2db951-e3a0-4554-9743-b670b51dcf96}</UniqueIdentifier>
+      <UniqueIdentifier>{1ffbd336-687f-4f91-abfb-7334d6bc250b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

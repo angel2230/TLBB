@@ -2,37 +2,37 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Main">
-      <UniqueIdentifier>{8cd75a5a-c9d7-4060-a3aa-6a3060ec8ee6}</UniqueIdentifier>
+      <UniqueIdentifier>{6d58f9c2-4ef2-4d77-8462-02bc55623dad}</UniqueIdentifier>
     </Filter>
     <Filter Include="Base">
-      <UniqueIdentifier>{0d7407ef-1adc-4ba0-89d3-3259f4e410ca}</UniqueIdentifier>
+      <UniqueIdentifier>{6f863863-08ed-4fba-9cea-aafe5492e145}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{ee70efd8-affa-4f4d-9cf3-75fa31c92f86}</UniqueIdentifier>
+      <UniqueIdentifier>{a90c22f0-042a-4619-8a64-c4c30e731cae}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Packets">
-      <UniqueIdentifier>{6659548f-b4ca-45f7-acbb-d562eff0e093}</UniqueIdentifier>
+      <UniqueIdentifier>{14d1eef9-c4b1-4810-9b88-dc2c2af4bc68}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\DataBase">
-      <UniqueIdentifier>{4e53f9ba-a859-443e-bc12-bc9d75dc4d55}</UniqueIdentifier>
+      <UniqueIdentifier>{abc950f4-d6bf-42a4-9f87-4b798b65e40e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Net">
-      <UniqueIdentifier>{576f4a0d-dc52-43ab-8caf-18023357e14c}</UniqueIdentifier>
+      <UniqueIdentifier>{cab52aa3-bf44-492b-b40e-93a83f8276a0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Player">
-      <UniqueIdentifier>{a5742591-fc2e-4bc4-80d5-b33d85193c34}</UniqueIdentifier>
+      <UniqueIdentifier>{bf07ca1f-f680-42ee-bd66-b39c998fcd22}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets">
-      <UniqueIdentifier>{6f5c00e3-2bde-46b5-b7e4-464c0579fe4e}</UniqueIdentifier>
+      <UniqueIdentifier>{2da02ebb-c413-4af2-82f1-0081a8a8a7ef}</UniqueIdentifier>
     </Filter>
     <Filter Include="Packets\Database">
-      <UniqueIdentifier>{c540f023-ebab-4634-a4ff-dc8baac57012}</UniqueIdentifier>
+      <UniqueIdentifier>{a48f4c59-39cd-4ce6-ba61-6a70a136d5ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="Process">
-      <UniqueIdentifier>{c954b3d9-6638-4556-ac58-936fed3fb74a}</UniqueIdentifier>
+      <UniqueIdentifier>{e504a4f4-cb3f-46ad-89cf-8a25f4768eff}</UniqueIdentifier>
     </Filter>
     <Filter Include="StdAfx">
-      <UniqueIdentifier>{46469598-b6c2-46d7-9695-5d75f68dc386}</UniqueIdentifier>
+      <UniqueIdentifier>{c9732ade-20c2-4471-9dc0-51f93cd354e1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -603,9 +603,6 @@
       <Filter>Process</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>StdAfx</Filter>
-    </ClInclude>
-    <ClInclude Include="fileapi.h">
       <Filter>StdAfx</Filter>
     </ClInclude>
   </ItemGroup>

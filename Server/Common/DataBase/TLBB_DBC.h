@@ -30,11 +30,17 @@
 #define _TLBB_DB_H_
 
 #include <vector>
+
+#if (_MSC_VER >= 1900) || !defined(_MSC_VER)
+#  include <unordered_map>
+#else
 #ifdef __WINDOWS__
 #include <hash_map>
 #else
 #include <ext/hash_map>
 #endif
+#endif
+
 #include "Type.h"
 
 namespace DBC
@@ -111,14 +117,16 @@ namespace DBC
 #ifdef __SGI_STL_PORT
 		typedef std::hash_map< INT, FIELD*>	FIELD_HASHMAP;
 #else
-	#ifdef __WINDOWS__
+#  ifdef _UNORDERED_MAP_
+		typedef std::unordered_map< INT, FIELD*>	FIELD_HASHMAP;
+#  elif __WINDOWS__
 		typedef stdext::hash_map< INT, FIELD*>	FIELD_HASHMAP;
-	#else
+#  else
 		typedef __gnu_cxx::hash_map< INT,FIELD*>    FIELD_HASHMAP;
 							  // hash_compare <INT, less<INT> > ,
 							   //allocator< pair<const INT, FIELD*> > >
 							  
-	#endif
+#  endif
 		
 #endif
 		//数据库格式文件名

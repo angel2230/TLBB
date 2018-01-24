@@ -2,32 +2,32 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Base">
-      <UniqueIdentifier>{f464aa0a-95ae-4eef-b320-8585b059c2f8}</UniqueIdentifier>
+      <UniqueIdentifier>{2275a3bf-c031-4922-81a2-737abd9587d0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Main">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{49e8049e-acdf-4987-aa90-679eccaca093}</UniqueIdentifier>
+      <UniqueIdentifier>{5aadf5ba-357a-4be3-864c-918077f351c4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\DataBase">
-      <UniqueIdentifier>{5a8767db-4f5f-40ab-a426-3db5d0f16c52}</UniqueIdentifier>
+      <UniqueIdentifier>{1e970be1-1d93-449c-9508-f33a20d92865}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common\Net">
-      <UniqueIdentifier>{0493aa6a-6672-48a5-839c-d07682887714}</UniqueIdentifier>
+      <UniqueIdentifier>{0a902cb0-5411-47ec-984e-bcaf60fbe07e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ShareData">
-      <UniqueIdentifier>{ff6c2a60-d421-4b5f-a52e-608b7d6f7eaa}</UniqueIdentifier>
+      <UniqueIdentifier>{23139087-6853-42f6-a306-04dc5b25df97}</UniqueIdentifier>
     </Filter>
     <Filter Include="DataBase">
-      <UniqueIdentifier>{6ae32a6b-1e92-46df-aaba-1fb1b82fd03a}</UniqueIdentifier>
+      <UniqueIdentifier>{835ea68d-e3fc-4df7-98e9-274b80df9d6b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Other">
-      <UniqueIdentifier>{fe87cb47-01a1-406b-b1dd-1f735b1f805b}</UniqueIdentifier>
+      <UniqueIdentifier>{154aceef-2775-49e7-9dd7-5cb47a5708d8}</UniqueIdentifier>
     </Filter>
     <Filter Include="StdAfx">
-      <UniqueIdentifier>{43177bca-cbda-4b28-b22c-581dc7f0cca3}</UniqueIdentifier>
+      <UniqueIdentifier>{9d04116c-8664-4bc6-a87b-df0bafd2a93f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -391,9 +391,6 @@
       <Filter>Other</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>StdAfx</Filter>
-    </ClInclude>
-    <ClInclude Include="fileapi.h">
       <Filter>StdAfx</Filter>
     </ClInclude>
   </ItemGroup>
