@@ -60,7 +60,7 @@ namespace SCRIPT_SANDBOX
 	//金钱的转换
 	INT Bank::GetInputMoney(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:GetInputMoney param parameter error");
@@ -110,7 +110,7 @@ namespace SCRIPT_SANDBOX
 	//发送存钱消息
 	INT Bank::SaveMoneyToBank(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:SaveMoneyToBank param parameter error");
@@ -143,7 +143,7 @@ namespace SCRIPT_SANDBOX
 	//发送存钱消息
 	INT Bank::SaveRMBToBank(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:SaveRMBToBank param parameter error");
@@ -177,7 +177,7 @@ namespace SCRIPT_SANDBOX
 	//发送取钱消息
 	INT Bank::GetMoneyFromBank(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMoneyFromBank param parameter error");
@@ -205,7 +205,7 @@ namespace SCRIPT_SANDBOX
 	//发送取钱消息
 	INT Bank::GetRMBFromBank(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:GetRMBFromBank param parameter error");
@@ -274,7 +274,7 @@ namespace SCRIPT_SANDBOX
 	//发送一个移动银行物品到背包的消息
 	INT Bank::MoveItemToPacket(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:MoveItemToPacket param parameter error");
@@ -323,7 +323,7 @@ namespace SCRIPT_SANDBOX
 	//导出指定租赁箱的开始数和格子数
 	INT Bank::GetRentBoxInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetRentBoxInfo param parameter error");
@@ -376,7 +376,7 @@ namespace SCRIPT_SANDBOX
 	//设置当前的租赁箱
 	INT Bank::SetCurRentIndex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetRentBoxInfo param parameter error");
@@ -389,7 +389,7 @@ namespace SCRIPT_SANDBOX
 	//转换货币
 	INT Bank::TransformCoin(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:Bank::TransformCoin param parameter error");
@@ -435,7 +435,7 @@ namespace SCRIPT_SANDBOX
 	//获得操作物品
 	INT Bank::EnumItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		//检查参数
 		if(!(args[2].IsInteger()))
@@ -451,7 +451,7 @@ namespace SCRIPT_SANDBOX
 		tActionItem* pActionItem = CActionSystem::GetMe()->EnumAction(nIndex, NAMETYPE_BANKITEM);
 		if(pActionItem)
 		{
-			LuaObject objReturn = state->BoxPointer(pActionItem);
+			LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 			objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 			objReturn.PushStack();
 
@@ -463,7 +463,7 @@ namespace SCRIPT_SANDBOX
 		}
 
 		//非法ActionItem
-		LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+		LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 		state->PushBoolean(false);

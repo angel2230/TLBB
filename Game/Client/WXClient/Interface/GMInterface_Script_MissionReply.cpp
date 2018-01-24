@@ -55,7 +55,7 @@ namespace SCRIPT_SANDBOX
 	{
 		//从数据池中获取数据（数据是玩家自己拖动到框里头的物品在背包中的索引）,
 		//向服务器发送任务确认,
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		INT nPetIndex;
 		if (!(args[2].IsInteger()) ) 
 		{
@@ -79,7 +79,7 @@ namespace SCRIPT_SANDBOX
 	//
 	INT MissionReply::EnumItem(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		//检查参数
 		if (!(args[2].IsInteger()))
@@ -92,7 +92,7 @@ namespace SCRIPT_SANDBOX
 			tActionItem* pActionItem = CActionSystem::GetMe()->EnumAction(nIndex, NAMETYPE_MISSIONREFER);
 			if(pActionItem)
 			{
-				LuaObject objReturn = state->BoxPointer(pActionItem);
+				LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 				objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 				objReturn.PushStack();
 
@@ -100,7 +100,7 @@ namespace SCRIPT_SANDBOX
 			}
 		}
 		//非法ActionItem
-		LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+		LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 		objReturn.PushStack();
 

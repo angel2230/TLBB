@@ -205,7 +205,7 @@ namespace SCRIPT_SANDBOX
 	//获得视频设置数据
 	INT SystemSetup::Lua_View_GetData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsString()))
 		{
@@ -295,7 +295,7 @@ namespace SCRIPT_SANDBOX
 	//设置视频数据
 	INT SystemSetup::Lua_View_SetData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsString()))
 		{
@@ -456,7 +456,7 @@ namespace SCRIPT_SANDBOX
 
 	INT SystemSetup::Lua_SaveGameSetup(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()))
 		{
@@ -638,7 +638,7 @@ namespace SCRIPT_SANDBOX
 	//获得玩家信息
 	INT SystemSetup::Lua_GetPrivateInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("SystemSetup::Lua_GetPrivateInfo[2] param parameter error");
@@ -787,7 +787,7 @@ namespace SCRIPT_SANDBOX
 	//获得玩家信息
 	INT SystemSetup::Lua_SetPrivateInfo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("SystemSetup::Lua_SetPrivateInfo[2] param parameter error");
@@ -925,7 +925,7 @@ namespace SCRIPT_SANDBOX
 	//打开页面
 	INT SystemSetup::Lua_OpenPrivatePage(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("SystemSetup::Lua_OpenPrivatePage[2] param parameter error");
@@ -953,7 +953,7 @@ namespace SCRIPT_SANDBOX
 	INT SystemSetup::Lua_OpenEquipFrame(LuaPlus::LuaState* state)
 	{
 		//打开装备界面
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("SystemSetup::Lua_OpenEquipFrame[2] param parameter error");
@@ -975,7 +975,7 @@ namespace SCRIPT_SANDBOX
 	//从玩家信息界面切换到玩家宠物界面
 	INT SystemSetup::Lua_OpenPetFrame(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("SystemSetup::Lua_OpenPetFrame[2] param parameter error");

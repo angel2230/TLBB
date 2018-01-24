@@ -33,7 +33,7 @@ namespace SCRIPT_SANDBOX
 	// 得到生活技能的数量
 /*	INT LifeAbility::GetLifeAbility_Count(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		CCharacterData* pCharData = CObjectManager::GetMe()->GetMySelf()->GetCharacterData();
 
@@ -47,7 +47,7 @@ namespace SCRIPT_SANDBOX
 	}
 */	INT LifeAbility::GetLifeAbility_Number(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -66,7 +66,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetPrescr_Material_Number(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -90,7 +90,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetPrescr_Material(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() ) return 0;
 
@@ -178,7 +178,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetPrescrList_Item_FromNum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:LifeAbility:GetPrescrList_Item_FromNum args error");
@@ -204,7 +204,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetPrescr_Item_Maximum(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:LifeAbility:GetPrescrList_Item_FromNum args error");
@@ -263,7 +263,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetPrescr_Material_Hold_Count(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()) || !(args[3].IsInteger()))
 		{
 			TDThrow("LUA:LifeAbility:GetPrescr_Material_Hold_Count args error");
@@ -325,7 +325,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT LifeAbility::GetPrescr_Explain(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()) )
 		{
 			TDThrow("LUA:LifeAbility:GetPrescr_Explain args error");
@@ -353,7 +353,7 @@ namespace SCRIPT_SANDBOX
 	//刷新合成界面界面
 	INT LifeAbility::Update_Synthesize( LuaPlus::LuaState* state) 
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (! (args[2].IsInteger()) )
 		{
 			TDThrow("LUA: LifeAbility:Update_Synthesize Wrong Param");
@@ -365,7 +365,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::Open_Compose_Gem_Page( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (! (args[2].IsInteger()) )
 		{
 			TDThrow("LUA: LifeAbility:Open_Compose_Gem_Page Wrong Param");
@@ -381,7 +381,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::Do_Enchase( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -421,7 +421,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::Do_Combine( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -459,7 +459,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetEquip_Gem( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -492,7 +492,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::GetEquip_GemCount( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -515,7 +515,7 @@ namespace SCRIPT_SANDBOX
 
 	INT LifeAbility::Enchase_Preparation( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -570,7 +570,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT LifeAbility::Compound_Preparation( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -605,7 +605,7 @@ namespace SCRIPT_SANDBOX
 
 	INT LifeAbility::Can_Enchase( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -670,7 +670,7 @@ namespace SCRIPT_SANDBOX
 
 	INT LifeAbility::Can_Combine( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() || !args[3].IsInteger())
 		{
@@ -703,7 +703,7 @@ namespace SCRIPT_SANDBOX
 	INT LifeAbility::Lock_Packet_Item( LuaPlus::LuaState* state )
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		//检查参数
 		if (!(args[2].IsInteger()))

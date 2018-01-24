@@ -33,7 +33,7 @@ INT PlayerPackage::EnumItem(LuaPlus::LuaState* state)
 	//const static STRING s_strMaterialName	= "material";	//材料物品 20-39
 	//const static STRING s_strQuestName		= "quest";		//任务物品 40-59
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	//检查参数
 	if (!(args[2].IsString()))
@@ -68,7 +68,7 @@ INT PlayerPackage::EnumItem(LuaPlus::LuaState* state)
 		tActionItem* pActionItem = CActionSystem::GetMe()->EnumAction(nIndex, NAMETYPE_PACKAGEITEM);
 		if(pActionItem)
 		{
-			LuaObject objReturn = state->BoxPointer(pActionItem);
+			LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 			objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 			objReturn.PushStack();
 
@@ -81,7 +81,7 @@ INT PlayerPackage::EnumItem(LuaPlus::LuaState* state)
 	}
 
 	//非法ActionItem
-	LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
+	LuaPlus::LuaObject objReturn = state->BoxPointer(&(CActionItem::s_InvalidAction));
 	objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 	objReturn.PushStack();
 
@@ -175,7 +175,7 @@ INT PlayerPackage::GetSplitSum(LuaPlus::LuaState* state)
 // 处理点击确定拆分后的处理
 INT PlayerPackage::SplitItem(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	//检查参数
 	if (!(args[2].IsInteger()))
 	{
@@ -290,7 +290,7 @@ INT PlayerPackage::CancelSplitItem(LuaPlus::LuaState* state)
 //整理物品
 INT PlayerPackage::PackUpPacket(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	//检查参数
 	if (!(args[2].IsInteger()))
 	{
@@ -314,7 +314,7 @@ INT PlayerPackage::OpenPetList(LuaPlus::LuaState* state)
 //打开锁定界面
 INT PlayerPackage::OpenLockFrame(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	//检查参数
 	if (!(args[2].IsInteger()))
 	{
@@ -328,7 +328,7 @@ INT PlayerPackage::OpenLockFrame(LuaPlus::LuaState* state)
 //锁定物品（宠物）
 INT PlayerPackage::Lock(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	//检查参数
 	if (!(args[2].IsString()))
 	{
@@ -421,7 +421,7 @@ INT PlayerPackage::Lock(LuaPlus::LuaState* state)
 //获得物品是否锁定
 INT PlayerPackage::IsLock(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA: PlayerPackage::IsLock[2] Wrong Param1");

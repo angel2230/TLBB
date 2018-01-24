@@ -1,101 +1,158 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="WXNetPackets"
 	ProjectGUID="{249B983A-3A90-4EA7-96BD-59EBC2FB94DC}"
-	Keyword="Win32Proj">
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Debug/WXNetPackets"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Debug/WXNetPackets"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				Optimization="0"
 				AdditionalIncludeDirectories="../../../Common;../../../Common/Packets;../../../Common/DataBase;../../../Common/Net;./"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__WINDOWS__;_WINDOWS;_FOX_CLIENT;_FOX_SERVER;GAME_CLIENT;_FOX_LOGIN"
-				MinimalRebuild="TRUE"
+				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
-				UsePrecompiledHeader="2"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
 				DebugInformationFormat="4"
-				DisableSpecificWarnings="4996"/>
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Debug/WXNetPackets.lib"/>
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+				OutputFile="..\..\_Scripts\VC7.1\Debug/WXNetPackets.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Release/WXNetPackets"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Release/WXNetPackets"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				AdditionalIncludeDirectories="../../../Common;../../../Common/Packets;../../../Common/DataBase;../../../Common/Net;./"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;__WINDOWS__;_FOX_CLIENT;_FOX_SERVER;GAME_CLIENT;_FOX_LOGIN"
 				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
 				UsePrecompiledHeader="1"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"
-				DisableSpecificWarnings="4996"/>
+				DebugInformationFormat="4"
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Release/WXNetPackets.lib"/>
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
+				OutputFile="..\..\_Scripts\VC7.1\Release/WXNetPackets.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -104,2565 +161,3418 @@
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath="..\..\..\Common\Packets\BLRetAuth.cpp">
+				RelativePath="..\..\..\Common\Packets\BLRetAuth.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGApplyPrivateInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGApplyPrivateInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskChangeScene.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskChangeScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailAbilityInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailAbilityInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailAttrib.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailAttrib.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailEquipList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailEquipList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailSkillList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailSkillList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailXinFaList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailXinFaList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskItemInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskItemInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskJoinMenpai.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskJoinMenpai.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskLeanAbility.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskLeanAbility.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskLockObj.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskLockObj.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMail.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskMail.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMissionDesc.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskMissionDesc.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMissionList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskMissionList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMyBagList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskMyBagList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskPrivateInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskPrivateInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskSetting.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskSetting.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskStudyXinfa.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskStudyXinfa.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamFollow.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamFollow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamMemberInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamMemberInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAttack.cpp">
+				RelativePath="..\..\..\Common\Packets\CGAttack.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankAcquireList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankAcquireList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankAddItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankAddItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankClose.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankMoney.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankMoney.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankRemoveItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankRemoveItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankSwapItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBankSwapItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBBSApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBBSApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBBSSychMessages.cpp">
+				RelativePath="..\..\..\Common\Packets\CGBBSSychMessages.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelCreate.cpp">
+				RelativePath="..\..\..\Common\Packets\CGChannelCreate.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelDismiss.cpp">
+				RelativePath="..\..\..\Common\Packets\CGChannelDismiss.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\CGChannelInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelKick.cpp">
+				RelativePath="..\..\..\Common\Packets\CGChannelKick.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAllTitles.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharAllTitles.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAskBaseAttrib.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharAskBaseAttrib.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAskEquipment.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharAskEquipment.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharDefaultEvnet.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharDefaultEvnet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharIdle.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharIdle.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharJump.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharJump.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharMoodState.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharMoodState.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharMove.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharMove.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharPositionWarp.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharPositionWarp.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharSit.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharSit.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharStopLogic.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharStopLogic.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharUpdateCurTitle.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharUpdateCurTitle.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharUseSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCharUseSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChat.cpp">
+				RelativePath="..\..\..\Common\Packets\CGChat.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCityAskAttr.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCityAskAttr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCommand.cpp">
+				RelativePath="..\..\..\Common\Packets\CGCommand.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGConnect.cpp">
+				RelativePath="..\..\..\Common\Packets\CGConnect.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDiscardEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\CGDiscardEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDiscardItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGDiscardItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDispelBuffReq.cpp">
+				RelativePath="..\..\..\Common\Packets\CGDispelBuffReq.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDoEvnet.cpp">
+				RelativePath="..\..\..\Common\Packets\CGDoEvnet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEnterScene.cpp">
+				RelativePath="..\..\..\Common\Packets\CGEnterScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEnvRequest.cpp">
+				RelativePath="..\..\..\Common\Packets\CGEnvRequest.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEventRequest.cpp">
+				RelativePath="..\..\..\Common\Packets\CGEventRequest.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeApplyI.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeApplyI.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeCancel.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeCancel.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeOkIII.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeOkIII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeReplyI.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeReplyI.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchItemII.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchItemII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchLock.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchLock.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchMoneyII.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchMoneyII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExecuteScript.cpp">
+				RelativePath="..\..\..\Common\Packets\CGExecuteScript.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGFinger.cpp">
+				RelativePath="..\..\..\Common\Packets\CGFinger.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGemCompound.cpp">
+				RelativePath="..\..\..\Common\Packets\CGGemCompound.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuild.cpp">
+				RelativePath="..\..\..\Common\Packets\CGGuild.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuildApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGGuildApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuildJoin.cpp">
+				RelativePath="..\..\..\Common\Packets\CGGuildJoin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGHeartBeat.cpp">
+				RelativePath="..\..\..\Common\Packets\CGHeartBeat.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGIssuePetPlacard.cpp">
+				RelativePath="..\..\..\Common\Packets\CGIssuePetPlacard.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGItemSynch.cpp">
+				RelativePath="..\..\..\Common\Packets\CGItemSynch.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGLeaveScene.cpp">
+				RelativePath="..\..\..\Common\Packets\CGLeaveScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGLockTarget.cpp">
+				RelativePath="..\..\..\Common\Packets\CGLockTarget.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMail.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMail.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGManipulatePet.cpp">
+				RelativePath="..\..\..\Common\Packets\CGManipulatePet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMinorPasswd.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMinorPasswd.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionAbandon.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionAbandon.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionAccept.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionAccept.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionCheck.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionCheck.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionContinue.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionContinue.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionRefuse.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionRefuse.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionSubmit.cpp">
+				RelativePath="..\..\..\Common\Packets\CGMissionSubmit.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGModifySetting.cpp">
+				RelativePath="..\..\..\Common\Packets\CGModifySetting.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGOpenItemBox.cpp">
+				RelativePath="..\..\..\Common\Packets\CGOpenItemBox.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGOtherEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\CGOtherEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPackage_SwapItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPackage_SwapItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPackUpPacket.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPackUpPacket.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPickBoxItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPickBoxItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerCallOfResult.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerCallOfResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerDieResult.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerDieResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireItemList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireItemList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireShopList.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireShopList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAskForRecord.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAskForRecord.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyShop.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyShop.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopDesc.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopDesc.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopEstablish.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopEstablish.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopFavorite.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopFavorite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopMoney.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopMoney.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopName.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopName.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopOnSale.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopOnSale.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopOpenStall.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopOpenStall.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopPartner.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopPartner.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopSaleOut.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopSaleOut.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopSize.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopSize.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopType.cpp">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopType.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGRelation.cpp">
+				RelativePath="..\..\..\Common\Packets\CGRelation.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGRemoveGem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGRemoveGem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqLevelUp.cpp">
+				RelativePath="..\..\..\Common\Packets\CGReqLevelUp.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqManualAttr.cpp">
+				RelativePath="..\..\..\Common\Packets\CGReqManualAttr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqResetAttr.cpp">
+				RelativePath="..\..\..\Common\Packets\CGReqResetAttr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReturnTeamFollow.cpp">
+				RelativePath="..\..\..\Common\Packets\CGReturnTeamFollow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSetMoodToHead.cpp">
+				RelativePath="..\..\..\Common\Packets\CGSetMoodToHead.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSetPetAttrib.cpp">
+				RelativePath="..\..\..\Common\Packets\CGSetPetAttrib.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopBuy.cpp">
+				RelativePath="..\..\..\Common\Packets\CGShopBuy.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopClose.cpp">
+				RelativePath="..\..\..\Common\Packets\CGShopClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopRepair.cpp">
+				RelativePath="..\..\..\Common\Packets\CGShopRepair.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopSell.cpp">
+				RelativePath="..\..\..\Common\Packets\CGShopSell.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\CGSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSplitItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGSplitItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallAddItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallAddItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallBuy.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallBuy.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallClose.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallDefaultPage.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallDefaultPage.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallEstablish.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallEstablish.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallItemPrice.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallItemPrice.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallOpen.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallOpen.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallRemoveItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallRemoveItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallShopName.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStallShopName.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStopTeamFollow.cpp">
+				RelativePath="..\..\..\Common\Packets\CGStopTeamFollow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamAppoint.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamAppoint.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamDismiss.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamDismiss.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamKick.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamKick.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamLeaderRetInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamLeaderRetInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamLeave.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamLeave.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamRetApply.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamRetApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamRetInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTeamRetInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTest.cpp">
+				RelativePath="..\..\..\Common\Packets\CGTest.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUnEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUnEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseAbility.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUseAbility.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUseEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseEquipSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUseEquipSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseGem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUseGem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseItem.cpp">
+				RelativePath="..\..\..\Common\Packets\CGUseItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCharList.cpp">
+				RelativePath="..\..\..\Common\Packets\CLAskCharList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCharLogin.cpp">
+				RelativePath="..\..\..\Common\Packets\CLAskCharLogin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCreateChar.cpp">
+				RelativePath="..\..\..\Common\Packets\CLAskCreateChar.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskDeleteChar.cpp">
+				RelativePath="..\..\..\Common\Packets\CLAskDeleteChar.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskLogin.cpp">
+				RelativePath="..\..\..\Common\Packets\CLAskLogin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLConnect.cpp">
+				RelativePath="..\..\..\Common\Packets\CLConnect.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Result.cpp">
+				RelativePath="..\..\..\Common\GameDefine_Result.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_MinorPasswd.cpp">
+				RelativePath="..\..\..\Common\GameStruct_MinorPasswd.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Script.cpp">
+				RelativePath="..\..\..\Common\GameStruct_Script.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbandonAbility.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbandonAbility.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityAction.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilityAction.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityExp.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilityExp.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityLevel.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilityLevel.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilityResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilitySucc.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilitySucc.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityTeacherInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAbilityTeacherInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAddCanPickMissionItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAddCanPickMissionItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAddLockObj.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAddLockObj.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCArrive.cpp">
+				RelativePath="..\..\..\Common\Packets\GCArrive.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAskTeamFollow.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAskTeamFollow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAttack.cpp">
+				RelativePath="..\..\..\Common\Packets\GCAttack.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankAcquireList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankAcquireList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankAddItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankAddItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankBegin.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankBegin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankItemInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankItemInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankMoney.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankMoney.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankRemoveItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankRemoveItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankSwapItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBankSwapItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBBSMessages.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBBSMessages.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBoxItemList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCBoxItemList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCanPickMissionItemList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCanPickMissionItemList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChannelError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCChannelError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChannelResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCChannelResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharAction.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharAction.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharAllTitles.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharAllTitles.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharBaseAttrib.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharBaseAttrib.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharBUFF.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharBUFF.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharDirectImpact.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharDirectImpact.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharDoAction.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharDoAction.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharEquipment.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharEquipment.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharFirstLogin.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharFirstLogin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharIdle.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharIdle.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharImpactListUpdate.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharImpactListUpdate.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharJump.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharJump.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharModifyAction.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharModifyAction.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharMove.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharMove.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharMoveResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharMoveResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_CreateBullet.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_CreateBullet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather_Modify.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather_Modify.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead_Modify.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead_Modify.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Missed.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Missed.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Send.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Send.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharStopAction.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCharStopAction.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChat.cpp">
+				RelativePath="..\..\..\Common\Packets\GCChat.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityAttr.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCityAttr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCityError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityNotify.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCityNotify.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCConnect.cpp">
+				RelativePath="..\..\..\Common\Packets\GCConnect.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCoolDownUpdate.cpp">
+				RelativePath="..\..\..\Common\Packets\GCCoolDownUpdate.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDelObject.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDelObject.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAbilityInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailAbilityInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAttrib.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailAttrib.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAttrib_Pet.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailAttrib_Pet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailBUFF.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailBUFF.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailEquipList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailEquipList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailHealsAndDamages.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailHealsAndDamages.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailImpactListUpdate.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailImpactListUpdate.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailSkillList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailSkillList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailSubEffectList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailSubEffectList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailXinFaList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDetailXinFaList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDie.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDie.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDiscardEquipResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDiscardEquipResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDiscardItemResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCDiscardItemResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCEnterScene.cpp">
+				RelativePath="..\..\..\Common\Packets\GCEnterScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCErrorAttack.cpp">
+				RelativePath="..\..\..\Common\Packets\GCErrorAttack.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCErrorSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\GCErrorSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeApplyI.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeApplyI.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeCancel.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeCancel.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeEstablishI.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeEstablishI.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSuccessIII.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSuccessIII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchConfirmII.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchConfirmII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchII.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchII.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchLock.cpp">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchLock.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCFinger.cpp">
+				RelativePath="..\..\..\Common\Packets\GCFinger.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuild.cpp">
+				RelativePath="..\..\..\Common\Packets\GCGuild.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildApply.cpp">
+				RelativePath="..\..\..\Common\Packets\GCGuildApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCGuildError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildReturn.cpp">
+				RelativePath="..\..\..\Common\Packets\GCGuildReturn.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCItemInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCItemList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemSynch.cpp">
+				RelativePath="..\..\..\Common\Packets\GCItemSynch.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCJoinMenpai.cpp">
+				RelativePath="..\..\..\Common\Packets\GCJoinMenpai.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLeaveScene.cpp">
+				RelativePath="..\..\..\Common\Packets\GCLeaveScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLevelUp.cpp">
+				RelativePath="..\..\..\Common\Packets\GCLevelUp.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLevelUpResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCLevelUpResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMail.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMail.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCManipulatePetRet.cpp">
+				RelativePath="..\..\..\Common\Packets\GCManipulatePetRet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCManualAttrResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCManualAttrResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMenpaiInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMenpaiInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMinorPasswd.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMinorPasswd.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionAdd.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMissionAdd.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMissionList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionModify.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMissionModify.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionRemove.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMissionRemove.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMissionResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCModifySpeed.cpp">
+				RelativePath="..\..\..\Common\Packets\GCModifySpeed.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMonsterRealMove.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMonsterRealMove.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMonsterSpeak.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMonsterSpeak.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMyBagList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCMyBagList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewItemBox.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewItemBox.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster_Death.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster_Death.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster_Move.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster_Move.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet_Death.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPet_Death.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet_Move.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPet_Move.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlatform.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPlatform.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Death.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Death.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Move.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Move.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPortal.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewPortal.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewSkillObj.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewSkillObj.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewSpecial.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNewSpecial.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyChangeScene.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNotifyChangeScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNotifyEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyGoodBad.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNotifyGoodBad.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyMail.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNotifyMail.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyTeamInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCNotifyTeamInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCObjTeleport.cpp">
+				RelativePath="..\..\..\Common\Packets\GCObjTeleport.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOperateResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCOperateResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherAttack.cpp">
+				RelativePath="..\..\..\Common\Packets\GCOtherAttack.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherEquip.cpp">
+				RelativePath="..\..\..\Common\Packets\GCOtherEquip.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\GCOtherSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPackage_SwapItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPackage_SwapItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPackUpPacket.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPackUpPacket.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPetPlacardList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPetPlacardList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPickResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPickResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerCallOf.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerCallOf.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerDie.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerDie.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerRealMove.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerRealMove.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerRelive.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerRelive.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopAcquireShopList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopAcquireShopList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopApply.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopBuyShop.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopBuyShop.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopEstablish.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopEstablish.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopMoney.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopMoney.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopOnSale.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopOnSale.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopOpenStall.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopOpenStall.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopRecordList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopRecordList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopSaleOut.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopSaleOut.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopStallStatus.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopStallStatus.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopType.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopType.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdateFavorite.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdateFavorite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdatePartners.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdatePartners.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPrescription.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPrescription.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPrivateInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCPrivateInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRelation.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRelation.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemoveCanPickMissionItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRemoveCanPickMissionItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemoveGemResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRemoveGemResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemovePet.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRemovePet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCReqResetAttrResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCReqResetAttrResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetChangeScene.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRetChangeScene.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetMissionDesc.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRetMissionDesc.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetSetting.cpp">
+				RelativePath="..\..\..\Common\Packets\GCRetSetting.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCReturnTeamFollow.cpp">
+				RelativePath="..\..\..\Common\Packets\GCReturnTeamFollow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCScriptCommand.cpp">
+				RelativePath="..\..\..\Common\Packets\GCScriptCommand.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopBuy.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopBuy.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopMerchandiseList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopMerchandiseList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopRepair.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopRepair.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopSell.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopSell.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopSoldList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopSoldList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopUpdateMerchandiseList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCShopUpdateMerchandiseList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSkill.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSkill.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSkillPrepare.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSkillPrepare.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSpecialObj_ActNow.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSpecialObj_ActNow.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSpecialObj_FadeOut.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSpecialObj_FadeOut.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSplitItemResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSplitItemResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallAddItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallAddItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallApply.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallBuy.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallBuy.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallClose.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallEstablish.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallEstablish.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallItemPrice.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallItemPrice.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallOpen.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallOpen.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallRemoveItem.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStallRemoveItem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStudyXinfa.cpp">
+				RelativePath="..\..\..\Common\Packets\GCStudyXinfa.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSystemMsg.cpp">
+				RelativePath="..\..\..\Common\Packets\GCSystemMsg.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTargetListAndHitFlags.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTargetListAndHitFlags.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamAskApply.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamAskApply.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamAskInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamAskInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamError.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamFollowErr.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamFollowErr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamFollowList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamFollowList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamLeaderAskInvite.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamLeaderAskInvite.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamList.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamMemberInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamMemberInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTeamResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTest.cpp">
+				RelativePath="..\..\..\Common\Packets\GCTest.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUICommand.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUICommand.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUnEquipResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUnEquipResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseEquipResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUseEquipResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseEquipSkillResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUseEquipSkillResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseGemResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUseGemResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseItemResult.cpp">
+				RelativePath="..\..\..\Common\Packets\GCUseItemResult.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCWorldTime.cpp">
+				RelativePath="..\..\..\Common\Packets\GCWorldTime.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCXinfaStudyInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GCXinfaStudyInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityApplyNewCity.cpp">
+				RelativePath="..\..\..\Common\Packets\GWCityApplyNewCity.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityAskInitInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\GWCityAskInitInfo.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityClose.cpp">
+				RelativePath="..\..\..\Common\Packets\GWCityClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityCloseSuccess.cpp">
+				RelativePath="..\..\..\Common\Packets\GWCityCloseSuccess.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityOpt.cpp">
+				RelativePath="..\..\..\Common\Packets\GWCityOpt.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCharList.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetCharList.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCharLogin.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetCharLogin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetConnect.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetConnect.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCreateChar.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetCreateChar.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetDeleteChar.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetDeleteChar.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetLogin.cpp">
+				RelativePath="..\..\..\Common\Packets\LCRetLogin.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCStatus.cpp">
+				RelativePath="..\..\..\Common\Packets\LCStatus.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityApplyNewCity.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityApplyNewCity.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityAttr.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityAttr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityClose.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityClose.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityCloseSuccess.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityCloseSuccess.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityError.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityError.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityInitInfo.cpp">
+				RelativePath="..\..\..\Common\Packets\WGCityInitInfo.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath="..\..\..\Common\Packets\BLRetAuth.cpp">
+				RelativePath="..\..\..\Common\Packets\BLRetAuth.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGApplyPrivateInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGApplyPrivateInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskChangeScene.h">
+				RelativePath="..\..\..\Common\Packets\CGAskChangeScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailAbilityInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailAbilityInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailAttrib.h">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailAttrib.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailEquipList.h">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailEquipList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailSkillList.h">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailSkillList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskDetailXinFaList.h">
+				RelativePath="..\..\..\Common\Packets\CGAskDetailXinFaList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskItemInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGAskItemInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskJoinMenpai.h">
+				RelativePath="..\..\..\Common\Packets\CGAskJoinMenpai.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskLeanAbility.h">
+				RelativePath="..\..\..\Common\Packets\CGAskLeanAbility.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskLockObj.h">
+				RelativePath="..\..\..\Common\Packets\CGAskLockObj.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMail.h">
+				RelativePath="..\..\..\Common\Packets\CGAskMail.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMissionDesc.h">
+				RelativePath="..\..\..\Common\Packets\CGAskMissionDesc.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMissionList.h">
+				RelativePath="..\..\..\Common\Packets\CGAskMissionList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskMyBagList.h">
+				RelativePath="..\..\..\Common\Packets\CGAskMyBagList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskPrivateInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGAskPrivateInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskSetting.h">
+				RelativePath="..\..\..\Common\Packets\CGAskSetting.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskStudyXinfa.h">
+				RelativePath="..\..\..\Common\Packets\CGAskStudyXinfa.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamFollow.h">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamFollow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAskTeamMemberInfo.h">
+				RelativePath="..\..\..\Common\Packets\CGAskTeamMemberInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGAttack.h">
+				RelativePath="..\..\..\Common\Packets\CGAttack.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankAcquireList.h">
+				RelativePath="..\..\..\Common\Packets\CGBankAcquireList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankAddItem.h">
+				RelativePath="..\..\..\Common\Packets\CGBankAddItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankClose.h">
+				RelativePath="..\..\..\Common\Packets\CGBankClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankMoney.h">
+				RelativePath="..\..\..\Common\Packets\CGBankMoney.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankRemoveItem.h">
+				RelativePath="..\..\..\Common\Packets\CGBankRemoveItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBankSwapItem.h">
+				RelativePath="..\..\..\Common\Packets\CGBankSwapItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBBSApply.h">
+				RelativePath="..\..\..\Common\Packets\CGBBSApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGBBSSychMessages.h">
+				RelativePath="..\..\..\Common\Packets\CGBBSSychMessages.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelCreate.h">
+				RelativePath="..\..\..\Common\Packets\CGChannelCreate.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelDismiss.h">
+				RelativePath="..\..\..\Common\Packets\CGChannelDismiss.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelInvite.h">
+				RelativePath="..\..\..\Common\Packets\CGChannelInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChannelKick.h">
+				RelativePath="..\..\..\Common\Packets\CGChannelKick.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAllTitles.h">
+				RelativePath="..\..\..\Common\Packets\CGCharAllTitles.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAskBaseAttrib.h">
+				RelativePath="..\..\..\Common\Packets\CGCharAskBaseAttrib.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharAskEquipment.h">
+				RelativePath="..\..\..\Common\Packets\CGCharAskEquipment.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharDefaultEvent.h">
+				RelativePath="..\..\..\Common\Packets\CGCharDefaultEvent.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharIdle.h">
+				RelativePath="..\..\..\Common\Packets\CGCharIdle.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharJump.h">
+				RelativePath="..\..\..\Common\Packets\CGCharJump.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharMoodState.h">
+				RelativePath="..\..\..\Common\Packets\CGCharMoodState.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharMove.h">
+				RelativePath="..\..\..\Common\Packets\CGCharMove.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharPositionWarp.h">
+				RelativePath="..\..\..\Common\Packets\CGCharPositionWarp.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharSit.h">
+				RelativePath="..\..\..\Common\Packets\CGCharSit.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharStopLogic.h">
+				RelativePath="..\..\..\Common\Packets\CGCharStopLogic.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharUpdateCurTitle.h">
+				RelativePath="..\..\..\Common\Packets\CGCharUpdateCurTitle.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCharUseSkill.h">
+				RelativePath="..\..\..\Common\Packets\CGCharUseSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGChat.h">
+				RelativePath="..\..\..\Common\Packets\CGChat.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCityAskAttr.h">
+				RelativePath="..\..\..\Common\Packets\CGCityAskAttr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGCommand.h">
+				RelativePath="..\..\..\Common\Packets\CGCommand.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGConnect.h">
+				RelativePath="..\..\..\Common\Packets\CGConnect.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDiscardEquip.h">
+				RelativePath="..\..\..\Common\Packets\CGDiscardEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDiscardItem.h">
+				RelativePath="..\..\..\Common\Packets\CGDiscardItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDispelBuffReq.h">
+				RelativePath="..\..\..\Common\Packets\CGDispelBuffReq.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGDoEvent.h">
+				RelativePath="..\..\..\Common\Packets\CGDoEvent.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEnterScene.h">
+				RelativePath="..\..\..\Common\Packets\CGEnterScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEnvRequest.h">
+				RelativePath="..\..\..\Common\Packets\CGEnvRequest.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGEventRequest.h">
+				RelativePath="..\..\..\Common\Packets\CGEventRequest.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeApplyI.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeApplyI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeCancel.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeCancel.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeOkIII.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeOkIII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeReplyI.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeReplyI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchItemII.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchItemII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchLock.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchLock.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExchangeSynchMoneyII.h">
+				RelativePath="..\..\..\Common\Packets\CGExchangeSynchMoneyII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGExecuteScript.h">
+				RelativePath="..\..\..\Common\Packets\CGExecuteScript.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGFinger.h">
+				RelativePath="..\..\..\Common\Packets\CGFinger.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGemCompound.h">
+				RelativePath="..\..\..\Common\Packets\CGGemCompound.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuild.h">
+				RelativePath="..\..\..\Common\Packets\CGGuild.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuildApply.h">
+				RelativePath="..\..\..\Common\Packets\CGGuildApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGGuildJoin.h">
+				RelativePath="..\..\..\Common\Packets\CGGuildJoin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGHeartBeat.h">
+				RelativePath="..\..\..\Common\Packets\CGHeartBeat.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGIssuePetPlacard.h">
+				RelativePath="..\..\..\Common\Packets\CGIssuePetPlacard.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGItemSynch.h">
+				RelativePath="..\..\..\Common\Packets\CGItemSynch.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGLeaveScene.h">
+				RelativePath="..\..\..\Common\Packets\CGLeaveScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGLockTarget.h">
+				RelativePath="..\..\..\Common\Packets\CGLockTarget.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMail.h">
+				RelativePath="..\..\..\Common\Packets\CGMail.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGManipulatePet.h">
+				RelativePath="..\..\..\Common\Packets\CGManipulatePet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMinorPasswd.h">
+				RelativePath="..\..\..\Common\Packets\CGMinorPasswd.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionAbandon.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionAbandon.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionAccept.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionAccept.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionCheck.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionCheck.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionContinue.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionContinue.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionRefuse.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionRefuse.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGMissionSubmit.h">
+				RelativePath="..\..\..\Common\Packets\CGMissionSubmit.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGModifySetting.h">
+				RelativePath="..\..\..\Common\Packets\CGModifySetting.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGOpenItemBox.h">
+				RelativePath="..\..\..\Common\Packets\CGOpenItemBox.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGOtherEquip.h">
+				RelativePath="..\..\..\Common\Packets\CGOtherEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPackage_SwapItem.h">
+				RelativePath="..\..\..\Common\Packets\CGPackage_SwapItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPackUpPacket.h">
+				RelativePath="..\..\..\Common\Packets\CGPackUpPacket.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPickBoxItem.h">
+				RelativePath="..\..\..\Common\Packets\CGPickBoxItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerCallOfResult.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerCallOfResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerDieResult.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerDieResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireItemList.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireItemList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireShopList.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAcquireShopList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopApply.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopAskForRecord.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopAskForRecord.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyItem.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyShop.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopBuyShop.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopDesc.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopDesc.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopEstablish.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopEstablish.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopFavorite.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopFavorite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopMoney.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopMoney.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopName.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopName.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopOnSale.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopOnSale.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopOpenStall.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopOpenStall.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopPartner.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopPartner.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopSaleOut.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopSaleOut.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopSize.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopSize.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGPlayerShopType.h">
+				RelativePath="..\..\..\Common\Packets\CGPlayerShopType.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGRelation.h">
+				RelativePath="..\..\..\Common\Packets\CGRelation.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGRemoveGem.h">
+				RelativePath="..\..\..\Common\Packets\CGRemoveGem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqLevelUp.h">
+				RelativePath="..\..\..\Common\Packets\CGReqLevelUp.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqManualAttr.h">
+				RelativePath="..\..\..\Common\Packets\CGReqManualAttr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReqResetAttr.h">
+				RelativePath="..\..\..\Common\Packets\CGReqResetAttr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGReturnTeamFollow.h">
+				RelativePath="..\..\..\Common\Packets\CGReturnTeamFollow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSetMoodToHead.h">
+				RelativePath="..\..\..\Common\Packets\CGSetMoodToHead.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSetPetAttrib.h">
+				RelativePath="..\..\..\Common\Packets\CGSetPetAttrib.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopBuy.h">
+				RelativePath="..\..\..\Common\Packets\CGShopBuy.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopClose.h">
+				RelativePath="..\..\..\Common\Packets\CGShopClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopRepair.h">
+				RelativePath="..\..\..\Common\Packets\CGShopRepair.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGShopSell.h">
+				RelativePath="..\..\..\Common\Packets\CGShopSell.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSkill.h">
+				RelativePath="..\..\..\Common\Packets\CGSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGSplitItem.h">
+				RelativePath="..\..\..\Common\Packets\CGSplitItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallAddItem.h">
+				RelativePath="..\..\..\Common\Packets\CGStallAddItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallApply.h">
+				RelativePath="..\..\..\Common\Packets\CGStallApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallBuy.h">
+				RelativePath="..\..\..\Common\Packets\CGStallBuy.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallClose.h">
+				RelativePath="..\..\..\Common\Packets\CGStallClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallDefaultPage.h">
+				RelativePath="..\..\..\Common\Packets\CGStallDefaultPage.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallEstablish.h">
+				RelativePath="..\..\..\Common\Packets\CGStallEstablish.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallItemPrice.h">
+				RelativePath="..\..\..\Common\Packets\CGStallItemPrice.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallOpen.h">
+				RelativePath="..\..\..\Common\Packets\CGStallOpen.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallRemoveItem.h">
+				RelativePath="..\..\..\Common\Packets\CGStallRemoveItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStallShopName.h">
+				RelativePath="..\..\..\Common\Packets\CGStallShopName.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGStopTeamFollow.h">
+				RelativePath="..\..\..\Common\Packets\CGStopTeamFollow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamApply.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamAppoint.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamAppoint.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamDismiss.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamDismiss.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamInvite.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamKick.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamKick.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamLeaderRetInvite.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamLeaderRetInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamLeave.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamLeave.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamRetApply.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamRetApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTeamRetInvite.h">
+				RelativePath="..\..\..\Common\Packets\CGTeamRetInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGTest.h">
+				RelativePath="..\..\..\Common\Packets\CGTest.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUnEquip.h">
+				RelativePath="..\..\..\Common\Packets\CGUnEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseAbility.h">
+				RelativePath="..\..\..\Common\Packets\CGUseAbility.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseEquip.h">
+				RelativePath="..\..\..\Common\Packets\CGUseEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseEquipSkill.h">
+				RelativePath="..\..\..\Common\Packets\CGUseEquipSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseGem.h">
+				RelativePath="..\..\..\Common\Packets\CGUseGem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CGUseItem.h">
+				RelativePath="..\..\..\Common\Packets\CGUseItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCharList.h">
+				RelativePath="..\..\..\Common\Packets\CLAskCharList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCharLogin.h">
+				RelativePath="..\..\..\Common\Packets\CLAskCharLogin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskCreateChar.h">
+				RelativePath="..\..\..\Common\Packets\CLAskCreateChar.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskDeleteChar.h">
+				RelativePath="..\..\..\Common\Packets\CLAskDeleteChar.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLAskLogin.h">
+				RelativePath="..\..\..\Common\Packets\CLAskLogin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\CLConnect.h">
+				RelativePath="..\..\..\Common\Packets\CLConnect.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\ExchangeMsgDefine.h">
+				RelativePath="..\..\..\Common\Packets\ExchangeMsgDefine.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_MinorPasswd.h">
+				RelativePath="..\..\..\Common\GameStruct_MinorPasswd.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Script.h">
+				RelativePath="..\..\..\Common\GameStruct_Script.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbandonAbility.h">
+				RelativePath="..\..\..\Common\Packets\GCAbandonAbility.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityAction.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilityAction.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityExp.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilityExp.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityLevel.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilityLevel.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityResult.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilityResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilitySucc.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilitySucc.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAbilityTeacherInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCAbilityTeacherInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAddCanPickMissionItem.h">
+				RelativePath="..\..\..\Common\Packets\GCAddCanPickMissionItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAddLockObj.h">
+				RelativePath="..\..\..\Common\Packets\GCAddLockObj.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCArrive.h">
+				RelativePath="..\..\..\Common\Packets\GCArrive.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAskTeamFollow.h">
+				RelativePath="..\..\..\Common\Packets\GCAskTeamFollow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCAttack.h">
+				RelativePath="..\..\..\Common\Packets\GCAttack.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankAcquireList.h">
+				RelativePath="..\..\..\Common\Packets\GCBankAcquireList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankAddItem.h">
+				RelativePath="..\..\..\Common\Packets\GCBankAddItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankBegin.h">
+				RelativePath="..\..\..\Common\Packets\GCBankBegin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankItemInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCBankItemInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankMoney.h">
+				RelativePath="..\..\..\Common\Packets\GCBankMoney.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankRemoveItem.h">
+				RelativePath="..\..\..\Common\Packets\GCBankRemoveItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBankSwapItem.h">
+				RelativePath="..\..\..\Common\Packets\GCBankSwapItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBBSMessages.h">
+				RelativePath="..\..\..\Common\Packets\GCBBSMessages.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCBoxItemList.h">
+				RelativePath="..\..\..\Common\Packets\GCBoxItemList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCanPickMissionItemList.h">
+				RelativePath="..\..\..\Common\Packets\GCCanPickMissionItemList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChannelError.h">
+				RelativePath="..\..\..\Common\Packets\GCChannelError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChannelResult.h">
+				RelativePath="..\..\..\Common\Packets\GCChannelResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharAction.h">
+				RelativePath="..\..\..\Common\Packets\GCCharAction.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharAllTitles.h">
+				RelativePath="..\..\..\Common\Packets\GCCharAllTitles.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharBaseAttrib.h">
+				RelativePath="..\..\..\Common\Packets\GCCharBaseAttrib.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharBUFF.h">
+				RelativePath="..\..\..\Common\Packets\GCCharBUFF.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharDirectImpact.h">
+				RelativePath="..\..\..\Common\Packets\GCCharDirectImpact.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharDoAction.h">
+				RelativePath="..\..\..\Common\Packets\GCCharDoAction.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharEquipment.h">
+				RelativePath="..\..\..\Common\Packets\GCCharEquipment.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharFirstLogin.h">
+				RelativePath="..\..\..\Common\Packets\GCCharFirstLogin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharIdle.h">
+				RelativePath="..\..\..\Common\Packets\GCCharIdle.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharImpactListUpdate.h">
+				RelativePath="..\..\..\Common\Packets\GCCharImpactListUpdate.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharJump.h">
+				RelativePath="..\..\..\Common\Packets\GCCharJump.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharModifyAction.h">
+				RelativePath="..\..\..\Common\Packets\GCCharModifyAction.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharMove.h">
+				RelativePath="..\..\..\Common\Packets\GCCharMove.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharMoveResult.h">
+				RelativePath="..\..\..\Common\Packets\GCCharMoveResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_CreateBullet.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_CreateBullet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather_Modify.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Gather_Modify.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead_Modify.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Lead_Modify.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Missed.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Missed.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharSkill_Send.h">
+				RelativePath="..\..\..\Common\Packets\GCCharSkill_Send.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCharStopAction.h">
+				RelativePath="..\..\..\Common\Packets\GCCharStopAction.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCChat.h">
+				RelativePath="..\..\..\Common\Packets\GCChat.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityAttr.h">
+				RelativePath="..\..\..\Common\Packets\GCCityAttr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityError.h">
+				RelativePath="..\..\..\Common\Packets\GCCityError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCityNotify.h">
+				RelativePath="..\..\..\Common\Packets\GCCityNotify.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCConnect.h">
+				RelativePath="..\..\..\Common\Packets\GCConnect.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCCoolDownUpdate.h">
+				RelativePath="..\..\..\Common\Packets\GCCoolDownUpdate.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDelObject.h">
+				RelativePath="..\..\..\Common\Packets\GCDelObject.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAbilityInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailAbilityInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAttrib.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailAttrib.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailAttrib_Pet.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailAttrib_Pet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailBUFF.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailBUFF.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailEquipList.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailEquipList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailHealsAndDamages.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailHealsAndDamages.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailImpactListUpdate.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailImpactListUpdate.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailSkillList.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailSkillList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailSubEffectList.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailSubEffectList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDetailXinFaList.h">
+				RelativePath="..\..\..\Common\Packets\GCDetailXinFaList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDie.h">
+				RelativePath="..\..\..\Common\Packets\GCDie.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDiscardEquipResult.h">
+				RelativePath="..\..\..\Common\Packets\GCDiscardEquipResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCDiscardItemResult.h">
+				RelativePath="..\..\..\Common\Packets\GCDiscardItemResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCEnterScene.h">
+				RelativePath="..\..\..\Common\Packets\GCEnterScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCErrorAttack.h">
+				RelativePath="..\..\..\Common\Packets\GCErrorAttack.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCErrorSkill.h">
+				RelativePath="..\..\..\Common\Packets\GCErrorSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeApplyI.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeApplyI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeCancel.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeCancel.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeError.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeEstablishI.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeEstablishI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSuccessIII.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSuccessIII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchConfirmII.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchConfirmII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchII.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchII.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCExchangeSynchLock.h">
+				RelativePath="..\..\..\Common\Packets\GCExchangeSynchLock.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCFinger.h">
+				RelativePath="..\..\..\Common\Packets\GCFinger.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuild.h">
+				RelativePath="..\..\..\Common\Packets\GCGuild.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildApply.h">
+				RelativePath="..\..\..\Common\Packets\GCGuildApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildError.h">
+				RelativePath="..\..\..\Common\Packets\GCGuildError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCGuildReturn.h">
+				RelativePath="..\..\..\Common\Packets\GCGuildReturn.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemBoxChangeStage.h">
+				RelativePath="..\..\..\Common\Packets\GCItemBoxChangeStage.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCItemInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemList.h">
+				RelativePath="..\..\..\Common\Packets\GCItemList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCItemSynch.h">
+				RelativePath="..\..\..\Common\Packets\GCItemSynch.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCJoinMenpai.h">
+				RelativePath="..\..\..\Common\Packets\GCJoinMenpai.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLeaveScene.h">
+				RelativePath="..\..\..\Common\Packets\GCLeaveScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLevelUp.h">
+				RelativePath="..\..\..\Common\Packets\GCLevelUp.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCLevelUpResult.h">
+				RelativePath="..\..\..\Common\Packets\GCLevelUpResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMail.h">
+				RelativePath="..\..\..\Common\Packets\GCMail.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCManipulatePetRet.h">
+				RelativePath="..\..\..\Common\Packets\GCManipulatePetRet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCManualAttrResult.h">
+				RelativePath="..\..\..\Common\Packets\GCManualAttrResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMenpaiInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCMenpaiInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMinorPasswd.h">
+				RelativePath="..\..\..\Common\Packets\GCMinorPasswd.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionAdd.h">
+				RelativePath="..\..\..\Common\Packets\GCMissionAdd.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionList.h">
+				RelativePath="..\..\..\Common\Packets\GCMissionList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionModify.h">
+				RelativePath="..\..\..\Common\Packets\GCMissionModify.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionRemove.h">
+				RelativePath="..\..\..\Common\Packets\GCMissionRemove.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMissionResult.h">
+				RelativePath="..\..\..\Common\Packets\GCMissionResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCModifySpeed.h">
+				RelativePath="..\..\..\Common\Packets\GCModifySpeed.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMonsterRealMove.h">
+				RelativePath="..\..\..\Common\Packets\GCMonsterRealMove.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMonsterSpeak.h">
+				RelativePath="..\..\..\Common\Packets\GCMonsterSpeak.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCMyBagList.h">
+				RelativePath="..\..\..\Common\Packets\GCMyBagList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewItem.h">
+				RelativePath="..\..\..\Common\Packets\GCNewItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewItemBox.h">
+				RelativePath="..\..\..\Common\Packets\GCNewItemBox.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster.h">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster_Death.h">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster_Death.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewMonster_Move.h">
+				RelativePath="..\..\..\Common\Packets\GCNewMonster_Move.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet_Death.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPet_Death.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPet_Move.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPet_Move.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlatform.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPlatform.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Death.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Death.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Move.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPlayer_Move.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewPortal.h">
+				RelativePath="..\..\..\Common\Packets\GCNewPortal.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewSkillObj.h">
+				RelativePath="..\..\..\Common\Packets\GCNewSkillObj.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNewSpecial.h">
+				RelativePath="..\..\..\Common\Packets\GCNewSpecial.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyChangeScene.h">
+				RelativePath="..\..\..\Common\Packets\GCNotifyChangeScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyEquip.h">
+				RelativePath="..\..\..\Common\Packets\GCNotifyEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyGoodBad.h">
+				RelativePath="..\..\..\Common\Packets\GCNotifyGoodBad.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyMail.h">
+				RelativePath="..\..\..\Common\Packets\GCNotifyMail.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCNotifyTeamInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCNotifyTeamInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCObjTeleport.h">
+				RelativePath="..\..\..\Common\Packets\GCObjTeleport.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOperateResult.h">
+				RelativePath="..\..\..\Common\Packets\GCOperateResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherAttack.h">
+				RelativePath="..\..\..\Common\Packets\GCOtherAttack.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherEquip.h">
+				RelativePath="..\..\..\Common\Packets\GCOtherEquip.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCOtherSkill.h">
+				RelativePath="..\..\..\Common\Packets\GCOtherSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPackage_SwapItem.h">
+				RelativePath="..\..\..\Common\Packets\GCPackage_SwapItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPackUpPacket.h">
+				RelativePath="..\..\..\Common\Packets\GCPackUpPacket.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPetPlacardList.h">
+				RelativePath="..\..\..\Common\Packets\GCPetPlacardList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPickResult.h">
+				RelativePath="..\..\..\Common\Packets\GCPickResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerCallOf.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerCallOf.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerDie.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerDie.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerRealMove.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerRealMove.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerRelive.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerRelive.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopAcquireShopList.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopAcquireShopList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopApply.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopBuyShop.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopBuyShop.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopError.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopEstablish.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopEstablish.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopMoney.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopMoney.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopOnSale.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopOnSale.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopOpenStall.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopOpenStall.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopRecordList.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopRecordList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopSaleOut.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopSaleOut.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopStallStatus.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopStallStatus.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopType.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopType.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdateFavorite.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdateFavorite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdatePartners.h">
+				RelativePath="..\..\..\Common\Packets\GCPlayerShopUpdatePartners.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPrescription.h">
+				RelativePath="..\..\..\Common\Packets\GCPrescription.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCPrivateInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCPrivateInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRelation.h">
+				RelativePath="..\..\..\Common\Packets\GCRelation.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemoveCanPickMissionItem.h">
+				RelativePath="..\..\..\Common\Packets\GCRemoveCanPickMissionItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemoveGemResult.h">
+				RelativePath="..\..\..\Common\Packets\GCRemoveGemResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRemovePet.h">
+				RelativePath="..\..\..\Common\Packets\GCRemovePet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCReqResetAttrResult.h">
+				RelativePath="..\..\..\Common\Packets\GCReqResetAttrResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetChangeScene.h">
+				RelativePath="..\..\..\Common\Packets\GCRetChangeScene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetMissionDesc.h">
+				RelativePath="..\..\..\Common\Packets\GCRetMissionDesc.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCRetSetting.h">
+				RelativePath="..\..\..\Common\Packets\GCRetSetting.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCReturnTeamFollow.h">
+				RelativePath="..\..\..\Common\Packets\GCReturnTeamFollow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCScriptCommand.h">
+				RelativePath="..\..\..\Common\Packets\GCScriptCommand.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopBuy.h">
+				RelativePath="..\..\..\Common\Packets\GCShopBuy.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopMerchandiseList.h">
+				RelativePath="..\..\..\Common\Packets\GCShopMerchandiseList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopRepair.h">
+				RelativePath="..\..\..\Common\Packets\GCShopRepair.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopSell.h">
+				RelativePath="..\..\..\Common\Packets\GCShopSell.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopSoldList.h">
+				RelativePath="..\..\..\Common\Packets\GCShopSoldList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCShopUpdateMerchandiseList.h">
+				RelativePath="..\..\..\Common\Packets\GCShopUpdateMerchandiseList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSkill.h">
+				RelativePath="..\..\..\Common\Packets\GCSkill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSkillPrepare.h">
+				RelativePath="..\..\..\Common\Packets\GCSkillPrepare.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSpecialObj_ActNow.h">
+				RelativePath="..\..\..\Common\Packets\GCSpecialObj_ActNow.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSpecialObj_FadeOut.h">
+				RelativePath="..\..\..\Common\Packets\GCSpecialObj_FadeOut.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSplitItemResult.h">
+				RelativePath="..\..\..\Common\Packets\GCSplitItemResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallAddItem.h">
+				RelativePath="..\..\..\Common\Packets\GCStallAddItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallApply.h">
+				RelativePath="..\..\..\Common\Packets\GCStallApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallBuy.h">
+				RelativePath="..\..\..\Common\Packets\GCStallBuy.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallClose.h">
+				RelativePath="..\..\..\Common\Packets\GCStallClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallError.h">
+				RelativePath="..\..\..\Common\Packets\GCStallError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallEstablish.h">
+				RelativePath="..\..\..\Common\Packets\GCStallEstablish.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallItemPrice.h">
+				RelativePath="..\..\..\Common\Packets\GCStallItemPrice.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallOpen.h">
+				RelativePath="..\..\..\Common\Packets\GCStallOpen.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStallRemoveItem.h">
+				RelativePath="..\..\..\Common\Packets\GCStallRemoveItem.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCStudyXinfa.h">
+				RelativePath="..\..\..\Common\Packets\GCStudyXinfa.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCSystemMsg.h">
+				RelativePath="..\..\..\Common\Packets\GCSystemMsg.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTargetListAndHitFlags.h">
+				RelativePath="..\..\..\Common\Packets\GCTargetListAndHitFlags.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamAskApply.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamAskApply.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamAskInvite.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamAskInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamError.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamFollowErr.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamFollowErr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamFollowList.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamFollowList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamLeaderAskInvite.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamLeaderAskInvite.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamList.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamMemberInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamMemberInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTeamResult.h">
+				RelativePath="..\..\..\Common\Packets\GCTeamResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCTest.h">
+				RelativePath="..\..\..\Common\Packets\GCTest.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUICommand.h">
+				RelativePath="..\..\..\Common\Packets\GCUICommand.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUnEquipResult.h">
+				RelativePath="..\..\..\Common\Packets\GCUnEquipResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseEquipResult.h">
+				RelativePath="..\..\..\Common\Packets\GCUseEquipResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseEquipSkillResult.h">
+				RelativePath="..\..\..\Common\Packets\GCUseEquipSkillResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseGemResult.h">
+				RelativePath="..\..\..\Common\Packets\GCUseGemResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCUseItemResult.h">
+				RelativePath="..\..\..\Common\Packets\GCUseItemResult.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCWorldTime.h">
+				RelativePath="..\..\..\Common\Packets\GCWorldTime.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GCXinfaStudyInfo.h">
+				RelativePath="..\..\..\Common\Packets\GCXinfaStudyInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityApplyNewCity.h">
+				RelativePath="..\..\..\Common\Packets\GWCityApplyNewCity.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityAskInitInfo.h">
+				RelativePath="..\..\..\Common\Packets\GWCityAskInitInfo.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityClose.h">
+				RelativePath="..\..\..\Common\Packets\GWCityClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityCloseSuccess.h">
+				RelativePath="..\..\..\Common\Packets\GWCityCloseSuccess.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\GWCityOpt.h">
+				RelativePath="..\..\..\Common\Packets\GWCityOpt.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\ItemSynchStructDefine.h">
+				RelativePath="..\..\..\Common\Packets\ItemSynchStructDefine.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCharList.h">
+				RelativePath="..\..\..\Common\Packets\LCRetCharList.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCharLogin.h">
+				RelativePath="..\..\..\Common\Packets\LCRetCharLogin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetConnect.h">
+				RelativePath="..\..\..\Common\Packets\LCRetConnect.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetCreateChar.h">
+				RelativePath="..\..\..\Common\Packets\LCRetCreateChar.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetDeleteChar.h">
+				RelativePath="..\..\..\Common\Packets\LCRetDeleteChar.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCRetLogin.h">
+				RelativePath="..\..\..\Common\Packets\LCRetLogin.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\LCStatus.h">
+				RelativePath="..\..\..\Common\Packets\LCStatus.h"
+				>
 			</File>
 			<File
-				RelativePath=".\resource.h">
+				RelativePath=".\resource.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityApplyNewCity.h">
+				RelativePath="..\..\..\Common\Packets\WGCityApplyNewCity.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityAttr.h">
+				RelativePath="..\..\..\Common\Packets\WGCityAttr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityClose.h">
+				RelativePath="..\..\..\Common\Packets\WGCityClose.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityCloseSuccess.h">
+				RelativePath="..\..\..\Common\Packets\WGCityCloseSuccess.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityError.h">
+				RelativePath="..\..\..\Common\Packets\WGCityError.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packets\WGCityInitInfo.h">
+				RelativePath="..\..\..\Common\Packets\WGCityInitInfo.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Common">
+			Name="Common"
+			>
 			<File
-				RelativePath="..\..\..\Common\Assertx.cpp">
+				RelativePath="..\..\..\Common\Assertx.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Assertx.h">
+				RelativePath="..\..\..\Common\Assertx.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\BuffImpactMgr.cpp">
+				RelativePath="..\..\..\Common\BuffImpactMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\BuffImpactMgr.h">
+				RelativePath="..\..\..\Common\BuffImpactMgr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\CampDataMgr.cpp">
+				RelativePath="..\..\..\Common\CampDataMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\CampDataMgr.h">
+				RelativePath="..\..\..\Common\CampDataMgr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\DB_Struct.cpp">
+				RelativePath="..\..\..\Common\DB_Struct.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\DB_Struct.h">
+				RelativePath="..\..\..\Common\DB_Struct.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\DirectlyImpactMgr.cpp">
+				RelativePath="..\..\..\Common\DirectlyImpactMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\DirectlyImpactMgr.h">
+				RelativePath="..\..\..\Common\DirectlyImpactMgr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\FileAPI.h">
+				RelativePath="..\..\..\Common\FileAPI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\FileDataMgr.cpp">
+				RelativePath="..\..\..\Common\FileDataMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\FileDataMgr.h">
+				RelativePath="..\..\..\Common\FileDataMgr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine.h">
+				RelativePath="..\..\..\Common\GameDefine.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine2.h">
+				RelativePath="..\..\..\Common\GameDefine2.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Attr.h">
+				RelativePath="..\..\..\Common\GameDefine_Attr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Guild.h">
+				RelativePath="..\..\..\Common\GameDefine_Guild.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Item.h">
+				RelativePath="..\..\..\Common\GameDefine_Item.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_PlayerShop.h">
+				RelativePath="..\..\..\Common\GameDefine_PlayerShop.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Result.h">
+				RelativePath="..\..\..\Common\GameDefine_Result.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameDefine_Scene.h">
+				RelativePath="..\..\..\Common\GameDefine_Scene.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct.cpp">
+				RelativePath="..\..\..\Common\GameStruct.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct.h">
+				RelativePath="..\..\..\Common\GameStruct.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Finger.cpp">
+				RelativePath="..\..\..\Common\GameStruct_Finger.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Finger.h">
+				RelativePath="..\..\..\Common\GameStruct_Finger.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Guild.h">
+				RelativePath="..\..\..\Common\GameStruct_Guild.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Item.h">
+				RelativePath="..\..\..\Common\GameStruct_Item.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Pet.cpp">
+				RelativePath="..\..\..\Common\GameStruct_Pet.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Pet.h">
+				RelativePath="..\..\..\Common\GameStruct_Pet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Relation.cpp">
+				RelativePath="..\..\..\Common\GameStruct_Relation.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Relation.h">
+				RelativePath="..\..\..\Common\GameStruct_Relation.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Skill.h">
+				RelativePath="..\..\..\Common\GameStruct_Skill.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameStruct_Team.h">
+				RelativePath="..\..\..\Common\GameStruct_Team.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameUtil.cpp">
+				RelativePath="..\..\..\Common\GameUtil.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\GameUtil.h">
+				RelativePath="..\..\..\Common\GameUtil.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\OResultDef.h">
+				RelativePath="..\..\..\Common\OResultDef.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Packet.h">
+				RelativePath="..\..\..\Common\Packet.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\PacketDefine.h">
+				RelativePath="..\..\..\Common\PacketDefine.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\PacketFactory.h">
+				RelativePath="..\..\..\Common\PacketFactory.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\PacketFactoryManager.cpp">
+				RelativePath="..\..\..\Common\PacketFactoryManager.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\PacketFactoryManager.h">
+				RelativePath="..\..\..\Common\PacketFactoryManager.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\PlayerStatus.h">
+				RelativePath="..\..\..\Common\PlayerStatus.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Rand.cpp">
+				RelativePath="..\..\..\Common\Rand.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Rand.h">
+				RelativePath="..\..\..\Common\Rand.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\ScriptCommandStruct.cpp">
+				RelativePath="..\..\..\Common\ScriptCommandStruct.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\ScriptCommandStruct.h">
+				RelativePath="..\..\..\Common\ScriptCommandStruct.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\SkillDataMgr.cpp">
+				RelativePath="..\..\..\Common\SkillDataMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\SkillDataMgr.h">
+				RelativePath="..\..\..\Common\SkillDataMgr.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Socket.h">
+				RelativePath="..\..\..\Common\Socket.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\SocketAPI.h">
+				RelativePath="..\..\..\Common\SocketAPI.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\SocketInputStream.h">
+				RelativePath="..\..\..\Common\SocketInputStream.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\SocketOutputStream.h">
+				RelativePath="..\..\..\Common\SocketOutputStream.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Type.h">
+				RelativePath="..\..\..\Common\Type.h"
+				>
 			</File>
 			<Filter
-				Name="Net">
+				Name="Net"
+				>
 				<File
-					RelativePath="..\..\..\Common\Net\FileAPI.cpp">
+					RelativePath="..\..\..\Common\Net\FileAPI.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\FileAPI.h">
+					RelativePath="..\..\..\Common\Net\FileAPI.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\Packet.cpp">
+					RelativePath="..\..\..\Common\Net\Packet.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\Packet.h">
+					RelativePath="..\..\..\Common\Net\Packet.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\ServerSocket.cpp">
+					RelativePath="..\..\..\Common\Net\ServerSocket.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\ServerSocket.h">
+					RelativePath="..\..\..\Common\Net\ServerSocket.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\Socket.cpp">
+					RelativePath="..\..\..\Common\Net\Socket.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\Socket.h">
+					RelativePath="..\..\..\Common\Net\Socket.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketAPI.cpp">
+					RelativePath="..\..\..\Common\Net\SocketAPI.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketAPI.h">
+					RelativePath="..\..\..\Common\Net\SocketAPI.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketInputStream.cpp">
+					RelativePath="..\..\..\Common\Net\SocketInputStream.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketInputStream.h">
+					RelativePath="..\..\..\Common\Net\SocketInputStream.h"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketOutputStream.cpp">
+					RelativePath="..\..\..\Common\Net\SocketOutputStream.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\..\..\Common\Net\SocketOutputStream.h">
+					RelativePath="..\..\..\Common\Net\SocketOutputStream.h"
+					>
 				</File>
 			</Filter>
 		</Filter>
 		<Filter
-			Name="DataBase">
+			Name="DataBase"
+			>
 			<File
-				RelativePath="..\..\..\Common\DataBase\TLBB_DBC.cpp">
+				RelativePath="..\..\..\Common\DataBase\TLBB_DBC.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\DataBase\TLBB_DBC.h">
+				RelativePath="..\..\..\Common\DataBase\TLBB_DBC.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Combat">
+			Name="Combat"
+			>
 			<File
-				RelativePath="..\..\..\Common\Combat\CampAndStand.cpp">
+				RelativePath="..\..\..\Common\Combat\CampAndStand.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Combat\CampAndStand.h">
+				RelativePath="..\..\..\Common\Combat\CampAndStand.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Combat\DataRecords.cpp">
+				RelativePath="..\..\..\Common\Combat\DataRecords.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Combat\DataRecords.h">
+				RelativePath="..\..\..\Common\Combat\DataRecords.h"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Combat\TemplateManager.cpp">
+				RelativePath="..\..\..\Common\Combat\TemplateManager.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\..\..\Common\Combat\TemplateManager.h">
+				RelativePath="..\..\..\Common\Combat\TemplateManager.h"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\ReadMe.txt">
+			RelativePath=".\ReadMe.txt"
+			>
 		</File>
 		<File
-			RelativePath=".\stdafx.cpp">
+			RelativePath=".\stdafx.cpp"
+			>
 			<FileConfiguration
-				Name="Debug|Win32">
+				Name="Debug|Win32"
+				>
 				<Tool
 					Name="VCCLCompilerTool"
-					UsePrecompiledHeader="1"/>
+					UsePrecompiledHeader="1"
+				/>
 			</FileConfiguration>
 		</File>
 		<File
-			RelativePath=".\stdafx.h">
+			RelativePath=".\stdafx.h"
+			>
 		</File>
 	</Files>
 	<Globals>

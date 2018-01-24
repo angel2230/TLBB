@@ -176,9 +176,9 @@ private:
 	LuaTableIterator& operator=( const LuaTableIterator& iter );
 	LuaTableIterator( const LuaTableIterator& iter );
 
-	LuaObject& m_tableObj;				///< The table object being iterated.
-	LuaObject m_keyObj;
-	LuaObject m_valueObj;
+	LuaPlus::LuaObject& m_tableObj;				///< The table object being iterated.
+	LuaPlus::LuaObject m_keyObj;
+	LuaPlus::LuaObject m_valueObj;
 	bool m_isDone;
 };
 

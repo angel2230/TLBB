@@ -98,9 +98,9 @@ VOID CUIWindowItem::PreLoadWindow(VOID)
 	//注册引用函数
 
 	//注册"this"对象
-	LuaObject metaUIWindowItem = g_pScriptSys->GetLuaState()->GetGlobals().GetByName("MetaTable_UIWindowItem");
+	LuaPlus::LuaObject metaUIWindowItem = g_pScriptSys->GetLuaState()->GetGlobals().GetByName("MetaTable_UIWindowItem");
 
-	LuaObject objThis = g_pScriptSys->GetLuaState()->BoxPointer(this);
+	LuaPlus::LuaObject objThis = g_pScriptSys->GetLuaState()->BoxPointer(this);
 	objThis.SetMetaTable(metaUIWindowItem);
 	m_pScriptEnv->GetLuaObject()->SetObject("this", objThis);
 
@@ -147,7 +147,7 @@ VOID CUIWindowItem::_RegisterControlToScript(CEGUI::Window* pWindow)
 	//Register Me
 	LUA_CONTROL::Window* pTempControl = LUA_CONTROL::Window::CreateControl(pWindow);
 
-	LuaObject objThis = g_pScriptSys->GetLuaState()->BoxPointer(pTempControl);
+	LuaPlus::LuaObject objThis = g_pScriptSys->GetLuaState()->BoxPointer(pTempControl);
 	objThis.SetMetaTable(*(pTempControl->GetMetaTable()));
 
 	CEGUI::String strTemp = pWindow->getName();
@@ -242,7 +242,7 @@ void CUIWindowItem::onWindowHidden(void)
 
 INT CUIWindowItem::LUA_RegisterEvent(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) return 0;
 
 	if(m_bLayoutLoaded) 
@@ -303,7 +303,7 @@ INT	CUIWindowItem::LUA_TransAllWindowText(LuaPlus::LuaState* pState)
 //关心与某逻辑Obj的距离(用于商人或者任务窗口，当距离超过一定距离后自动关闭)
 INT CUIWindowItem::LUA_CareObject(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA: CUIWindowItem::LUA_CareObject[2] Wrong Param1");

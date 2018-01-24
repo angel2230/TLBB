@@ -91,7 +91,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Character::GetData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA:GetData param parameter error");
@@ -332,7 +332,7 @@ namespace SCRIPT_SANDBOX
 	//请求组队
 	INT	Character::SendTeamRequest(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(this == &s_Target)
 		{
@@ -375,7 +375,7 @@ namespace SCRIPT_SANDBOX
 	//请求加入队伍
 	INT	Character::SendTeamApply(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(this == &s_Target)
 		{
@@ -434,7 +434,7 @@ namespace SCRIPT_SANDBOX
 
 	INT		Character::GetBuffIconNameByIndex( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBuffIconNameByIndex param parameter error");
@@ -534,7 +534,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Character::SendAskDetail(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		CObject_Character* pCharObj = NULL;
 //		CGameProcedure::s_pEventSystem->PushEvent( GE_CLOSE_TARGET_EQUIP );
@@ -585,7 +585,7 @@ namespace SCRIPT_SANDBOX
 	INT Character::Set_To_Private(LuaPlus::LuaState* state)
 	{
 //		CObject_Character* pCharObj = _GetTargetAsCharacter();
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		LPCTSTR szName = "";
 

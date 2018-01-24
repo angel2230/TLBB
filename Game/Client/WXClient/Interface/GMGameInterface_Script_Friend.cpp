@@ -32,7 +32,7 @@ namespace SCRIPT_SANDBOX
 	int Friend::m_nCurSelect = 0;
 	INT	Friend::SetCurrentSelect( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[2].IsInteger() ) return 0;
 		m_nCurSelect = args[ 2 ].GetInteger();
 		return 0;
@@ -44,7 +44,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	Friend::SetCurrentTeam( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[2].IsInteger() ) return 0;
 		m_nCurTeam = args[ 2 ].GetInteger();
 		return 0;
@@ -74,7 +74,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Friend::OpenGrouping( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		//得到鼠标位置
 		POINT ptMouse = CInputSystem::GetMe()->MouseGetPos();
 		std::vector< STRING > vParam;
@@ -93,7 +93,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Friend::OpenMenu( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		//得到鼠标位置
 		POINT ptMouse = CInputSystem::GetMe()->MouseGetPos();
 		std::vector< STRING > vParam;
@@ -111,7 +111,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT Friend::EnumName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		//检查参数
 		if (!(args[2].IsInteger()))
 		{
@@ -145,7 +145,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT Friend::AskTeam(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[ 2 ].IsString() ) return 0;
 		CGTeamApply msg;
 		msg.SetSourGUID(CObjectManager::GetMe()->GetMySelf()->GetServerGUID());
@@ -155,7 +155,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT Friend::InviteTeam(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[ 2 ].IsString() ) return 0;
 		CGTeamInvite msg;
 		msg.SetSourObjID(CObjectManager::GetMe()->GetMySelf()->GetServerGUID());
@@ -167,7 +167,7 @@ namespace SCRIPT_SANDBOX
 	// 得到有多少条消息
 	INT Friend::GetHistroyNumber( LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[2].IsInteger() ) return 0;
 		if( !args[3].IsInteger() ) return 0; // 第几组的第几个人
 		int nNumber = CDataPool::GetMe()->GetRelation()->GetMailCount( ( RELATION_GROUP )args[2].GetInteger(), args[3].GetInteger() );
@@ -177,7 +177,7 @@ namespace SCRIPT_SANDBOX
 	// 得到历史数据
 	INT Friend::GetHistroyData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[2].IsInteger() ) return 0;
 		if( !args[3].IsInteger() ) return 0; // 第几组的第几个人
 		if( !args[4].IsInteger() ) return 0; // 第几组的第几个人
@@ -211,7 +211,7 @@ namespace SCRIPT_SANDBOX
 	//拉人界面的一个“同意”和“不同意”处理
 	INT Friend::CallOf(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if( !args[2].IsString() ) return 0;
 
 		std::string str = args[2].GetString();
@@ -263,7 +263,7 @@ namespace SCRIPT_SANDBOX
 
 	INT Friend::IsPlayerIsFriend(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		int nTmpGroup = -1, nIndex = -1;
 		if( CDataPool::GetMe()->GetRelation()->GetRelationByName( args[ 2 ].GetString(), nTmpGroup , nIndex ) == RELATION_TYPE_STRANGER )
 			state->PushInteger( 0 );

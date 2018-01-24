@@ -30,7 +30,7 @@ class LUAPLUS_CLASS LuaStackObject
 public:
 	/**
 	**/
-	LuaStackObject() :
+	LuaPlus::LuaStackObject() :
 		m_state(NULL)
 	{
 		// Bad to have this... but useful for containers.
@@ -39,17 +39,17 @@ public:
 	/**
 		Various constructors accepting different parameters.
 	**/
-	LuaStackObject(LuaState* state, int stackIndex);
+	LuaPlus::LuaStackObject(LuaState* state, int stackIndex);
 
 	/**
 		Various constructors accepting different parameters.
 	**/
-	LuaStackObject(LuaState& state, int stackIndex);
+	LuaPlus::LuaStackObject(LuaState& state, int stackIndex);
 
 	/**
 		Copy constructor.
 	**/
-	LuaStackObject(const LuaStackObject& src) :
+	LuaPlus::LuaStackObject(const LuaStackObject& src) :
 		m_state(src.m_state),
 		m_stackIndex(src.m_stackIndex)
 	{
@@ -110,15 +110,15 @@ public:
 
 	int Ref(int lock = 1);
 
-	LuaStackObject GetMetaTable();
+	LuaPlus::LuaStackObject GetMetaTable();
 	void SetMetaTable();
 	void SetMetaTable(LuaStackObject value);
 
 	void SetTable();
 	int GetCount();
 
-	LuaStackObject CreateTable(const char* name, int narray = 0, int lnhash = 0);
-	LuaStackObject CreateTable(int index, int narray = 0, int lnhash = 0);
+	LuaPlus::LuaStackObject CreateTable(const char* name, int narray = 0, int lnhash = 0);
+	LuaPlus::LuaStackObject CreateTable(int index, int narray = 0, int lnhash = 0);
 
 	void SetNil(const char* name);
 	void SetNil(int index);
@@ -139,13 +139,13 @@ public:
 	void SetObject(const char* name, LuaStackObject& value);
 	void SetObject(int index, LuaStackObject& value);
 
-	LuaStackObject GetByName(const char* name);
-	LuaStackObject GetByIndex(int index);
-	LuaStackObject GetByObject(LuaStackObject& obj);
+	LuaPlus::LuaStackObject GetByName(const char* name);
+	LuaPlus::LuaStackObject GetByIndex(int index);
+	LuaPlus::LuaStackObject GetByObject(LuaStackObject& obj);
 
-	LuaStackObject operator[](const char* name) const;
-	LuaStackObject operator[](int index) const;
-	LuaStackObject operator[](LuaStackObject& obj) const;
+	LuaPlus::LuaStackObject operator[](const char* name) const;
+	LuaPlus::LuaStackObject operator[](int index) const;
+	LuaPlus::LuaStackObject operator[](LuaStackObject& obj) const;
 
 //protected:
 	friend class LuaState;

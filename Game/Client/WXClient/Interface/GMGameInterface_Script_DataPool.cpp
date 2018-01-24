@@ -59,7 +59,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetMissionContinue_Text(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionContinue_Text");
@@ -73,7 +73,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetMissionContinue_Bonus(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionContinue_Bonus");
@@ -156,7 +156,7 @@ namespace SCRIPT_SANDBOX
 	//ÈÎÎñÐèÇó¡ª¡ªÎÄ±¾
 	INT DataPool::GetMissionDemand_Text(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Text");
@@ -171,7 +171,7 @@ namespace SCRIPT_SANDBOX
 	//ÈÎÎñÐèÇó¡ª¡ªÎïÆ·
 	INT DataPool::GetMissionDemand_Item(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Item");
@@ -210,7 +210,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Level");
@@ -242,7 +242,7 @@ namespace SCRIPT_SANDBOX
 	INT	DataPool::GetPlayerMission_Kind(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Kind");
@@ -275,7 +275,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	DataPool::GetMissionInfo_Kind(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionInfo_Kind arg error");
@@ -311,7 +311,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Level");
@@ -343,7 +343,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetMissionInfo_Text(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionInfo_Text");
@@ -359,7 +359,7 @@ namespace SCRIPT_SANDBOX
 	//ÈÎÎñ½±Àø
 	INT DataPool::GetMissionInfo_Bonus(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionInfo_Bonus");
@@ -419,7 +419,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT DataPool::GetPlayerMission_InUse(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_InUse");
@@ -470,7 +470,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT DataPool::GetPlayerMission_Description(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Description 1");
@@ -901,7 +901,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Item");
@@ -937,7 +937,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMissionDemandKill_Num");
@@ -968,7 +968,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetPlayerMission_Variable(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger() && args[3].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Variable");
@@ -996,7 +996,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetPlayerMission_DataRound(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!args[2].IsInteger())
 		{
 			TDThrow("LUA:GetPlayerMission_DataRound");
@@ -1025,7 +1025,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMission_ItemCountNow(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!args[2].IsInteger())
 		{
 			TDThrow("LUA:GetPlayerMission_ItemCountNow");
@@ -1050,7 +1050,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMission_Display(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger() && args[3].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Display");
@@ -1118,7 +1118,7 @@ namespace SCRIPT_SANDBOX
 	INT DataPool::GetPlayerMission_RemainTime(LuaPlus::LuaState* state)
 	{
 
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_RemainTime");
@@ -1133,7 +1133,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMissionDemand_Item(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Item");
@@ -1156,7 +1156,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMissionDemand_NPC(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMissionDemand_NPC");
@@ -1177,7 +1177,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetPlayerMissionCustom(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMissionCustom");
@@ -1199,7 +1199,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMissionBonus_Item(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionContinue_Bonus");
@@ -1255,7 +1255,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT DataPool::GetPlayerMission_Memo(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Memo IsInteger");
@@ -1291,7 +1291,7 @@ namespace SCRIPT_SANDBOX
 	
 	//INT DataPool::GetPlayerMissionDemand_Num(LuaPlus::LuaState* state)
 	//{
-	//	LuaStack args(state);
+	//	LuaPlus::LuaStack args(state);
 	//	if (!(args[2].IsInteger()))
 	//	{
 	//		TDThrow("LUA:GetPlayerMission_Info");
@@ -1310,7 +1310,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Item");
@@ -1346,7 +1346,7 @@ namespace SCRIPT_SANDBOX
 		//nNum = CUIDataPool::GetMe()->m_pMissionDemandInfo->m_yTextCount;
 		//state->PushInteger(nNum);
 		
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMissionCustom_Num");
@@ -1386,7 +1386,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMission_Name(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Name");
@@ -1406,7 +1406,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMission_BillName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetMissionDemand_Item");
@@ -1436,7 +1436,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPlayerMission_Info(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPlayerMission_Info");
@@ -1451,7 +1451,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::Mission_Abnegate_Popup(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger() && args[3].IsString()))
 		{
 			TDThrow("LUA:Mission_Abnegate_Popup");
@@ -1478,7 +1478,7 @@ namespace SCRIPT_SANDBOX
 	
 	INT DataPool::Mission_Abnegate_Special_Quest_Popup(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger() && args[3].IsString()))
 		{
 			TDThrow("LUA:Mission_Abnegate_Popup");
@@ -1493,7 +1493,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::EnumPlayerMission_ItemAction(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if ( !args[2].IsInteger())
 		{
 			TDThrow("LUA:EnumPlayerMission_ItemAction");
@@ -1521,7 +1521,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetNPCEventList_Item(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetNPCEventList_Item");
@@ -1582,7 +1582,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPrescrList_Item(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetProscrList_Item");
@@ -1603,7 +1603,7 @@ namespace SCRIPT_SANDBOX
 
 	INT DataPool::GetPrescrList_Item_LifeAbility(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPrescrList_Item_LifeAbility");
@@ -1630,7 +1630,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT DataPool::GetPrescrList_Item_Result(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetPrescrList_Item_Result Args error");
@@ -1660,7 +1660,7 @@ namespace SCRIPT_SANDBOX
 	INT	DataPool::GetBoothGood_ID( LuaPlus::LuaState* state ) // µÃµ½»õÎïµÄid 
 	{
 		// ²ÎÊýÊÇÔÚ»õ¼ÛÉÏµÄÐòÁÐºÃ
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBoothGood_ID");
@@ -1678,7 +1678,7 @@ namespace SCRIPT_SANDBOX
 	INT	DataPool::GetBoothGood_Name(LuaPlus::LuaState* state) // µÃµ½»õÎïµÄÃû×Ö
 	{
 		// ²ÎÊýÊÇÔÚ»õ¼ÛÉÏµÄÐòÁÐºÃ
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:GetBoothGood_Name");
@@ -1703,7 +1703,7 @@ namespace SCRIPT_SANDBOX
 
 INT DataPool::GetPrescrList_Item_Requirement(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()) || !(args[3].IsInteger()))
 	{
 		TDThrow("LUA:GetPrescrList_Item_Requirement");
@@ -1777,7 +1777,7 @@ INT	DataPool::SetSelfInfo(LuaPlus::LuaState* state)
 // ¶Ó³¤´ò¿ª¶ÓÎéÐÅÏ¢Ê±, Ñ¡ÖÐµÄÈËÎï
 INT	DataPool::SetSelectTeamMember_Leader(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:SetSelectTeamMember_Leader");
@@ -1819,7 +1819,7 @@ INT	DataPool::IsTeamLeader(LuaPlus::LuaState* state)
 INT	DataPool::GetTeamMemUIModelNameByIndex(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±µÄuiÄ£ÐÍÃû×Ö
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:GetTeamMemUIModelNameByIndex");
@@ -1852,7 +1852,7 @@ INT	DataPool::GetTeamMemUIModelNameByIndex(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ
 INT	DataPool::SelectAsTargetByUIIndex(LuaPlus::LuaState* state)	// Í¨¹ý¶ÓÓÑÍ·Ïñ, Ñ¡ÖÐ¶ÓÓÑ×÷Îªtarget
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:SelectAsTargetByUIIndex");
@@ -1901,7 +1901,7 @@ INT	DataPool::SelectAsTargetByUIIndex(LuaPlus::LuaState* state)	// Í¨¹ý¶ÓÓÑÍ·Ïñ,
 INT	DataPool::GetTeamMemInfoByIndex(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±µÄÐÅÏ¢
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:GetTeamMemInfoByIndex");
@@ -1971,7 +1971,7 @@ INT	DataPool::GetTeamMemInfoByIndex(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±µÄÐÅÏ¢
 INT	DataPool::GetTeamMemUIModelName(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±uiÄ£ÐÍÃû×Ö
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:GetTeamMemUIModelName");
@@ -2004,7 +2004,7 @@ INT	DataPool::GetTeamMemUIModelName(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±uiÄ£ÐÍ
 INT	DataPool::IsTeamMemberInScene(LuaPlus::LuaState* state)	
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:IsTeamMemberInScene");
@@ -2024,7 +2024,7 @@ INT	DataPool::IsTeamMemberInScene(LuaPlus::LuaState* state)
 
 INT		DataPool::GetTeamMemGUIDByUIIndex(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:GetTeamMemGUIDByUIIndex");
@@ -2043,7 +2043,7 @@ INT		DataPool::GetTeamMemGUIDByUIIndex(LuaPlus::LuaState* state)
 INT	DataPool::GetTeamMemInfo(LuaPlus::LuaState* state)		// µÃµ½¶ÓÔ±µÄÐÅÏ¢
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!(args[2].IsInteger()))
 	{
 		TDThrow("LUA:GetTeamMemInfo");
@@ -2232,7 +2232,7 @@ INT	DataPool::GetInviteTeamCount(LuaPlus::LuaState* state)
 INT	DataPool::GetInviteTeamMemberCount(LuaPlus::LuaState* state)				
 {
 	// µÃµ½¶ÓÔ±µÄ¸öÊý
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:GetInviteTeamMemberCount");
@@ -2270,7 +2270,7 @@ INT DataPool::GetInviteTeamMemberUIModelName(LuaPlus::LuaState* state)
 	const InviteTeam* pInviteTeam = NULL;
 	TeamCacheInfo*    pMemberInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if ((!(args[2].IsInteger()))||(!(args[3].IsInteger())))
 	{
 		TDThrow("LUA:GetInviteTeamMemberUIModelName");
@@ -2320,7 +2320,7 @@ INT DataPool::GetInviteTeamMemberInfo(LuaPlus::LuaState* state)
 	const InviteTeam* pInviteTeam = NULL;
 	TeamCacheInfo*    pMemberInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if ((!(args[2].IsInteger()))||(!(args[3].IsInteger())))
 	{
 		TDThrow("LUA:GetInviteTeamMemberInfo");
@@ -2437,7 +2437,7 @@ INT     DataPool::GetApplyMemberUIModelName(LuaPlus::LuaState* state)		// µÃµ½Éê
 	// ¸ù¾ÝË÷ÒýµÃµ½Ä³¸öÉêÇëÈË
 	const TeamCacheInfo*	pApplyInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:GetApplyMemberUIModelName");
@@ -2467,7 +2467,7 @@ INT     DataPool::GetApplyMemberInfo(LuaPlus::LuaState* state)		// µÃµ½ÉêÇëÕßµÄÐ
 	// ¸ù¾ÝË÷ÒýµÃµ½Ä³¸öÉêÇëÈË
 	const TeamCacheInfo*	pApplyInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:GetApplyMemberInfo");
@@ -2547,7 +2547,7 @@ INT     DataPool::GetApplyMemberInfo(LuaPlus::LuaState* state)		// µÃµ½ÉêÇëÕßµÄÐ
 INT		DataPool::SetTeamFrameOpenFlag(LuaPlus::LuaState* state)	// ÉèÖÃ¶ÓÎé¶Ô»°¿ò´ò¿ª±ê¼Ç
 {
 	// ÉèÖÃ¶ÓÎéÐÅÏ¢¶Ô»°¿òµÄ´ò¿ª·½Ê½.
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:SetTeamFrameOpenFlag");
@@ -2564,7 +2564,7 @@ INT     DataPool::SetCurSelApply(LuaPlus::LuaState* state)
 	// ¸ù¾ÝË÷ÒýµÃµ½Ä³¸öÉêÇëÈË
 	const TeamCacheInfo*	pApplyInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:SetCurSelApply");
@@ -2596,7 +2596,7 @@ INT     DataPool::EraseApply(LuaPlus::LuaState* state)
 	// ¸ù¾ÝË÷ÒýµÃµ½Ä³¸öÉêÇëÈË
 	const TeamCacheInfo*	pApplyInfo = NULL;
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	if (!args[2].IsInteger())
 	{
 		TDThrow("LUA:EraseApply");
@@ -2631,7 +2631,7 @@ INT	DataPool::ClearAllApply(LuaPlus::LuaState* state)
 INT DataPool::GetPacketItem( LuaPlus::LuaState* state )
 {
 #define MAX_ITEM_PER_PAGE MAX_BAG_SIZE / 3
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() ) return 0;
 	if( !args[ 3 ].IsInteger() ) return 0;
 	INT nPage = args[ 2 ].GetInteger();
@@ -2654,7 +2654,7 @@ INT DataPool::GetPacketItem( LuaPlus::LuaState* state )
 // µÃµ½µÚ¼¸Ò³ÓÐ¼¸¸öÎïÆ·
 INT DataPool::GetPacketItemMaxNumber( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 1 ].IsInteger() ) return 0;
 	state->PushInteger( MAX_BAG_SIZE / 3 );
 
@@ -2665,7 +2665,7 @@ INT DataPool::GetPacketItemMaxNumber( LuaPlus::LuaState* state )
 // out: 1  ËùÐèÒªµÄ×éÀïµÄºÃÓÑµÄÊýÁ¿
 INT		DataPool::GetFriendNumber( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() ) 
 		return 0;
 	int nCount = CDataPool::GetMe()->GetRelation()->GetListCount( RELATION_GROUP( args[ 2 ].GetInteger() ) );
@@ -2679,7 +2679,7 @@ INT		DataPool::GetFriendNumber( LuaPlus::LuaState* state )
 
 INT		DataPool::GetFriend( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	const SDATA_RELATION_MEMBER *pInfo = NULL;
 	std::string  str;
 
@@ -2868,7 +2868,7 @@ INT		DataPool::GetFriend( LuaPlus::LuaState* state )
 }
 INT DataPool::ThrowToBlackList( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	const SDATA_RELATION_MEMBER *pMember = CDataPool::GetMe()->GetRelation()->GetRelationInfo( ( RELATION_GROUP )args[ 2].GetInteger(), args[ 3 ].GetInteger() );
 
 	CGRelation Msg;
@@ -2885,7 +2885,7 @@ INT DataPool::ThrowToBlackList( LuaPlus::LuaState* state )
 // ÒÆ¶¯µ½ÖÆ¶¨×é
 INT DataPool::ThrowToList( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() )
 		return 0;
 	if( !args[ 3 ].IsInteger() )
@@ -2909,7 +2909,7 @@ INT DataPool::ThrowToList( LuaPlus::LuaState* state )
 // int: 1 ËùÐèÒªÌí¼ÓµÄºÃÓÑµÄID
 INT		DataPool::AddFriend( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() ) return 0;
 
 
@@ -3048,7 +3048,7 @@ INT		DataPool::AddFriend( LuaPlus::LuaState* state )
 // int: 1 ËùÐèÒªÉ¾³ýµÄºÃÓÑµÄID
 INT		DataPool::DelFriend( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() ) return 0;
 	if( !args[ 3 ].IsInteger() ) return 0;
 
@@ -3087,7 +3087,7 @@ INT		DataPool::DelFriend( LuaPlus::LuaState* state )
 }
 INT    DataPool::GetFriendByName( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[2].IsString() ) return 0;
 	int nGroup = -1, nIndex = -1;
 	CDataPool::GetMe()->GetRelation()->GetRelationByName( args[2].GetString(), nGroup , nIndex );
@@ -3097,7 +3097,7 @@ INT    DataPool::GetFriendByName( LuaPlus::LuaState* state )
 }
 INT		DataPool::ShowFriendInfo( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	int nGroup,nIndex;
 	if( args[2].IsInteger() ) // Èç¹ûÊÇ×Ö·û´®
 	{
@@ -3136,7 +3136,7 @@ INT		DataPool::ShowFriendInfo( LuaPlus::LuaState* state )
 
 INT	DataPool::ShowChatInfo(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if(!(args[2].IsString()))
 	{
@@ -3169,7 +3169,7 @@ INT	DataPool::GetMailNumber( LuaPlus::LuaState* state )
 }
 INT DataPool::OpenMail(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	CEventSystem::GetMe()->PushEvent( GE_OPEN_EMAIL_WRITE, args[ 2 ].GetString() );
 	return 0;
 }
@@ -3193,7 +3193,7 @@ INT	DataPool::GetNextMail(LuaPlus::LuaState* state )
 }
 INT DataPool::SendMail( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	MAIL  mail;
 	mail.m_GUID = CObjectManager::GetMe()->GetMySelf()->GetServerGUID();
@@ -3271,7 +3271,7 @@ INT DataPool::SendMail( LuaPlus::LuaState* state )
 }
 INT DataPool::GetMail( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 
 	if( !args[ 2 ].IsInteger() ) 
 		return 0;
@@ -3314,7 +3314,7 @@ INT DataPool::GetMail( LuaPlus::LuaState* state )
 // ·¢ËÍ¸ø·þÎñÆ÷£¬ËµÃ÷ÐÄÇé¸Ä±äÁË¡£
 INT DataPool::SetMood( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsString() ) return 0;
 	if(!CGameProcedure::s_pUISystem->CheckStringFilter(args[ 2 ].GetString()))
 	{
@@ -3360,7 +3360,7 @@ INT		DataPool::EditMood( LuaPlus::LuaState* state )
 
 INT		DataPool::OpenHistroy( LuaPlus::LuaState* state )
 {
-	LuaStack args( state );
+	LuaPlus::LuaStack args( state );
 	if( !args[ 2 ].IsInteger() ) return 0;
 	if( !args[ 3 ].IsInteger() ) return 0;
 	CEventSystem::GetMe()->PushEvent( GE_OPEN_HISTROY, args[ 2 ].GetInteger(), args[ 3 ].GetInteger() );
@@ -3370,7 +3370,7 @@ INT		DataPool::OpenHistroy( LuaPlus::LuaState* state )
 INT DataPool::Change_MyHairColor(LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger()	||
 		(!args[3].IsInteger())	||
@@ -3397,7 +3397,7 @@ INT DataPool::Change_MyHairColor(LuaPlus::LuaState* state)
 
 INT DataPool::Change_RectifyColor(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger()	||
 		(!args[3].IsInteger())	||
@@ -3451,7 +3451,7 @@ INT DataPool::Change_RectifyColor(LuaPlus::LuaState* state)
 
 INT DataPool::Change_GetColorLumination(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger()	||
 		(!args[3].IsInteger())	||
@@ -3496,7 +3496,7 @@ INT DataPool::Change_GetColorLumination(LuaPlus::LuaState* state)
 INT DataPool::Change_MyHairStyle(LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{
@@ -3513,7 +3513,7 @@ INT DataPool::Change_MyHairStyle(LuaPlus::LuaState* state)
 INT DataPool::Change_MyHairStyle_Item(LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 		
@@ -3544,7 +3544,7 @@ INT DataPool::Change_MyHairStyle_Item(LuaPlus::LuaState* state)
 INT DataPool::Get_MyHairColor(LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	INT nColor=CObjectManager::GetMe()->GetMySelf()->GetCharacterData()->Get_HairColor();
 
@@ -3564,7 +3564,7 @@ INT DataPool::Get_MyHairColor(LuaPlus::LuaState* state)
 INT DataPool::Get_MyHairStyle(LuaPlus::LuaState* state)
 {
 
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	INT nStyle = CObjectManager::GetMe()->GetMySelf()->GetCharacterData()->Get_HairMesh();
 	state->PushInteger(nStyle);
@@ -3596,7 +3596,7 @@ INT	DataPool::IsCanDoAction( LuaPlus::LuaState* state )
 
 INT DataPool::Check_StringCode( LuaPlus::LuaState* state )
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsString() )
 	{
@@ -3680,7 +3680,7 @@ INT DataPool::ToggleShowPetList(LuaPlus::LuaState* state)
 }
 INT DataPool::GetNPCIDByServerID(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{
@@ -3702,7 +3702,7 @@ INT DataPool::GetNPCIDByServerID(LuaPlus::LuaState* state)
 
 INT DataPool::GetUIColor(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{
@@ -3731,7 +3731,7 @@ INT DataPool::GetUIColor(LuaPlus::LuaState* state)
 //µÃµ½¼¼ÄÜID
 INT DataPool::GetPlayerSkill_ID(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{
@@ -3745,7 +3745,7 @@ INT DataPool::GetPlayerSkill_ID(LuaPlus::LuaState* state)
 //µÃµ½¼¼ÄÜµÈ¼¶
 INT DataPool::GetPlayerSkill_Level(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{
@@ -3759,7 +3759,7 @@ INT DataPool::GetPlayerSkill_Level(LuaPlus::LuaState* state)
 //µÃµ½Ñ§Ï°¼¼ÄÜNPCID
 INT DataPool::GetNPCobj_ID(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 	const INT nNPCID = CUIDataPool::GetMe()->GetStudySkill_NPCID();
 	state->PushInteger(nNPCID);
 	return 1;
@@ -3767,7 +3767,7 @@ INT DataPool::GetNPCobj_ID(LuaPlus::LuaState* state)
 //µÃµ½¼¼ÄÜµÄÏµ
 INT DataPool::GetPlayerSkill_Type(LuaPlus::LuaState* state)
 {
-	LuaStack args(state);
+	LuaPlus::LuaStack args(state);
 
 	if (!args[2].IsInteger() )
 	{

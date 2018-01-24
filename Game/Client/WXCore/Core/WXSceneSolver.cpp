@@ -163,7 +163,7 @@ namespace WX {
                 String value = object->getPropertyAsString(propertyDef.name);
                 TypeValuePair key(propertyDef.type, value);
                 std::pair<UnsolvedMap::iterator, bool> inserted =
-                    unsolvedMap.insert(UnsolvedMap::value_type(key, NULL));
+                    unsolvedMap.insert(UnsolvedMap::value_type(key, nullptr));
                 if (!inserted.second)
                 {
                     // The item already checked

@@ -99,7 +99,7 @@ namespace SCRIPT_SANDBOX
 	// 获得服务器升级的一些数据
 	INT AbilityTeacher::GetServerData(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsString()))
 		{

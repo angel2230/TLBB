@@ -40,7 +40,7 @@ namespace SCRIPT_SANDBOX
 	////得到宠物是否存在
 	INT TargetPet::IsPresent(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) )
@@ -74,7 +74,7 @@ namespace SCRIPT_SANDBOX
 	//得到第几只宠物的名字
 	INT	TargetPet::GetPetList_Appoint(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet;
 		INT count =0;
@@ -98,7 +98,7 @@ namespace SCRIPT_SANDBOX
 	// 得到宠物的名字
 	INT	TargetPet::GetName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -124,7 +124,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetConsort(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -145,7 +145,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetSex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 			
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -160,7 +160,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetID(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -186,7 +186,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetLevel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -200,7 +200,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetHappy(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -214,7 +214,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetType(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -228,7 +228,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetNaturalLife(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 			
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -242,7 +242,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMaxLife(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		TDAssert(false&&"Pet::GetMaxLife 没有宠物的最大生命的概念");
 		state->PushNumber( 100 );
 		return 1;
@@ -250,7 +250,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetLoyalgGade(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 			
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -264,7 +264,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetHP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -278,7 +278,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -292,7 +292,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMaxHP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 			
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -306,7 +306,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMaxMP(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -320,7 +320,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetStrAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -334,7 +334,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetPFAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -348,7 +348,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetDexAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -362,7 +362,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetIntAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -376,7 +376,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetStaAptitude(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -390,7 +390,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetStr(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -404,7 +404,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetInt(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -417,7 +417,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	TargetPet::GetDex(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -430,7 +430,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	TargetPet::GetPF(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -444,7 +444,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetSta(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -458,7 +458,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetBasic(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -472,7 +472,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetPotential(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -485,7 +485,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	TargetPet::GetExp(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -499,7 +499,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetPhysicsAttack(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -512,7 +512,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT	TargetPet::GetMagicAttack(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -526,7 +526,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetPhysicsRecovery(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -540,7 +540,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMagicRecovery(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -554,7 +554,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetShootProbability(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -568,7 +568,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::GetMiss(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -582,7 +582,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::SetModel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -596,7 +596,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::CopyMyPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if( !args[2].IsInteger() )
 		{
@@ -617,7 +617,7 @@ namespace SCRIPT_SANDBOX
 	// 宠物加属性点。
 	INT TargetPet::Add_Attribute(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if (!(args[2].IsInteger()) ||
 			!(args[3].IsInteger()) ||
@@ -664,7 +664,7 @@ namespace SCRIPT_SANDBOX
 	//宠物改名字
 	INT	TargetPet::Change_Name(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !(args[2].IsInteger()) || !(args[3].IsString()) )
 		{
@@ -694,7 +694,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::Go_Fight(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -720,7 +720,7 @@ namespace SCRIPT_SANDBOX
 
 	INT	TargetPet::Go_Relax(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if ( !args[2].IsInteger() )
 		{
@@ -746,7 +746,7 @@ namespace SCRIPT_SANDBOX
 */
 	INT	TargetPet::GetIsFighting(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )
@@ -767,7 +767,7 @@ namespace SCRIPT_SANDBOX
 	}
 	INT TargetPet::GetDeathWarrant(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		SDATA_PET* My_Pet= CDataPool::GetMe()->TargetPet_GetPet();
 		if( (!My_Pet) || (INVALID_ID == My_Pet->m_nIsPresent) )

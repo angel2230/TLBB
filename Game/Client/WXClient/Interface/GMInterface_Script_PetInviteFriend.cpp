@@ -37,7 +37,7 @@ namespace SCRIPT_SANDBOX
 	//------------------------------------------------------------------------------------------------------------------------------
 	INT PetInviteFriend::GetHumanINFO(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -88,7 +88,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PetInviteFriend::GetInviteMsg(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -123,7 +123,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PetInviteFriend::SetPetModel(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -145,7 +145,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PetInviteFriend::ShowTargetPet(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{
@@ -168,7 +168,7 @@ namespace SCRIPT_SANDBOX
 
 	INT PetInviteFriend::GetPetINFO(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 
 		if(!(args[2].IsInteger()))
 		{

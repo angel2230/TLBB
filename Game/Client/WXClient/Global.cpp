@@ -13,4 +13,4 @@ HINSTANCE		g_hInstance			= NULL;
 const CHAR		VERSION_INFO[]		= "0.0.0005";
 
 //标题
-const CHAR		GAME_TITLE[]		="武侠世界";
+const CHAR		GAME_TITLE[]		= "TLBB";

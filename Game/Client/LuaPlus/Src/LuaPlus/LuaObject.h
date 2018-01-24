@@ -9,7 +9,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #ifdef _MSC_VER
 #pragma once
-#endif _MSC_VER
+#endif
 #ifndef LUAOBJECT_H
 #define LUAOBJECT_H
 
@@ -38,17 +38,17 @@ struct LuaRun
 class LUAPLUS_CLASS LuaObject
 {
 public:
-	LuaObject();
-	LuaObject(LuaState* state) throw();
-	LuaObject(LuaState* state, int stackIndex) throw();
-	LuaObject(LuaState* state, const lua_TObject* obj);
-	LuaObject(const LuaObject& src) throw();
-	LuaObject(const LuaStackObject& src) throw();
-	LuaObject& operator=(const LuaObject& src) throw();
-	LuaObject& operator=(const LuaStackObject& src) throw();
+	LuaPlus::LuaObject();
+	LuaPlus::LuaObject(LuaState* state) throw();
+	LuaPlus::LuaObject(LuaState* state, int stackIndex) throw();
+	LuaPlus::LuaObject(LuaState* state, const lua_TObject* obj);
+	LuaPlus::LuaObject(const LuaObject& src) throw();
+	LuaPlus::LuaObject(const LuaStackObject& src) throw();
+	LuaPlus::LuaObject& operator=(const LuaObject& src) throw();
+	LuaPlus::LuaObject& operator=(const LuaStackObject& src) throw();
 
 /*	template <typename T>
-	LuaObject& operator=(const T& value)
+	LuaPlus::LuaObject& operator=(const T& value)
 	{
 		assert(m_state);
 		LCD::Assign(*this, value);
@@ -109,9 +109,9 @@ public:
 	void* GetLightUserData() const;
 	bool GetBoolean() const;
 
-	LuaStackObject PushStack();
+	LuaPlus::LuaStackObject PushStack();
 
-	LuaObject GetMetaTable();
+	LuaPlus::LuaObject GetMetaTable();
 	void SetMetaTable(const LuaObject& valueObj);
 
 	int GetN();
@@ -125,39 +125,39 @@ public:
 	int GetCount();
 	int GetTableCount();
 
-	LuaObject Clone();
+	LuaPlus::LuaObject Clone();
 
-	LuaObject CreateTable(const char* key, int narray = 0, int lnhash = 0);
-	LuaObject CreateTable(int key, int narray = 0, int lnhash = 0);
-	LuaObject CreateTable(LuaObject& key, int narray = 0, int lnhash = 0);
+	LuaPlus::LuaObject CreateTable(const char* key, int narray = 0, int lnhash = 0);
+	LuaPlus::LuaObject CreateTable(int key, int narray = 0, int lnhash = 0);
+	LuaPlus::LuaObject CreateTable(LuaObject& key, int narray = 0, int lnhash = 0);
 
-	LuaObject& SetNil(const char* key);
-	LuaObject& SetNil(int key);
-	LuaObject& SetNil(LuaObject& key);
-	LuaObject& SetBoolean(const char* key, bool value);
-	LuaObject& SetBoolean(int key, bool value);
-	LuaObject& SetBoolean(LuaObject& key, bool value);
-	LuaObject& SetInteger(const char* key, int value);
-	LuaObject& SetInteger(int key, int value);
-	LuaObject& SetInteger(LuaObject& key, int value);
-	LuaObject& SetNumber(const char* key, lua_Number value);
-	LuaObject& SetNumber(int key, lua_Number value);
-	LuaObject& SetNumber(LuaObject& key, lua_Number value);
-	LuaObject& SetString(const char* key, const char* value);
-	LuaObject& SetString(int key, const char* value);
-	LuaObject& SetString(LuaObject& key, const char* value);
-	LuaObject& SetWString(const char* key, const lua_WChar* value);
-	LuaObject& SetWString(int key, const lua_WChar* value);
-	LuaObject& SetWString(LuaObject& key, const lua_WChar* value);
-	LuaObject& SetUserData(const char* key, void* value);
-	LuaObject& SetUserData(int key, void* value);
-	LuaObject& SetUserData(LuaObject& key, void* value);
-	LuaObject& SetLightUserData(const char* key, void* value);
-	LuaObject& SetLightUserData(int key, void* value);
-	LuaObject& SetLightUserData(LuaObject& key, void* value);
-	LuaObject& SetObject(const char* key, LuaObject& value);
-	LuaObject& SetObject(int key, LuaObject& value);
-	LuaObject& SetObject(LuaObject& key, LuaObject& value);
+	LuaPlus::LuaObject& SetNil(const char* key);
+	LuaPlus::LuaObject& SetNil(int key);
+	LuaPlus::LuaObject& SetNil(LuaObject& key);
+	LuaPlus::LuaObject& SetBoolean(const char* key, bool value);
+	LuaPlus::LuaObject& SetBoolean(int key, bool value);
+	LuaPlus::LuaObject& SetBoolean(LuaObject& key, bool value);
+	LuaPlus::LuaObject& SetInteger(const char* key, int value);
+	LuaPlus::LuaObject& SetInteger(int key, int value);
+	LuaPlus::LuaObject& SetInteger(LuaObject& key, int value);
+	LuaPlus::LuaObject& SetNumber(const char* key, lua_Number value);
+	LuaPlus::LuaObject& SetNumber(int key, lua_Number value);
+	LuaPlus::LuaObject& SetNumber(LuaObject& key, lua_Number value);
+	LuaPlus::LuaObject& SetString(const char* key, const char* value);
+	LuaPlus::LuaObject& SetString(int key, const char* value);
+	LuaPlus::LuaObject& SetString(LuaObject& key, const char* value);
+	LuaPlus::LuaObject& SetWString(const char* key, const lua_WChar* value);
+	LuaPlus::LuaObject& SetWString(int key, const lua_WChar* value);
+	LuaPlus::LuaObject& SetWString(LuaObject& key, const lua_WChar* value);
+	LuaPlus::LuaObject& SetUserData(const char* key, void* value);
+	LuaPlus::LuaObject& SetUserData(int key, void* value);
+	LuaPlus::LuaObject& SetUserData(LuaObject& key, void* value);
+	LuaPlus::LuaObject& SetLightUserData(const char* key, void* value);
+	LuaPlus::LuaObject& SetLightUserData(int key, void* value);
+	LuaPlus::LuaObject& SetLightUserData(LuaObject& key, void* value);
+	LuaPlus::LuaObject& SetObject(const char* key, LuaObject& value);
+	LuaPlus::LuaObject& SetObject(int key, LuaObject& value);
+	LuaPlus::LuaObject& SetObject(LuaObject& key, LuaObject& value);
 
 	void AssignNil(LuaState* state);
 	void AssignBoolean(LuaState* state, bool value);
@@ -171,16 +171,16 @@ public:
 	void AssignNewTable(LuaState* state, int narray = 0, int numhash = 0);
 	void AssignTObject(LuaState* state, lua_TObject* value);
 
-	LuaObject GetByName(const char* name);
-	LuaObject GetByIndex(int index);
-	LuaObject GetByObject(const LuaStackObject& obj);
-	LuaObject GetByObject(const LuaObject& obj);
-	LuaObject operator[](const char* name);
-	LuaObject operator[](int index);
-	LuaObject operator[](const LuaStackObject& obj);
-	LuaObject operator[](const LuaObject& obj);
+	LuaPlus::LuaObject GetByName(const char* name);
+	LuaPlus::LuaObject GetByIndex(int index);
+	LuaPlus::LuaObject GetByObject(const LuaStackObject& obj);
+	LuaPlus::LuaObject GetByObject(const LuaObject& obj);
+	LuaPlus::LuaObject operator[](const char* name);
+	LuaPlus::LuaObject operator[](int index);
+	LuaPlus::LuaObject operator[](const LuaStackObject& obj);
+	LuaPlus::LuaObject operator[](const LuaObject& obj);
 
-	LuaObject Lookup(const char* key);
+	LuaPlus::LuaObject Lookup(const char* key);
 
 	void Register(const char* funcName, lua_CFunction func, int nupvalues = 0);
 
@@ -237,8 +237,8 @@ public:
 	void AddToUsedList(LuaState* state, const lua_TObject& obj);
 	void RemoveFromUsedList();
 
-	LuaObject* m_next;		   // only valid when in free list
-	LuaObject* m_prev;		   // only valid when in used list
+	LuaPlus::LuaObject* m_next;		   // only valid when in free list
+	LuaPlus::LuaObject* m_prev;		   // only valid when in used list
 	LuaState* m_state;
 	enum { TOBJECT_SIZE = 12 };
 #ifdef BUILDING_LUAPLUS
@@ -248,9 +248,9 @@ public:
 #endif BUILDING_LUAPLUS
 
 protected:
-	LuaObject& SetTableHelper(const char* key, lua_TObject& valueObj);
-	LuaObject& SetTableHelper(int key, lua_TObject& valueObj);
-	LuaObject& SetTableHelper(LuaObject& key, lua_TObject& valueObj);
+	LuaPlus::LuaObject& SetTableHelper(const char* key, lua_TObject& valueObj);
+	LuaPlus::LuaObject& SetTableHelper(int key, lua_TObject& valueObj);
+	LuaPlus::LuaObject& SetTableHelper(LuaObject& key, lua_TObject& valueObj);
 };
 
 
@@ -259,11 +259,11 @@ class LuaCall
 public:
 	LuaCall(LuaObject& functionObj);
 
-	LuaStackObject operator<<(const LuaRun& /*run*/);
+	LuaPlus::LuaStackObject operator<<(const LuaRun& /*run*/);
 	LuaCall& operator=(const LuaCall& src);
 
 	LuaState* m_state;
-	LuaObject m_functionObj;
+	LuaPlus::LuaObject m_functionObj;
 	int m_numArgs;
 	int m_startResults;
 };

@@ -80,7 +80,7 @@ namespace SCRIPT_SANDBOX
 		}
 
 		//检查参数
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsString()))
 		{
 			TDThrow("LUA: SuperTooltips GetAttributeValue Wrong Param1");
@@ -1126,7 +1126,7 @@ namespace SCRIPT_SANDBOX
 	// 判断自己是不是有第几件套装
 	INT SuperTooltips::IsItemExist( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		m_pActionItem = (CActionItem*)CActionSystem::GetMe()->GetAction(m_nActionId);
 		if(!m_pActionItem)
 		{
@@ -1281,7 +1281,7 @@ namespace SCRIPT_SANDBOX
 	// 得到套装的属性
 	INT SuperTooltips::GetSuitAtt( LuaPlus::LuaState* state )
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		m_pActionItem = (CActionItem*)CActionSystem::GetMe()->GetAction(m_nActionId);
 		if(!m_pActionItem)
 		{

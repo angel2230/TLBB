@@ -1,133 +1,202 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="WXRender"
 	ProjectGUID="{4A768006-EB60-4A38-B26B-912044640819}"
 	RootNamespace="WXRender"
-	Keyword="Win32Proj">
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Debug"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Debug/WXRender"
 			ConfigurationType="2"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				Optimization="0"
 				AdditionalIncludeDirectories=".;..\..\Common;..\..\Common\DataBase;..\WXCore;..\..\ogre\OgreMain\include;..\..\boost;..\Common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDER_FAIRY_EXPORTS;MODELSYSTEM_STATIC_LINK"
-				MinimalRebuild="TRUE"
-				ExceptionHandling="TRUE"
+				MinimalRebuild="true"
+				ExceptionHandling="1"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
-				UsePrecompiledHeader="2"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
 				DebugInformationFormat="4"
-				DisableSpecificWarnings="4996"/>
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalOptions="/ignore:4078"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/ignore:4078 /INCREMENTAL:NO"
 				AdditionalDependencies="winmm.lib WXCore.lib Main.lib Expat.lib opcode.lib tinyxml.lib WXEngine.lib"
 				OutputFile="..\..\_Scripts\VC7.1\Debug/WXRender.dll"
-				LinkIncremental="2"
+				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;..\..\_Scripts\VC7.1\Debug&quot;"
-				IgnoreAllDefaultLibraries="FALSE"
+				GenerateManifest="false"
+				IgnoreAllDefaultLibraries="false"
 				IgnoreDefaultLibraryNames=""
 				ModuleDefinitionFile="WXRender.def"
-				GenerateDebugInformation="TRUE"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/WXRender.pdb"
 				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/WXRender.lib"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Release"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Release/WXRender"
 			ConfigurationType="2"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				AdditionalIncludeDirectories=".;..\..\Common;..\..\Common\DataBase;..\WXCore;..\..\ogre\OgreMain\include;..\..\boost;..\Common"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;RENDER_FAIRY_EXPORTS;MODELSYSTEM_STATIC_LINK"
 				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
-				UsePrecompiledHeader="2"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"
-				DisableSpecificWarnings="4996"/>
+				DebugInformationFormat="4"
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalOptions="/ignore:4078"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/ignore:4078 /INCREMENTAL:NO"
 				AdditionalDependencies="winmm.lib WXCore.lib Main.lib Expat.lib opcode.lib tinyxml.lib WXEngine.lib"
 				OutputFile="..\..\_Scripts\VC7.1\Release/WXRender.dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;..\..\_Scripts\VC7.1\Release&quot;"
+				GenerateManifest="false"
 				ModuleDefinitionFile="WXRender.def"
-				GenerateDebugInformation="TRUE"
-				GenerateMapFile="TRUE"
+				GenerateDebugInformation="true"
+				GenerateMapFile="true"
 				MapFileName="$(OutDir)/WXRender.map"
-				MapExports="TRUE"
+				MapExports="true"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/WXRender.lib"
-				TargetMachine="1"/>
+				TargetMachine="1"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCAppVerifierTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -136,171 +205,226 @@
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath=".\DebugPanel.cpp">
+				RelativePath=".\DebugPanel.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Global.cpp">
+				RelativePath=".\Global.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Render.cpp">
+				RelativePath=".\Render.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\RenderSystem.cpp">
+				RelativePath=".\RenderSystem.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						MinimalRebuild="FALSE"
-						UsePrecompiledHeader="0"/>
+						MinimalRebuild="false"
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath=".\ResourceLoadListener.cpp">
-			</File>
-			<File
-				RelativePath=".\ResourceProvider.cpp">
-				<FileConfiguration
-					Name="Debug|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\RFFakeObjectManager.cpp">
+				RelativePath=".\ResourceLoadListener.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.cpp">
+				RelativePath=".\ResourceProvider.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\TerrainGrid.cpp">
+				RelativePath=".\RFFakeObjectManager.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\WXObj_ProjTex.cpp">
+				RelativePath=".\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\WXRender.def">
+				RelativePath=".\TerrainGrid.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\WXObj_ProjTex.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\WXRender.def"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\DebugPanel.h">
+				RelativePath=".\DebugPanel.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Global.h">
+				RelativePath=".\Global.h"
+				>
 			</File>
 			<File
-				RelativePath=".\RenderSystem.h">
+				RelativePath=".\RenderSystem.h"
+				>
 			</File>
 			<File
-				RelativePath=".\resource.h">
+				RelativePath=".\resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ResourceLoadListener.h">
+				RelativePath=".\ResourceLoadListener.h"
+				>
 			</File>
 			<File
-				RelativePath=".\ResourceProvider.h">
+				RelativePath=".\ResourceProvider.h"
+				>
 			</File>
 			<File
-				RelativePath=".\RFFakeObjectManager.h">
+				RelativePath=".\RFFakeObjectManager.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath=".\TerrainGrid.h">
+				RelativePath=".\TerrainGrid.h"
+				>
 			</File>
 			<File
-				RelativePath=".\WXObj_ProjTex.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Camera">
-			<File
-				RelativePath=".\Camera\Camera.cpp">
-			</File>
-			<File
-				RelativePath=".\Camera\Camera.h">
-			</File>
-			<File
-				RelativePath=".\Camera\Camera_CharSel.cpp">
-			</File>
-			<File
-				RelativePath=".\Camera\Camera_CharSel.h">
-			</File>
-			<File
-				RelativePath=".\Camera\Camera_Scene.cpp">
-			</File>
-			<File
-				RelativePath=".\Camera\Camera_Scene.h">
+				RelativePath=".\WXObj_ProjTex.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Object">
+			Name="Camera"
+			>
 			<File
-				RelativePath=".\Object\RFObj.cpp">
+				RelativePath=".\Camera\Camera.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj.h">
+				RelativePath=".\Camera\Camera.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Actor.cpp">
+				RelativePath=".\Camera\Camera_CharSel.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Actor.h">
+				RelativePath=".\Camera\Camera_CharSel.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Model.cpp">
+				RelativePath=".\Camera\Camera_Scene.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Model.h">
+				RelativePath=".\Camera\Camera_Scene.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Object"
+			>
+			<File
+				RelativePath=".\Object\RFObj.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Static.cpp">
+				RelativePath=".\Object\RFObj.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObj_Static.h">
+				RelativePath=".\Object\RFObj_Actor.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObjDummy.cpp">
+				RelativePath=".\Object\RFObj_Actor.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObjDummy.h">
+				RelativePath=".\Object\RFObj_Model.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObject.cpp">
+				RelativePath=".\Object\RFObj_Model.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Object\RFObject.h">
+				RelativePath=".\Object\RFObj_Static.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Object\RFObj_Static.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Object\RFObjDummy.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Object\RFObjDummy.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Object\RFObject.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Object\RFObject.h"
+				>
 			</File>
 		</Filter>
 	</Files>

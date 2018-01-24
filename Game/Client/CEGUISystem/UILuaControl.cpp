@@ -498,7 +498,7 @@ VOID Window::DestroyMetaTable(VOID)
 
 INT Window::setProperty(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	if (!(args[2].IsString())) return 0;
 	if (!(args[3].IsString())) return 0;
@@ -536,7 +536,7 @@ INT Window::setProperty(LuaPlus::LuaState* pState)
 // 将窗口居中显示，相对与父窗口
 INT		Window::CenterWindow( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	CEGUI::Window* pParent = m_pWindow->getParent();
 	if( pParent )
 	{
@@ -551,7 +551,7 @@ INT		Window::CenterWindow( LuaPlus::LuaState* pState )
 // 将窗口居中显示，相对与父窗口
 INT		Window::SetWindowCenter( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsInteger() ) return 0;
 	if( !args[ 3 ].IsInteger() ) return 0;
 
@@ -564,7 +564,7 @@ INT		Window::SetWindowCenter( LuaPlus::LuaState* pState )
 //设置窗口的随父属性
 INT		Window::SetClippedByParent( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsInteger() ) return 0;
 	
 	INT n = args[ 2 ].GetInteger();
@@ -582,7 +582,7 @@ INT		Window::SetClippedByParent( LuaPlus::LuaState* pState )
 //自动设置窗口的位置
 INT		Window::AutoMousePosition( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())||(!(args[3].IsString())))
 	{
 		return 0;
@@ -619,7 +619,7 @@ INT		Window::AutoMousePosition( LuaPlus::LuaState* pState )
 
 INT Window::getProperty(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	if (!(args[2].IsString())) return 0;
 
@@ -642,7 +642,7 @@ INT Window::getProperty(LuaPlus::LuaState* pState)
 
 INT	Window::setText(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	INT t = args[2].GetType();
 	if( args[ 2 ].IsInteger() ) // 如果是个数字
@@ -689,7 +689,7 @@ INT	Window::getText(LuaPlus::LuaState* pState)
 }
 INT	Window::setTextOriginal(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	INT t = args[2].GetType();
 	if (!(args[2].IsString())) return 0;
@@ -711,7 +711,7 @@ INT	Window::setForce( LuaPlus::LuaState* pState)
 }
 INT	Window::SetToolTip( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !( args[ 2 ].IsString() ) ) return 0;
 	std::string strMbcs = args[2].GetString();
 	CEGUI::String  strLast;
@@ -750,7 +750,7 @@ INT Window::CaptureInput( LuaPlus::LuaState* pState)
 LuaPlus::LuaObject* ProgressBar::s_pMetaTable = NULL;
 INT ProgressBar::SetProgress(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsNumber())) return 0;
 	if (!(args[3].IsNumber())) return 0;
 
@@ -766,7 +766,7 @@ INT ProgressBar::SetProgress(LuaPlus::LuaState* pState)
 LuaPlus::LuaObject* ActionButton::s_pMetaTable = NULL;
 INT ActionButton::Lua_SetActionItem(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) return 0;
 	
 	INT idItem = (INT)args[2].GetInteger();
@@ -791,7 +791,7 @@ INT ActionButton::Lua_DoSubAction(LuaPlus::LuaState* pState)
 
 INT ActionButton::Lua_SetPushed(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) return 0;
 	
 	BOOL bCheck = args[2].GetInteger() == 1;
@@ -803,7 +803,7 @@ INT ActionButton::Lua_SetPushed(LuaPlus::LuaState* pState)
 
 INT	ActionButton::Lua_SetFlash(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) return 0;
 	
 	BOOL bFlash = args[2].GetInteger();
@@ -1030,7 +1030,7 @@ INT PopMenu::ClosePopMenu(LuaPlus::LuaState* pState)
 // 设置位置
 INT	PopMenu::SetPopMenuPos(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())||(!(args[3].IsString())))
 	{
 		return 0;
@@ -1060,7 +1060,7 @@ INT	PopMenu::SetPopMenuPos(LuaPlus::LuaState* pState)
 LuaPlus::LuaObject* ComplexWindow::s_pMetaTable = NULL;
 INT ComplexWindow::AddTextElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) return 0;
 
 	//文字转化
@@ -1109,7 +1109,7 @@ INT ComplexWindow::AddTextElement(LuaPlus::LuaState* pState)
 
 INT ComplexWindow::AddOptionElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) return 0;
 
 	//文字转化
@@ -1165,7 +1165,7 @@ INT ComplexWindow::AddOptionElement(LuaPlus::LuaState* pState)
 }
 INT ComplexWindow::AddItemElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) return 0;
 	if (!(args[3].IsInteger())) return 0;
 	if (!(args[4].IsInteger())) return 0;
@@ -1196,7 +1196,7 @@ INT ComplexWindow::AddItemElement(LuaPlus::LuaState* pState)
 
 INT ComplexWindow::AddActionElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) return 0;
 	if (!(args[3].IsInteger())) return 0;
 	if (!(args[4].IsInteger())) return 0;
@@ -1238,7 +1238,7 @@ INT ComplexWindow::AddActionElement(LuaPlus::LuaState* pState)
 //struct SBuffImpact;
 INT ComplexWindow::AddImpactElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) return 0;
 //	if (!(args[3].IsInteger())) return 0;
 //	if (!(args[4].IsInteger())) return 0;
@@ -1266,7 +1266,7 @@ INT ComplexWindow::AddImpactElement(LuaPlus::LuaState* pState)
 
 INT ComplexWindow::AddMoneyElement(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) return 0;
 
 	CEGUI::IFalagardComplexWindow* pComplexWindow = (CEGUI::IFalagardComplexWindow*)(CEGUI::FalagardComplexWindow*)m_pWindow;
@@ -1303,7 +1303,7 @@ LuaPlus::LuaObject* Minimap::s_pMetaTable = NULL;
 LPCTSTR FLAG_CLASS_NAME[] = {"Animate","ExpNPC","Teamate","OtherPlayer","ExpObj",};
 INT Minimap::UpdateFlag( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	
 	CEGUI::IFalagardSceneMapWindow* pWindow= (CEGUI::IFalagardSceneMapWindow*)(CEGUI::FalagardRadar*)m_pWindow;
 	fVector3 MyselfPos = g_pWorldSystem->GetMyselfPos();
@@ -1340,7 +1340,7 @@ INT Minimap::UpdateFlag( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* ListBox::s_pMetaTable = NULL;
 INT ListBox::AddItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	if (!(args[3].IsInteger()))
@@ -1374,7 +1374,7 @@ INT ListBox::AddItem( LuaPlus::LuaState* pState )
 }
 INT ListBox::SetItemTooltip( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	if( !( args[ 3 ].IsString() ) )
@@ -1386,7 +1386,7 @@ INT ListBox::SetItemTooltip( LuaPlus::LuaState* pState )
 }
 INT ListBox::SetItemText( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	if( !( args[ 3 ].IsString() ) )
@@ -1401,7 +1401,7 @@ INT ListBox::SetItemText( LuaPlus::LuaState* pState )
 }
 INT ListBox::DelItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	CEGUI::ListboxItem* pItem = ((CEGUI::Listbox*)m_pWindow)->getListboxItemFromIndex( args[ 2 ].GetInteger() );
@@ -1411,7 +1411,7 @@ INT ListBox::DelItem( LuaPlus::LuaState* pState )
 
 INT ListBox::GetItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	if( args[ 2 ].GetInteger() < 0 )
@@ -1443,7 +1443,7 @@ INT	ListBox::GetFirstSelectItem( LuaPlus::LuaState* pState )
 
 INT	ListBox::SetItemSelect( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	
@@ -1455,7 +1455,7 @@ INT	ListBox::SetItemSelect( LuaPlus::LuaState* pState )
 
 INT	ListBox::SetItemSelectByItemID( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsInteger())) 
 		return 0;
 	
@@ -1470,7 +1470,7 @@ INT	ListBox::SetItemSelectByItemID( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* ImageListBox::s_pMetaTable = NULL;
 INT ImageListBox::AddItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 
@@ -1485,7 +1485,7 @@ INT ImageListBox::AddItem( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* ImageListBoxEx::s_pMetaTable = NULL;
 INT ImageListBoxEx::AddItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	if( !( args[ 3 ].IsInteger() ) )
@@ -1508,7 +1508,7 @@ INT ImageListBoxEx::AddItem( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* CheckButton::s_pMetaTable = NULL;
 INT CheckButton::SetCheck( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsInteger() ) return 0;
 	
 	if( args[ 2 ].GetInteger() == 1 )
@@ -1521,7 +1521,7 @@ INT CheckButton::SetCheck( LuaPlus::LuaState* pState )
 }
 INT CheckButton::GetCheck( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if(CEGUI::PropertyHelper::stringToBool(  m_pWindow->getProperty( "Selected" ) ))
 		pState->PushInteger(TRUE);
 	else
@@ -1534,7 +1534,7 @@ INT CheckButton::GetCheck( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* ComboBox::s_pMetaTable = NULL;
 INT ComboBox::ComboBoxAddItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	std::string strMbcs = args[2].GetString();
@@ -1571,7 +1571,7 @@ INT		ComboBox::GetCurrentSelect( LuaPlus::LuaState* pState )
 }
 INT		ComboBox::SetCurrentSelect( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);	
+	LuaPlus::LuaStack args(pState);	
 	CEGUI::ListboxItem* pItem = ((CEGUI::Combobox*)m_pWindow)->getListboxItemFromIndex( args[ 2 ].GetInteger() );
 	((CEGUI::Combobox*)m_pWindow)->setItemSelectState( args[ 2 ].GetInteger() , true );
 	((CEGUI::Combobox*)m_pWindow)->setText( pItem->getText() );
@@ -1583,7 +1583,7 @@ INT		ComboBox::SetCurrentSelect( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* StaticImage::s_pMetaTable = NULL;
 INT StaticImage::SetImageColor( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	CEGUI::colour color = CEGUI::PropertyHelper::stringToColour( args[ 2 ].GetString() );
@@ -1594,7 +1594,7 @@ INT StaticImage::SetImageColor( LuaPlus::LuaState* pState )
 }
 INT StaticImage::SetImage( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	if( args[3].IsString() ) // 说明这个图片是全路径
@@ -1638,7 +1638,7 @@ INT ScrollBar::GetPosition( LuaPlus::LuaState* pState )
 
 INT ScrollBar::SetPosition( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsNumber())) 
 		return 0;
 	((CEGUI::Scrollbar*)m_pWindow)->setScrollPosition((float)args[2].GetNumber());
@@ -1652,7 +1652,7 @@ LuaPlus::LuaObject* SuperTooltip::s_pMetaTable = NULL;
 
 INT SuperTooltip::PositionSelf( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())||(!(args[3].IsString())))
 	{
 		return 0;
@@ -1693,7 +1693,7 @@ INT SuperTooltip::PositionSelf( LuaPlus::LuaState* pState )
 LuaPlus::LuaObject* MeshWindow::s_pMetaTable = NULL;
 INT MeshWindow::SetFakeObject( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[2].IsString())
 		return 0;
 
@@ -1707,7 +1707,7 @@ INT MeshWindow::SetFakeObject( LuaPlus::LuaState* pState )
 
 INT MeshWindow::RotateBegin(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[2].IsNumber())
 		return 0;
 
@@ -1721,7 +1721,7 @@ INT MeshWindow::RotateBegin(LuaPlus::LuaState* pState)
 
 INT MeshWindow::ChangeActionBegin(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[2].IsNumber())
 		return 0;
 	if( !args[3].IsNumber())
@@ -1737,7 +1737,7 @@ INT MeshWindow::ChangeActionBegin(LuaPlus::LuaState* pState)
 
 INT MeshWindow::RotateEnd(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	//通知FakeObject系统
 	g_pFakeSystem->RotateObj_End(m_pWindow->getProperty((CEGUI::utf8*)"FakeObject").c_str());
@@ -1750,7 +1750,7 @@ INT MeshWindow::RotateEnd(LuaPlus::LuaState* pState)
 LuaPlus::LuaObject* ChatHistory::s_pMetaTable = NULL;
 INT ChatHistory::InsertChatString(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[2].IsString())
 		return 0;
 
@@ -1792,7 +1792,7 @@ INT ChatChannel::ClearAllChannel(LuaPlus::LuaState* pState)
 
 INT ChatChannel::AddChannel(LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[2].IsString() || !args[3].IsString() || !args[4].IsString())
 		return 0;
 
@@ -1820,7 +1820,7 @@ INT ChatChannel::AddChannel(LuaPlus::LuaState* pState)
 LuaPlus::LuaObject* Scenemap::s_pMetaTable = NULL;
 INT Scenemap::SetSceneZoomMode( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsNumber() ) return 0;
 	CEGUI::IFalagardSceneMapWindow* pWindow= (CEGUI::IFalagardSceneMapWindow*)(CEGUI::FalagardSceneMap*)m_pWindow;
 	pWindow->SetZoomMode( float( args[ 2 ].GetNumber()) );
@@ -1840,7 +1840,7 @@ INT Scenemap::UpdateViewRect( LuaPlus::LuaState* pState )
 }
 INT Scenemap::SetSceneFileName( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsNumber() ) return 0;
 	if( !args[ 3 ].IsNumber() ) return 0;
 	if( !args[ 4 ].IsString() ) return 0;
@@ -1868,7 +1868,7 @@ INT Scenemap::GetMouseScenePos( LuaPlus::LuaState* pState )
 
 INT	Scenemap::UpdateSceneMap( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 
 	if( !m_pWindow->isVisible() )
 		return 0;
@@ -1993,7 +1993,7 @@ void Worldmap::UpdatePlayer()
 LuaPlus::LuaObject* InfoList::s_pMetaTable = NULL;
 INT InfoList::AddInfo( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if (!(args[2].IsString())) 
 		return 0;
 	//TextIndex
@@ -2012,7 +2012,7 @@ LuaPlus::LuaObject* CtrlList::s_pMetaTable = NULL;
 
 INT CtrlList::AddColumn( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	std::string caption = args[2].GetString();
 	CEGUI::String strUtf32;
 	CUIStringSystem::GetMe()->ParserString_Runtime(caption, strUtf32);
@@ -2022,7 +2022,7 @@ INT CtrlList::AddColumn( LuaPlus::LuaState* pState )
 }
 INT CtrlList::InsertColumn( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	std::string caption = args[2].GetString();
 	CEGUI::String strUtf32;
 	CUIStringSystem::GetMe()->ParserString_Runtime(caption, strUtf32);
@@ -2032,7 +2032,7 @@ INT CtrlList::InsertColumn( LuaPlus::LuaState* pState )
 }
 INT CtrlList::AddNewItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	std::string caption = args[2].GetString();
 	CEGUI::String strUtf32;
 	CUIStringSystem::GetMe()->ParserString_Runtime(caption, strUtf32);
@@ -2066,7 +2066,7 @@ INT CtrlList::AddNewItem( LuaPlus::LuaState* pState )
 }
 INT CtrlList::SetItemText( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	CEGUI::MCLGridRef  grid_ref( args[ 2 ].GetInteger(), args[ 3 ].GetInteger() );
 	CEGUI::ListboxItem* pItem = 0;
 
@@ -2087,7 +2087,7 @@ INT CtrlList::SetItemText( LuaPlus::LuaState* pState )
 }
 INT CtrlList::SetItemData( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	CEGUI::MCLGridRef  grid_ref( args[ 2 ].GetInteger(), args[ 3 ].GetInteger() );
 	CEGUI::ListboxItem* pItem = 0;
 
@@ -2104,7 +2104,7 @@ INT CtrlList::SetItemData( LuaPlus::LuaState* pState )
 }
 INT CtrlList::DeleteItem( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	((CEGUI::MultiColumnList*)m_pWindow)->removeRow( args[ 2 ].GetInteger() );
 	return 0;
 }
@@ -2115,7 +2115,7 @@ INT CtrlList::RemoveAllItem( LuaPlus::LuaState* pState )
 }
 INT CtrlList::GetItemText( LuaPlus::LuaState* pState )
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	CEGUI::MCLGridRef  grid_ref( args[ 2 ].GetInteger(), args[ 3 ].GetInteger() );
 	CEGUI::ListboxItem* pItem = 0;
 
@@ -2160,7 +2160,7 @@ LuaPlus::LuaObject* SoftKeyWindow::s_pMetaTable = NULL;
 
 INT SoftKeyWindow::SetAimEditBox( LuaPlus::LuaState* pState)
 {
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	if( !args[ 2 ].IsString() ) return 0;
 	CEGUI::IFalagardSoftKeyBoard * pWindow= (CEGUI::IFalagardSoftKeyBoard *)(CEGUI::FalagardSoftKeyBoard*)m_pWindow;
 	pWindow->SetActiveEditBox( (CEGUI::String)( CEGUI::utf8*)(args[2].GetString()) );
@@ -2172,7 +2172,7 @@ LuaPlus::LuaObject* AnimateWindow::s_pMetaTable = NULL;
 INT AnimateWindow::Play( LuaPlus::LuaState* pState)
 {
 	CEGUI::IFalagardAnimate * pWindow= (CEGUI::IFalagardAnimate*)(CEGUI::FalagardAnimate*)m_pWindow;
-	LuaStack args(pState);
+	LuaPlus::LuaStack args(pState);
 	pWindow->Play( args[ 2 ].GetBoolean() );
 	return 0;
 }

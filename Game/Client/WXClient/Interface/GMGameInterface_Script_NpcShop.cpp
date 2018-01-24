@@ -31,7 +31,7 @@ namespace SCRIPT_SANDBOX
 	//获得商店的物品
 	//INT NpcShop::EnumCallBackItem(LuaPlus::LuaState* state)
 	//{
-	//	LuaStack args(state);
+	//	LuaPlus::LuaStack args(state);
 	//	if (!(args[2].IsInteger()))
 	//	{
 	//		TDThrow("LUA:NpcShop::EnumCallBackItem[2] param parameter error");
@@ -42,7 +42,7 @@ namespace SCRIPT_SANDBOX
 	//	tActionItem* pActionItem = CActionSystem::GetMe()->EnumAction(nIndex, NAMETYPE_CALLBACK);
 	//	if(pActionItem)
 	//	{
-	//		LuaObject objReturn = state->BoxPointer(pActionItem);
+	//		LuaPlus::LuaObject objReturn = state->BoxPointer(pActionItem);
 	//		objReturn.SetMetaTable(*CActionItem::s_pMetaTable);
 	//		objReturn.PushStack();
 
@@ -54,7 +54,7 @@ namespace SCRIPT_SANDBOX
 	//获得商店的物品价格
 	INT NpcShop::EnumItemPrice(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:NpcShop::EnumItemPrice[2] param parameter error");
@@ -69,7 +69,7 @@ namespace SCRIPT_SANDBOX
 	//获得商店的物品最大叠加数量
 	INT NpcShop::EnumItemMaxOverlay(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:NpcShop::EnumItemMaxOverlay[2] param parameter error");
@@ -92,7 +92,7 @@ namespace SCRIPT_SANDBOX
 	//获得商店的物品的名称
 	INT NpcShop::EnumItemName(LuaPlus::LuaState* state)
 	{
-		LuaStack args(state);
+		LuaPlus::LuaStack args(state);
 		if (!(args[2].IsInteger()))
 		{
 			TDThrow("LUA:NpcShop::EnumItemName[2] param parameter error");
@@ -115,7 +115,7 @@ namespace SCRIPT_SANDBOX
 	//一次购买多个物品
 	//INT NpcShop::BulkBuyItem(LuaPlus::LuaState* state)
 	//{
-	//	LuaStack args(state);
+	//	LuaPlus::LuaStack args(state);
 	//	if (!(args[2].IsInteger()))
 	//	{
 	//		TDThrow("LUA:NpcShop::BulkBuyItem[2] param parameter error");
@@ -169,7 +169,7 @@ namespace SCRIPT_SANDBOX
 	//INT NpcShop::GetShopType(LuaPlus::LuaState* state)
 	//{
 	//	// 在这里导出商店相关的所有的类新
-	//	LuaStack args(state);
+	//	LuaPlus::LuaStack args(state);
 	//	if (!(args[2].IsString()))
 	//	{
 	//		TDThrow("LUA:NpcShop::GetShopType[2] param parameter error");

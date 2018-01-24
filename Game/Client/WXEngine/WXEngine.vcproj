@@ -1,103 +1,158 @@
 <?xml version="1.0" encoding="gb2312"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="9.00"
 	Name="WXEngine"
 	ProjectGUID="{A1B4BF17-94BC-4AF8-8160-BF4D1D2BE963}"
-	Keyword="Win32Proj">
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Debug/WXEngine"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Debug/WXEngine"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				Optimization="0"
 				AdditionalIncludeDirectories=".;..\Common;..\..\Common\DataBase;..\Client\Common;&quot;..\Xerces\Projects\Win32\BCB6\Xerces-all\XercesLib&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;TENGDA_EXPORTS"
-				MinimalRebuild="TRUE"
-				ExceptionHandling="TRUE"
+				MinimalRebuild="true"
+				ExceptionHandling="1"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
-				UsePrecompiledHeader="2"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
 				DebugInformationFormat="4"
-				DisableSpecificWarnings="4996"/>
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Debug/$(ProjectName).lib"/>
+				UseUnicodeResponseFiles="false"
+				OutputFile="..\..\_Scripts\VC7.1\Debug/$(ProjectName).lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\_Scripts\VC7.1\Release/WXEngine"
 			IntermediateDirectory="..\..\_Scripts\VC7.1\Release/WXEngine"
 			ConfigurationType="4"
-			CharacterSet="2">
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				UseUnicodeResponseFiles="false"
+				AdditionalOptions="/INCREMENTAL:NO"
 				AdditionalIncludeDirectories=".;..\Common;..\..\Common\DataBase;..\Client\Common;&quot;..\Xerces\Projects\Win32\BCB6\Xerces-all\XercesLib&quot;"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;TENGDA_EXPORTS"
-				ExceptionHandling="TRUE"
-				RuntimeLibrary="2"
-				TreatWChar_tAsBuiltInType="TRUE"
-				ForceConformanceInForLoopScope="TRUE"
-				UsePrecompiledHeader="2"
+				ExceptionHandling="1"
+				RuntimeLibrary="3"
+				TreatWChar_tAsBuiltInType="true"
+				ForceConformanceInForLoopScope="true"
+				UsePrecompiledHeader="0"
 				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"
-				DisableSpecificWarnings="4996"/>
+				DebugInformationFormat="4"
+				ErrorReporting="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="..\..\_Scripts\VC7.1\Release/$(ProjectName).lib"/>
+				UseUnicodeResponseFiles="false"
+				OutputFile="..\..\_Scripts\VC7.1\Release/$(ProjectName).lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -106,310 +161,411 @@
 		<Filter
 			Name="Source Files"
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
 			<File
-				RelativePath="..\Common\AxTrace.cpp">
+				RelativePath="..\Common\AxTrace.cpp"
+				>
 				<FileConfiguration
-					Name="Debug|Win32">
+					Name="Debug|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32">
+					Name="Release|Win32"
+					>
 					<Tool
 						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="0"/>
-				</FileConfiguration>
-			</File>
-			<File
-				RelativePath="..\Common\AxTrace.h">
-			</File>
-			<File
-				RelativePath=".\stdafx.cpp">
-				<FileConfiguration
-					Name="Debug|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32">
-					<Tool
-						Name="VCCLCompilerTool"
-						UsePrecompiledHeader="1"/>
+						UsePrecompiledHeader="0"
+					/>
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath=".\WXEngine.cpp">
+				RelativePath="..\Common\AxTrace.h"
+				>
+			</File>
+			<File
+				RelativePath=".\stdafx.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\WXEngine.cpp"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
 			<File
-				RelativePath=".\resource.h">
+				RelativePath=".\resource.h"
+				>
 			</File>
 			<File
-				RelativePath=".\stdafx.h">
+				RelativePath=".\stdafx.h"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDBasicType.h">
+				RelativePath="..\Common\TDBasicType.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 		</Filter>
 		<Filter
-			Name="Kernel">
+			Name="Kernel"
+			>
 			<File
-				RelativePath=".\Kernel\TDClass.cpp">
+				RelativePath=".\Kernel\TDClass.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDClass.h">
+				RelativePath="..\Common\TDClass.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Kernel\TDKernel.cpp">
+				RelativePath=".\Kernel\TDKernel.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDKernel.h">
+				RelativePath="..\Common\TDKernel.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Kernel\TDNode.cpp">
+				RelativePath=".\Kernel\TDNode.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDNode.h">
+				RelativePath="..\Common\TDNode.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Exception">
+			Name="Exception"
+			>
 			<File
-				RelativePath=".\Exception\TDCrashReport.cpp">
+				RelativePath=".\Exception\TDCrashReport.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\Exception\TDCrashReport.h">
+				RelativePath=".\Exception\TDCrashReport.h"
+				>
 			</File>
 			<File
-				RelativePath=".\Exception\TDException.cpp">
+				RelativePath=".\Exception\TDException.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDException.h">
+				RelativePath="..\Common\TDException.h"
+				>
 			</File>
 			<Filter
-				Name="XZip">
+				Name="XZip"
+				>
 				<File
-					RelativePath=".\Exception\XZip.cpp">
+					RelativePath=".\Exception\XZip.cpp"
+					>
 				</File>
 				<File
-					RelativePath=".\Exception\XZip.h">
+					RelativePath=".\Exception\XZip.h"
+					>
 				</File>
 			</Filter>
 		</Filter>
 		<Filter
-			Name="Util">
+			Name="Util"
+			>
 			<File
-				RelativePath=".\Util\TDUtil.cpp">
+				RelativePath=".\Util\TDUtil.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDUtil.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Gfx">
-			<File
-				RelativePath=".\Gfx\TDGfxSystem.cpp">
-			</File>
-			<File
-				RelativePath="..\Common\TDGfxSystem.h">
+				RelativePath="..\Common\TDUtil.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Game">
+			Name="Gfx"
+			>
+			<File
+				RelativePath=".\Gfx\TDGfxSystem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDGfxSystem.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Game"
+			>
 			<Filter
-				Name="World">
+				Name="World"
+				>
 				<File
-					RelativePath=".\Game\World\TDWorldSystem.cpp">
+					RelativePath=".\Game\World\TDWorldSystem.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\Common\TDWorldSystem.h">
+					RelativePath="..\Common\TDWorldSystem.h"
+					>
 				</File>
 			</Filter>
 			<Filter
-				Name="Object">
+				Name="Object"
+				>
 				<File
-					RelativePath=".\Game\Object\TDObjectSystem.cpp">
+					RelativePath=".\Game\Object\TDObjectSystem.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\Common\TDObjectSystem.h">
-				</File>
-			</Filter>
-			<Filter
-				Name="Interface">
-				<File
-					RelativePath=".\Game\Interface\TDGameInterface.cpp">
-				</File>
-				<File
-					RelativePath="..\Common\TDGameInterface.h">
+					RelativePath="..\Common\TDObjectSystem.h"
+					>
 				</File>
 			</Filter>
 			<Filter
-				Name="Event">
+				Name="Interface"
+				>
 				<File
-					RelativePath=".\Game\Event\TDEventSystem.cpp">
+					RelativePath=".\Game\Interface\TDGameInterface.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\Common\TDEventSystem.h">
+					RelativePath="..\Common\TDGameInterface.h"
+					>
 				</File>
 			</Filter>
 			<Filter
-				Name="DataPool">
+				Name="Event"
+				>
 				<File
-					RelativePath=".\Game\DataPool\TDUIDataPool.cpp">
+					RelativePath=".\Game\Event\TDEventSystem.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\Common\TDUIDataPool.h">
+					RelativePath="..\Common\TDEventSystem.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="DataPool"
+				>
+				<File
+					RelativePath=".\Game\DataPool\TDUIDataPool.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Common\TDUIDataPool.h"
+					>
 				</File>
 				<Filter
-					Name="_new">
+					Name="_new"
+					>
 					<File
-						RelativePath=".\Game\DataPool\TDDataPool.cpp">
+						RelativePath=".\Game\DataPool\TDDataPool.cpp"
+						>
 					</File>
 					<File
-						RelativePath="..\Common\TDDataPool.h">
+						RelativePath="..\Common\TDDataPool.h"
+						>
 					</File>
 				</Filter>
 			</Filter>
 			<Filter
-				Name="Action">
+				Name="Action"
+				>
 				<File
-					RelativePath=".\Game\Action\TDActionSystem.cpp">
+					RelativePath=".\Game\Action\TDActionSystem.cpp"
+					>
 				</File>
 				<File
-					RelativePath="..\Common\TDActionSystem.h">
+					RelativePath="..\Common\TDActionSystem.h"
+					>
 				</File>
 			</Filter>
 		</Filter>
 		<Filter
-			Name="Input">
+			Name="Input"
+			>
 			<File
-				RelativePath=".\Input\TDInputSystem.cpp">
+				RelativePath=".\Input\TDInputSystem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDInputSystem.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Time">
-			<File
-				RelativePath=".\Time\TDTimeSystem.cpp">
-			</File>
-			<File
-				RelativePath="..\Common\TDTimeSystem.h">
+				RelativePath="..\Common\TDInputSystem.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="UI">
+			Name="Time"
+			>
 			<File
-				RelativePath=".\Ui\TDUISystem.cpp">
+				RelativePath=".\Time\TDTimeSystem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDUISystem.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Math">
-			<File
-				RelativePath=".\Math\TDMath.cpp">
-			</File>
-			<File
-				RelativePath="..\Common\TDMath.h">
+				RelativePath="..\Common\TDTimeSystem.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Sound">
+			Name="UI"
+			>
 			<File
-				RelativePath=".\Sound\TDSound.cpp">
+				RelativePath=".\Ui\TDUISystem.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDSound.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="DataBase">
-			<File
-				RelativePath=".\Dbc\TDDataBase.cpp">
-			</File>
-			<File
-				RelativePath="..\Common\TDDataBase.h">
-			</File>
-			<File
-				RelativePath="..\Common\TDDBC_Struct.h">
+				RelativePath="..\Common\TDUISystem.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Variable">
+			Name="Math"
+			>
 			<File
-				RelativePath=".\Variable\TDVariable.cpp">
+				RelativePath=".\Math\TDMath.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDVariable.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Debuger">
-			<File
-				RelativePath=".\debuger\TDDebuge.cpp">
-			</File>
-			<File
-				RelativePath="..\Common\TDDebuger.h">
+				RelativePath="..\Common\TDMath.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Cursor">
+			Name="Sound"
+			>
 			<File
-				RelativePath=".\Cursor\TDCursorSystem.cpp">
+				RelativePath=".\Sound\TDSound.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDCursorSystem.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="Script">
-			<File
-				RelativePath="..\Common\TDScriptSystem.h">
-			</File>
-			<File
-				RelativePath=".\Script\TDScriptSystm.cpp">
+				RelativePath="..\Common\TDSound.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Profile">
+			Name="DataBase"
+			>
 			<File
-				RelativePath=".\Profile\TDProfile.cpp">
+				RelativePath=".\Dbc\TDDataBase.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDProfile.h">
-			</File>
-		</Filter>
-		<Filter
-			Name="FakeObject">
-			<File
-				RelativePath=".\FakeObject\TDFakeObjSystem.cpp">
+				RelativePath="..\Common\TDDataBase.h"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDFakeObjSystem.h">
+				RelativePath="..\Common\TDDBC_Struct.h"
+				>
 			</File>
 		</Filter>
 		<Filter
-			Name="Helper">
+			Name="Variable"
+			>
 			<File
-				RelativePath=".\Helper\TDHelperSystem.cpp">
+				RelativePath=".\Variable\TDVariable.cpp"
+				>
 			</File>
 			<File
-				RelativePath="..\Common\TDHelperSystem.h">
+				RelativePath="..\Common\TDVariable.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Debuger"
+			>
+			<File
+				RelativePath=".\debuger\TDDebuge.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDDebuger.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Cursor"
+			>
+			<File
+				RelativePath=".\Cursor\TDCursorSystem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDCursorSystem.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Script"
+			>
+			<File
+				RelativePath="..\Common\TDScriptSystem.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Script\TDScriptSystm.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Profile"
+			>
+			<File
+				RelativePath=".\Profile\TDProfile.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDProfile.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="FakeObject"
+			>
+			<File
+				RelativePath=".\FakeObject\TDFakeObjSystem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDFakeObjSystem.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Helper"
+			>
+			<File
+				RelativePath=".\Helper\TDHelperSystem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\Common\TDHelperSystem.h"
+				>
 			</File>
 		</Filter>
 	</Files>
