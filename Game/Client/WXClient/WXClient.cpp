@@ -282,8 +282,8 @@ BOOL CALLBACK Debug_ChooseUserFunc( HWND hDlg, UINT message, WPARAM wParam, LPAR
 
 			//ÐÂÕÊºÅ
 			{
-				::SendDlgItemMessage(hDlg, IDC_COMBO_GENDER, CB_ADDSTRING, 0, (LPARAM)"Å®");
-				::SendDlgItemMessage(hDlg, IDC_COMBO_GENDER, CB_ADDSTRING, 1, (LPARAM)"ÄÐ");
+				::SendDlgItemMessage(hDlg, IDC_COMBO_GENDER, CB_ADDSTRING, 0, (LPARAM)"Female");
+				::SendDlgItemMessage(hDlg, IDC_COMBO_GENDER, CB_ADDSTRING, 1, (LPARAM)"Male");
 				::SendDlgItemMessage(hDlg, IDC_COMBO_GENDER, CB_SETCURSEL, 0, 0);
 			}
 
