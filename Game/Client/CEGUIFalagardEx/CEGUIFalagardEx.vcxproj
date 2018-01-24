@@ -64,7 +64,7 @@
       <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <DisableSpecificWarnings>4251;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4251;4001;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ErrorReporting>None</ErrorReporting>
     </ClCompile>
     <Lib>
@@ -88,7 +88,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4251;4001;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ErrorReporting>None</ErrorReporting>
     </ClCompile>
     <Lib>
