@@ -115,8 +115,10 @@
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+      <Command>for /r "$(ProjectDir)$(OutDir).." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
+explorer.exe "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
 exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -163,8 +165,10 @@ exit 0</Command>
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+      <Command>for /r "$(ProjectDir)$(OutDir).." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
+explorer.exe "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
 exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -211,8 +215,10 @@ exit 0</Command>
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+      <Command>for /r "$(ProjectDir)$(OutDir).." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
+explorer.exe "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
 exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -221,8 +227,10 @@ exit 0</Command>
       <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <PostBuildEvent>
-      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+      <Command>for /r "$(ProjectDir)$(OutDir).." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
+explorer.exe "$(SolutionDir)..\..\_Pre-Built\Client\Bin$(Configuration)"
+
 exit 0</Command>
     </PostBuildEvent>
     <Link>
