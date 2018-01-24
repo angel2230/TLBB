@@ -78,6 +78,7 @@
       </DataExecutionPrevention>
       <LinkErrorReporting>
       </LinkErrorReporting>
+      <ImportLibrary>..\..\..\..\_Scripts\VC7.1\$(ConfigurationName)\UIBase.lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -106,8 +107,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>
-      </ImportLibrary>
+      <ImportLibrary>.\$(ConfigurationName)\UIBase.lib</ImportLibrary>
       <LinkErrorReporting>
       </LinkErrorReporting>
     </Link>

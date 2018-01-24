@@ -68,6 +68,9 @@
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">C:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\Include;$(IncludePath)</IncludePath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Main</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">Main</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Main</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,7 +99,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>./Debug/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>./Debug/Main.lib</ImportLibrary>
     </Link>
     <Manifest />
   </ItemDefinitionGroup>
