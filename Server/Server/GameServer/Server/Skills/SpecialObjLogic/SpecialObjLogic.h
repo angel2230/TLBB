@@ -18,7 +18,7 @@ namespace Combat_Module
 {
 	namespace Special_Obj_Module
 	{
-		typedef enum
+		enum
 		{
 			SPECIAL_OBJ_TYPE = INVALID_ID,
 			TRAP_OBJ,
