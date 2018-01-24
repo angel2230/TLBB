@@ -54,16 +54,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\_Scripts\VC7.1\Debug/WXClient\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\_Scripts\VC7.1\Debug/WXClient\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\_Scripts\VC7.1\Debug\WXClient\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\_Scripts\VC7.1\Debug\WXClient\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\_Scripts\VC7.1\Release/WXClient\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\_Scripts\VC7.1\Release/WXClient\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\_Scripts\VC7.1\Release\WXClient\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\_Scripts\VC7.1\Release\WXClient\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">..\..\_Scripts\VC7.1\Release/WXClient\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">..\..\_Scripts\VC7.1\Release/WXClient\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">..\..\_Scripts\VC7.1\Release\WXClient\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">..\..\_Scripts\VC7.1\Release\WXClient\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">false</GenerateManifest>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
@@ -115,10 +115,9 @@
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(TargetDir)*.dll" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-copy /Y "$(TargetDir)*.exe" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-</Command>
+      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -164,10 +163,9 @@ explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(TargetDir)*.dll" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-copy /Y "$(TargetDir)*.exe" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-</Command>
+      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Final|Win32'">
@@ -213,16 +211,20 @@ explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
       </LinkErrorReporting>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y "$(TargetDir)*.dll" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-copy /Y "$(TargetDir)*.exe" "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)\"
-</Command>
+      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
     <ClCompile>
       <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
+    <PostBuildEvent>
+      <Command>for /r "$(ProjectDir)$(OutDir)\.." %%f in (*.exe *.dll) do @xcopy /Y "%%f" "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+explorer.exe "$(SolutionDir)_Pre-Built\Bin$(Configuration)"
+exit 0</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Global.cpp" />
